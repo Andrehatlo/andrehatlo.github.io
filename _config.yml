@@ -111,7 +111,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:iam@andrehatlo.com"
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
        url: "andrehatlo.com"
@@ -120,10 +120,10 @@ author:
        url: "https://www.linkedin.com/in/andr%C3%A9-hatlo-johansen-952a228a/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-     url: "https://www.facebook.com/Andre.Hatlo"
+       url: "https://www.facebook.com/Andre.Hatlo"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Andrehatlo"
+       url: "https://github.com/Andrehatlo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
        url: "https://www.instagram.com/thehatlo/"
