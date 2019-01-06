@@ -111,22 +111,22 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto:iam@andrehatlo.com
+        url: mailto:iam@andrehatlo.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-       url: "andrehatlo.com"
+        url: "andrehatlo.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-square"
-       url: "http://www.linkedin.com/in/andrehatlo"
+        url: "http://www.linkedin.com/in/andrehatlo"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://www.facebook.com/Andre.Hatlo"
+        url: "https://www.facebook.com/Andre.Hatlo"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
         url: "http://www.github.com/andrehatlo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/thehatlo/"
+        url: "https://www.instagram.com/thehatlo/"
 
 # Site Footer
 footer:
