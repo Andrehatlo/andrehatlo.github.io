@@ -1,3 +1,17 @@
+GIT
+  remote: git://github.com/mmistakes/minimal-mistakes.git
+  revision: d361c00f8aa516ecc1241f0b0731a56036ac5165
+  specs:
+    minimal-mistakes-jekyll (4.14.2)
+      jekyll (~> 3.7)
+      jekyll-data (~> 1.0)
+      jekyll-feed (~> 0.10)
+      jekyll-gist (~> 1.5)
+      jekyll-include-cache (~> 0.1)
+      jekyll-paginate (~> 1.1)
+      jekyll-sitemap (~> 1.2)
+      jemoji (~> 0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -112,6 +126,8 @@ GEM
       commonmarker (~> 0.17.6)
       jekyll-commonmark (~> 1)
       rouge (~> 2)
+    jekyll-data (1.0.0)
+      jekyll (~> 3.3)
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
     jekyll-feed (0.11.0)
@@ -121,6 +137,8 @@ GEM
     jekyll-github-metadata (2.9.4)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-include-cache (0.1.0)
+      jekyll (~> 3.3)
     jekyll-mentions (1.4.1)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -243,6 +261,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  minimal-mistakes-jekyll!
 
 BUNDLED WITH
    2.0.1
