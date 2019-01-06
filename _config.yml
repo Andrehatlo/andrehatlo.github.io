@@ -133,13 +133,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-        url: "https://twitter.com/Hatl00"
+        # url: "https://twitter.com/Hatl00"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://www.facebook.com/Andre.Hatlo"
+       # url: "https://www.facebook.com/Andre.Hatlo"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/Andrehatlo"
+       # url: "https://github.com/Andrehatlo"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -148,7 +148,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/thehatlo/"
+       # url: "https://www.instagram.com/thehatlo/"
 
 
 # Reading Files
