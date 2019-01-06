@@ -114,19 +114,19 @@ author:
        url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-       # url: "andrehatlo.com"
+       url: "andrehatlo.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-square"
-        url: "https://www.linkedin.com/in/andr%C3%A9-hatlo-johansen-952a228a/"
+        url: "http://www.linkedin.com/in/andrehatlo"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       # url: "https://www.facebook.com/Andre.Hatlo"
+       url: "https://www.facebook.com/Andre.Hatlo"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-        url: "https://github.com/Andrehatlo"
+        url: "http://www.github.com/andrehatlo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       # url: "https://www.instagram.com/thehatlo/"
+       url: "https://www.instagram.com/thehatlo/"
 
 # Site Footer
 footer:
