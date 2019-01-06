@@ -109,9 +109,9 @@ author:
   location         : "Norway - Drammen"
   email            : "iam@andrehatlo.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:iam@andrehatlo.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #    url: "mailto:iam@andrehatlo.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
        url: "andrehatlo.com"
