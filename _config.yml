@@ -104,14 +104,14 @@ analytics:
 # Site Author
 author:
   name             : "André Hatlo-Johansen"
-  avatar           : /assets/images/me.png
+  avatar           : "/assets/images/me.png"
   bio              : "Data Science blog and portfolio"
   location         : "Norway - Drammen"
   email            : "iam@andrehatlo.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:iam@andrehatlo.com"
+       url: mailto:iam@andrehatlo.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
        url: "andrehatlo.com"
