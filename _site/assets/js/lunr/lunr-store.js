@@ -1,11 +1,6 @@
 var store = [{
-        "title": "Creating a blog with Jekyll",
-        "excerpt":"Blogging my journey as a developer   I’ve been coding for about 4 years now, and i’ve reached the point that i need to code more to get better. A few hours a day doesn’t hold anymore.      First   one      This is a quote   ","categories": [],
+        "title": "Jekyll: Creating a blog",
+        "excerpt":"So, i’ve chosen to start blogging my experiences/insights/thoughts as a developer. Both to learn and to share knowledge. Trying to find the right platform to start a developer blog was tidies. Google made it hard to find out what the right platform for a simple programming blog and a showcase...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/projekt-nettansikt/",
-        "teaser":"http://localhost:4000/assets/images/me.png"},{
-        "title": "Thesis: Machine learning in an e-commercial business",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/my-thesis/",
         "teaser":"http://localhost:4000/assets/images/me.png"}]

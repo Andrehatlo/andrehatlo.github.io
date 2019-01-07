@@ -12,19 +12,19 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes@4.14.2"
-minimal_mistakes_skin    : "dark"  # "neon" "mint" "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt"  # "dark"  # "neon" "mint" "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
 title                    : "Hi! I'm André :-)"
 title_separator          : "-"
 name                     : "André Hatlo-Johansen"
-description              : "My developer portfolio and blog."
-url                      : "andrehatlo.github.io"
+description              : "Welcome to my developer portfolio and blog."
+url                      : "www.andrehatlo.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "andrehatlo/andrehatlo.github.io"
 teaser                   : "/assets/images/me.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true #, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
@@ -109,7 +109,7 @@ author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/me.png"
   bio              : "Data Science blog and portfolio"
-  location         : "Drammen"
+  location         : "Drammen, Norway"
   email            : #"iam@andrehatlo.com"
   links:
     - label: "Email"
@@ -227,8 +227,8 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone:	+5320−00615 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate_path: /page:num
+timezone: Arctic/Longyearbyen # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -286,6 +286,10 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -297,7 +301,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
 
@@ -308,6 +312,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+        layout: single
+        author_profile: false
+        share: true
+
 
 
 github: [metadata]

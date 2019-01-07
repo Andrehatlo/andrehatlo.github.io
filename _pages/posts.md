@@ -3,8 +3,6 @@ layout: archives
 permalink: /blog/
 title: ""
 author_profile: true
-header:
-  image: '/assets/image/about-color.jpg'
 ---
 
 {% for post in site.posts %}

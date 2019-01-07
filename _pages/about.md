@@ -1,6 +1,7 @@
 ---
 title: ""
 permalink: /about/
+author_profile: false
 header:
   image: '/assets/images/about-color.jpg'
 ---
@@ -12,7 +13,9 @@ header:
 
 A developer, working for Rørkjøp Nett AS as of 2 years now.
 
-Hired after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS. Where my main focus in the group was implementing a useable solution for their system. Which i successfully did.
+Hired after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
+
+On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS. This entailed creating personalised data sets for each unique customer, based on their previous shopping data. Which i did successfully.
 
     Technologies utilised for thesis:
       - Linux
@@ -43,11 +46,11 @@ On my spare time i like to **solve puzzles**, read, **gain knowledge** and **ski
 
 ## On a personal note:
 
-I am 27 year old man who loves to laugh and make people smile.
+I'm a 27 year old boy-man which loves to laugh and make people smile.
 
  At the moment I live in Drammen Norway, with my best friend and partner Hilde.
 
-We have a 35kg 2year old love child Boxer named Mini.
+We also have a thirty-five kilo, two year old love child named Mini.
 
 <img src="/assets/images/me-and-her.jpg" alt="my family" width="250"/>
 <img src="/assets/images/mini.jpg" alt="my family" width="380"/>
