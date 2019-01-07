@@ -15,7 +15,9 @@ A developer, working for Rørkjøp Nett AS as of 2 years now.
 
 Hired after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
 
-On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS. This entailed creating personalised data sets for each unique customer, based on their previous shopping data. Which i did successfully.
+On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS.
+
+This entailed setting up a machine learning system that learned by looking at personalised data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations. Which i did successfully.
 
     Technologies utilised for thesis:
       - Linux
@@ -42,26 +44,26 @@ On this thesis my main job in the group was to implement a working machine learn
 
 Projects I've been assigned while working for Rørkjøp are mostly based on creating solutions too speed up productivity and scaleability of Rørkjøp's e-commerce platform.
 
-On my spare time i like to **solve puzzles**, read, **gain knowledge** and **skills** in different technologies available while keeping an eye open for new trends to explore.
+On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and **skills** in different technologies available while keeping an eye open for new trends to explore.
 
 ## On a personal note:
 
-I'm a 27 year old boy-man which loves to laugh and make people smile.
+I'm a 27 year old man which loves a good laugh, have fun and make people smile.
 
- At the moment I live in Drammen Norway, with my best friend and partner Hilde.
+At the moment I live in Drammen Norway, with my best friend and partner Hilde.
 
-We also have a thirty-five kilo, two year old love child named Mini.
+We have a thirty-five kilo, two year old child named Mini.
 
 <img src="/assets/images/me-and-her.jpg" alt="my family" width="250"/>
 <img src="/assets/images/mini.jpg" alt="my family" width="380"/>
 
 ## Hobbies:
 
-  - Cooking
-  - Ski, snowboarding
-  - Keeping up with my favourite tv-shows
-  - Playing with my dog and
-  - Hanging out friends and with my better half.
+  - Cooking.
+  - Ski, snowboarding.
+  - Keeping up with my favourite tv-shows.
+  - Playing with my dog.
+  - Hanging out friends and my better half.
 
 
 ## Phrases i live by:

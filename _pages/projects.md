@@ -15,4 +15,4 @@ header:
 
 > This thesis explores the different algorithmic possibilities to use for machine learning in an e-commerce environment.
 > The goal in this paper was to find the best case to solve the problem given to us of Rørkjøp AS.
-> While also returning with an implementation of our best case algorithm in their system.
+> While also returning with an implementation using our best case algorithm for their system.

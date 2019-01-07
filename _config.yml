@@ -108,22 +108,19 @@ analytics:
 author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/me.png"
-  bio              : "Data Science blog and portfolio"
+  bio              : "Coding, tech, portfolio and thoughts"
   location         : "Drammen, Norway"
   email            : #"iam@andrehatlo.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-at"
-      url: "mailto:iam@andrehatlo.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "http://www.github.com/andrehatlo"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "www.linkedin.com/in/andrehatlo"
-    - label: "StackOverflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "http://stackoverflow.com"
+    # - label: "StackOverflow"
+    #   icon: "fab fa-fw fa-stack-overflow"
+    #   url: "http://stackoverflow.com"
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
     #   url: "mailto:iam@andrehatlo.com"
@@ -146,12 +143,12 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "www.linkedin.com/in/andrehatlo"
-    - label: "Email"
-      icon: "fas fa-fw fa-at"
-      url: "mailto:iam@andrehatlo.com"
-    - label: "StackOverflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "http://stackoverflow.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-at"
+    #   url: "mailto:iam@andrehatlo.com"
+    # - label: "StackOverflow"
+    #   icon: "fab fa-fw fa-stack-overflow"
+    #   url: "http://stackoverflow.com"
 
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
@@ -302,7 +299,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
 
   # _pages
