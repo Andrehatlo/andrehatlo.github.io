@@ -48,7 +48,7 @@ On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and *
 
 ## On a personal note:
 
-I'm a 27 year old man which loves a good laugh and haveing a good time.
+I'm a 27 year old man who both loves a good laugh and having a good time, and values the sound of silence and alone time.
 
 At the moment I live in Drammen Norway, with my best friend and partner Hilde.
 
