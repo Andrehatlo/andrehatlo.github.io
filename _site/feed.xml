@@ -1,7 +1,215 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T13:24:21+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André :-)</title><subtitle>Welcome to my developer portfolio and blog.</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html"></title><link href="http://localhost:4000/2019-01-01-lorem/" rel="alternate" type="text/html" title="" /><published>2019-01-07T13:24:21+01:00</published><updated>2019-01-07T13:24:21+01:00</updated><id>http://localhost:4000/2019-01-01-lorem</id><content type="html" xml:base="http://localhost:4000/2019-01-01-lorem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author></entry><entry><title type="html">Jekyll + Github: Free website hosting tutorial</title><link href="http://localhost:4000/jekyll-and-github-makes-love" rel="alternate" type="text/html" title="Jekyll + Github: Free website hosting tutorial" /><published>2019-01-07T00:00:00+01:00</published><updated>2019-01-07T00:00:00+01:00</updated><id>http://localhost:4000/jekyll-and-github-makes-love</id><content type="html" xml:base="http://localhost:4000/jekyll-and-github-makes-love">&lt;h1 id=&quot;step-1&quot;&gt;Step 1:&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T15:52:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André :-)</title><subtitle>Welcome to my developer portfolio and blog.</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Jekyll + Github: Free website hosting tutorial</title><link href="http://localhost:4000/jekyll-and-github-makes-love" rel="alternate" type="text/html" title="Jekyll + Github: Free website hosting tutorial" /><published>2019-01-07T00:00:00+01:00</published><updated>2019-01-07T00:00:00+01:00</updated><id>http://localhost:4000/jekyll-and-github-makes-love</id><content type="html" xml:base="http://localhost:4000/jekyll-and-github-makes-love">&lt;h2 id=&quot;requirements&quot;&gt;Requirements:&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Under construction
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Create your own blog/portofolio using these technologies, with no hosting fee!</summary></entry><entry><title type="html">Jekyll: Creating a blog is easy and FREE</title><link href="http://localhost:4000/jekyll-creating-blog/" rel="alternate" type="text/html" title="Jekyll: Creating a blog is easy and FREE" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/projekt-nettansikt</id><content type="html" xml:base="http://localhost:4000/jekyll-creating-blog/">&lt;p&gt;So, i’ve chosen to start blogging my experiences/insights/thoughts as a developer. Both to learn and to share knowledge.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Terminal&lt;/li&gt;
+  &lt;li&gt;Check whether you have Ruby 2.1.0 or higher installed:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ruby -v
+ ruby 2.x.x
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install Bundler:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ gem install bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a local repository for your Jekyll site. (Jump to step 1 if this is done)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Install git, see &lt;a href=&quot;https://help.github.com/articles/set-up-git/&quot;&gt;Set up Git&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Open terminal&lt;/li&gt;
+      &lt;li&gt;Initialize a new Git repo for your jekyll site:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git init &amp;lt;GitHubUsername&amp;gt;.github.io
+ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
+ # creates a new file directory on your local computer, Initialized as a Git repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Then change directory to the new repository created:
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ cd &amp;lt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-1-install-jekyll-using-bundler&quot;&gt;Step 1: Install Jekyll using Bundler&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check if you have a Gemfile in your newly created repo&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls
+ Gemfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;If you have a Gemfile, skip to step 4.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open up your favorite text editor, mine is &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, and add these lines to a new file&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; source 'http://rubygems.org'
+ gem 'github-pages', group: :jekyll_plugins
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Save the file as &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;, in the root directory of your local Jekyll repository. Now skip to step 5 to install Jekyll.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Only&lt;/strong&gt; if you already have a Gemfile. Open your favorite editor, mine is &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, and add these lines to your Gemfile:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Jekyll and other dependencies from the GitHub Pages gem by running:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle install
+Fetching gem metadata from https://rubygems.org/......
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-2-run-your-jekyll-site-localy&quot;&gt;Step 2: Run your Jekyll site localy&lt;/h2&gt;
+
+&lt;p&gt;You can generate site files for a basic Jekyll template site in your local repository.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you don’t already have a Jekyll site localy on your computer, create a Jekyll template site in a new directory:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ bundle exec jekyll _3.3.0_ new &amp;lt;new-jekyll-site-repo-name&amp;gt;
+ New jekyll site installed in /Users/horseforce/&amp;lt;new-jekyll-site-repo-name&amp;gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Navigate into your new site directory and edit your Gemfile by removing the following line:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ 'jekyll', &quot;3.3.0&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the same Gemfile, delete the &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; at the beginning of this line:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ gem &quot;github-pages&quot;, group: :jekyll_plugins
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Initialize the directory as a Git repo&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Connect your remote repo on GitHub to your local repo for your site.&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git remote add origin http://github.com/&amp;lt;username/organization-name/your-remote-repo-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To edit the Jekyll site, open your jekyll local repository in an text editor. Make as much changes as you want and save them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Preview changes locally by running a Jekyll command yo build your site:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Navigate to your site root directory:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd &amp;lt;GithubUsername&amp;gt;.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the following command:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle exec jekyll serve
+Configuration file: /Users/horseforce/andrehatlo.github.io/_config.yml
+            Source: /Users/horseforce/andrehatlo.github.io
+       Destination: /Users/horseforce/andrehatlo.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 0.309 seconds.
+ Auto-regeneration: enabled for '/Users/horseforce/my-site'
+Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In your browser, preview your local Jekyll site at &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add or stage your changes:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Commit it&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git commit -m &quot;some stuff changed&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Push your changes to your remote repository on GitHub&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;step-3-make-github-host-the-site-for-you&quot;&gt;Step 3: Make github host the site for you&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Navigate to your repository. Which should be called something like &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If your repository is called something else, we can change it at the next step.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enter into the repository settings.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;First thing you see is &lt;code class=&quot;highlighter-rouge&quot;&gt;Repository name&lt;/code&gt;, edit it so that it maches the syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Scroll down to &lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Pages&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;At &lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Pages&lt;/code&gt;, there can be all kind of messages. But hopefully it should say:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;:heavy_check_mark: Your site is published at &lt;a href=&quot;http://andrehatlo.com&quot;&gt;http://www.andrehatlo.github.io&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If not, there is possibly something wrong with your repository or github setup.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Just keep tweaking your website and check out all the different themes out there! I will be coming with more tutorials about Jekyll in the future :smile:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hope-this-helps-it-is-my-first-blog-post-i-know-its-not-the-best-but-ill-try-to-excel-as-fast-as-possible-by-writing-many-many-more-wave-wave&quot;&gt;Hope this helps, it is my first blog post (I know its not the best). But i’ll try to excel as fast as possible by writing MANY MANY more! :wave: :wave:&lt;/h3&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Create your own blog/portofolio using these technologies, with no hosting fee!</summary></entry><entry><title type="html">Jekyll: Creating a blog is easy and FREE</title><link href="http://localhost:4000/jekyll-creating-blog/" rel="alternate" type="text/html" title="Jekyll: Creating a blog is easy and FREE" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/projekt-nettansikt</id><content type="html" xml:base="http://localhost:4000/jekyll-creating-blog/">&lt;p&gt;So, i’ve chosen to start blogging my experiences/insights/thoughts as a developer. Both to learn and to share knowledge.&lt;/p&gt;
 
 &lt;p&gt;Trying to find the right platform to start a blog was my biggest challenge.&lt;/p&gt;
 
@@ -11,7 +219,7 @@
 
 &lt;p&gt;At last i made it through to the end, and i was left with was a revamped version of Joomla.&lt;/p&gt;
 
-&lt;p&gt;Using Wordpress, there is almost no challenge, and you end up paying for something in end anyway, thats something i’m &lt;em&gt;not&lt;/em&gt; interested in.&lt;/p&gt;
+&lt;p&gt;Using Wordpress, there is almost no challenge, and you end up paying for something in end anyway, something i’m &lt;em&gt;_not_&lt;/em&gt; interested in.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -20,9 +228,9 @@
 &lt;/center&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;I wanted the right platform for a simple programming blog and portfolio for my projects.&lt;/p&gt;
+&lt;p&gt;I wanted the right platform, for a simple programming blog and portfolio for my future projects.&lt;/p&gt;
 
-&lt;p&gt;This was until i stumbled into reddit and found a post about &lt;strong&gt;Jekyll&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This was until i stumbled into the best place on the internet; &lt;em&gt;Reddit&lt;/em&gt;, and found a post about &lt;strong&gt;Jekyll&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;For those who does now know what Jekyll is:&lt;/em&gt;&lt;/p&gt;
 
@@ -38,4 +246,4 @@
 
 &lt;p&gt;Follow my tutorial on how i used Jekyll and Github to create this blog/portfolio you are on right now:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;&quot;&gt;Free Blog/Portfolio with Jekyll and Github tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-05T00:00:00+01:00</published><updated>2019-01-05T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-04T00:00:00+01:00</published><updated>2019-01-04T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-31T00:00:00+01:00</published><updated>2018-12-31T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-30T00:00:00+01:00</published><updated>2018-12-30T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-29T00:00:00+01:00</published><updated>2018-12-29T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.andrehatlo.com/jekyll-and-github-makes-love&quot;&gt;Free Blog/Portfolio with Jekyll and Github tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-05T00:00:00+01:00</published><updated>2019-01-05T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-04T00:00:00+01:00</published><updated>2019-01-04T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-01T00:00:00+01:00</published><updated>2019-01-01T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-31T00:00:00+01:00</published><updated>2018-12-31T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-30T00:00:00+01:00</published><updated>2018-12-30T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-29T00:00:00+01:00</published><updated>2018-12-29T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry></feed>
