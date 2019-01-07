@@ -1,6 +1,8 @@
 ---
 layout: "post"
 author: "André Hatlo-Johansen"
-title: "Thesis: Machine learning in an e-commercial business"
+title: "Projekt Nett Ansikt!"
 permalink: /:title/
 ---
+
+Hei!
