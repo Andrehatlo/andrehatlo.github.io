@@ -17,7 +17,7 @@ Hired after writing my bachelor thesis on [Machine Learning in an E-Commercial B
 
 On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS.
 
-This entailed setting up a machine learning system that learned by looking at personalised data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations. Which i did successfully.
+This entailed setting up a machine learning system that learned by looking at personalised data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations. Which it did successfully.
 
     Technologies utilised for thesis:
       - Linux
@@ -42,24 +42,24 @@ This entailed setting up a machine learning system that learned by looking at pe
       - Elasticsearch
       - Heroku
 
-Projects I've been assigned while working for Rørkjøp are mostly based on creating solutions too speed up productivity and scaleability of Rørkjøp's e-commerce platform.
+Projects I've been assigned while working for Rørkjøp are mostly based on creating features too speed up productivity, scaleability or maintainability of Rørkjøp's e-commerce platform.
 
-On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and **skills** in different technologies available while keeping an eye open for new trends to explore.
+On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and **skills in different technologies** available while keeping an eye open for new trends to explore.
 
 ## On a personal note:
 
-I'm a 27 year old man which loves a good laugh, have fun and make people smile.
+I'm a 27 year old man which loves a good laugh and haveing a good time.
 
 At the moment I live in Drammen Norway, with my best friend and partner Hilde.
 
-We have a thirty-five kilo, two year old child named Mini.
+We have a thirty-five kilo, two year old boxer named Mini.
 
 <img src="/assets/images/me-and-her.jpg" alt="my family" width="250"/>
 <img src="/assets/images/mini.jpg" alt="my family" width="380"/>
 
 ## Hobbies:
 
-  - Cooking.
+  - Cooking - I love to eat
   - Ski, snowboarding.
   - Keeping up with my favourite tv-shows.
   - Playing with my dog.
@@ -79,4 +79,4 @@ We have a thirty-five kilo, two year old child named Mini.
   5. Let the universe do the worrying for you.
 
   6. Last but not least, enjoy the ride.
-    - You only get ONE!
+    - You only get **ONE!**
