@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-06T19:13:05+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André</title><subtitle>Data Science Portfolio and Blog with a main purpose to share knowledge as i learn</subtitle><author><name>André Hatlo-Johansen</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T09:41:04+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André</title><subtitle>Data Science Portfolio and Blog with a main purpose to share knowledge as i learn</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Thesis: Machine learning in an e-commercial business</title><link href="http://localhost:4000/my-thesis/" rel="alternate" type="text/html" title="Thesis: Machine learning in an e-commercial business" /><published>2019-01-07T00:00:00+00:00</published><updated>2019-01-07T00:00:00+00:00</updated><id>http://localhost:4000/my-thesis</id><content type="html" xml:base="http://localhost:4000/my-thesis/"></content><author><name>André Hatlo-Johansen</name></author><summary type="html"></summary></entry><entry><title type="html">Creating a blog with Jekyll</title><link href="http://localhost:4000/projekt-nettansikt/" rel="alternate" type="text/html" title="Creating a blog with Jekyll" /><published>2019-01-06T00:00:00+00:00</published><updated>2019-01-06T00:00:00+00:00</updated><id>http://localhost:4000/projekt-nettansikt</id><content type="html" xml:base="http://localhost:4000/projekt-nettansikt/">&lt;h1 id=&quot;blogging-my-journey-as-a-developer&quot;&gt;Blogging my journey as a developer&lt;/h1&gt;
+
+&lt;p&gt;I’ve been coding for about 4 years now, and i’ve reached the point that i need to code more to get better. A few hours a day doesn’t hold anymore.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;one&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a quote&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Blogging my journey as a developer</summary></entry></feed>
