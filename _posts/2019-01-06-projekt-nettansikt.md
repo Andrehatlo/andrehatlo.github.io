@@ -18,7 +18,7 @@ Making it through the first configuration, then the second configuration, then t
 
 At last i made it through to the end, and i was left with was a revamped version of Joomla.
 
-Using Wordpress, there is almost no challenge, and you end up paying for something in end anyway, thats something i'm _not_ interested in.
+Using Wordpress, there is almost no challenge, and you end up paying for something in end anyway, something i'm *_not_* interested in.
 
 <br>
 
@@ -27,9 +27,9 @@ Using Wordpress, there is almost no challenge, and you end up paying for somethi
 </center>
 <br>
 
-I wanted the right platform for a simple programming blog and portfolio for my projects.
+I wanted the right platform, for a simple programming blog and portfolio for my future projects.
 
-This was until i stumbled into reddit and found a post about **Jekyll**.
+This was until i stumbled into the best place on the internet; *Reddit*, and found a post about **Jekyll**.
 
 *For those who does now know what Jekyll is:*
 
@@ -45,4 +45,4 @@ Using Jekyll you can get *FREE* hosting through Github!
 
 Follow my tutorial on how i used Jekyll and Github to create this blog/portfolio you are on right now:
 
-[Free Blog/Portfolio with Jekyll and Github tutorial]()
+[Free Blog/Portfolio with Jekyll and Github tutorial](http://www.andrehatlo.com/jekyll-and-github-makes-love)
