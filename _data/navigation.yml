@@ -1,12 +1,12 @@
 # main links
 main:
   - title: "Home"
-    url: https://andrehatlo.com
+    url: /home/
   - title: "About"
     url: /about/
   - title: "Projects"
     url: /projects/
   - title: "Contact"
     url: /contact/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Sitemap"
+    url: /sitemap/

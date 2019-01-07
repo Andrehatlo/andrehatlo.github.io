@@ -2,7 +2,7 @@
 title: ""
 permalink: /about/
 header:
-  image: '/assets/images/foredrag-serr.jpg'
+  image: '/assets/images/about-color.jpg'
 ---
 
 # Hi! I'm André Hatlo-Johansen!
