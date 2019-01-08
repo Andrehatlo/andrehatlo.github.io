@@ -44,18 +44,25 @@ This entailed setting up a machine learning system that learned by looking at pe
 
 Projects I've been assigned while working for Rørkjøp are mostly based on creating features too speed up productivity, scaleability or maintainability of Rørkjøp's e-commerce platform.
 
+### Other skills:
+
+    - Java  (Upper Intermediate)
+    - HTML  (Advanced)
+    - CSS/SCSS   (Pre-advanced)
+    - Adobe Photoshop (Pre-advanced)
+    - Linux/Windows/iOS (Advanced)
+
 On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and **skills in different technologies** available while keeping an eye open for new trends to explore.
 
 ## On a personal note:
 
-I'm a 27 year old man who both loves a good laugh and having a good time, and values the sound of silence and alone time.
+I'm a 27 year old man who both loves a good laugh and having a good time, and values the sound of silence and my alone time.
 
-At the moment I live in Drammen Norway, with my best friend and partner Hilde.
+At the moment I live in Drammen Norway, with my best friend and beautiful partner Hilde.
 
-We have a thirty-five kilo, two year old boxer named Mini.
+Together we have a super funny thirty-five kilo, two year old boxer named Mini.
 
-<img src="/assets/images/me-and-her.jpg" alt="my family" width="250"/>
-<img src="/assets/images/mini.jpg" alt="my family" width="380"/>
+<img src="/assets/images/fam.jpg" alt="my family"/>
 
 ## Hobbies:
 
