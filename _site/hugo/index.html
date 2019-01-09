@@ -295,7 +295,7 @@
 
 
 
-  2 minute read
+  1 minute read
 </p>
           
         </header>
@@ -321,34 +321,26 @@
 
 <p>Get the <a href="https://chocolatey.org/">Chocolatey</a> package managment, then you can install Hugo with:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-choco install hugo -confirm
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install hugo -confirm
 </code></pre></div></div>
 
 <h4 id="linux">Linux</h4>
 
 <p>Get <a href="https://brew.sh/">Brew</a> and follow the directions there.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 </code></pre></div></div>
 
 <p>Run the <code class="highlighter-rouge">brew</code> commend to install <code class="highlighter-rouge">hugo</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-brew install hugo
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install hugo
 </code></pre></div></div>
 
 <h2 id="step-2-create-a-new-site">Step 2: Create a new site:</h2>
 
 <p>Go to the directory where you want to create your <code class="highlighter-rouge">Hugo</code> repo, then run this command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-hugo new site &lt;name-of-site-dir&gt;
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hugo new site &lt;name-of-site-dir&gt;
 </code></pre></div></div>
 
 <p>Will create a new Hugo site in a folder named <code class="highlighter-rouge">name-of-site-dir</code>.</p>
@@ -365,44 +357,36 @@ hugo new site &lt;name-of-site-dir&gt;
 
 <p>Step into the site folder and run the folloing commands:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-git init
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
 
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-```
 </code></pre></div></div>
 
 <p>Now edit the <code class="highlighter-rouge">config.toml</code> configuration file and add the Ananke theme:</p>
 
 <p>Either echo it in from commandline:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-echo 'theme = "ananke"' &gt;&gt; config.toml
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'theme = "ananke"' &gt;&gt; config.toml
 </code></pre></div></div>
 
 <p>Or edit it from your text editor:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-baseURL = "http://example.org/"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"
-```
 </code></pre></div></div>
 
 <h2 id="step-4-add-content">Step 4: Add content</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-hugo new posts/my-first-post.md
-``` Edit the file if you like, you can use both `Markdown` or `Html`, your choice.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hugo new posts/my-first-post.md
 </code></pre></div></div>
+
+<p>Edit the file if you like, you can use both <code class="highlighter-rouge">Markdown</code> or <code class="highlighter-rouge">Html</code>, your choice.</p>
 
 <h2 id="step-5-start-the-server">Step 5: Start the server</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-hugo server -D
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hugo server -D
 </code></pre></div></div>
 
 <p>Then navigate to <a href="http://localhost:1313/.">http://localhost:1313/.</a></p>
@@ -417,12 +401,10 @@ hugo server -D
 
 <p>Then replace <code class="highlighter-rouge">title</code> with something personal and <code class="highlighter-rouge">baseUrl</code> (if you have a domain already), like i did:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-baseURL = "http://andrehatlo.org/"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>baseURL = "http://andrehatlo.org/"
 languageCode = "en-us"
 title = "Hello! I'm André :)"
 theme = "ananke"
-```
 </code></pre></div></div>
 
 <blockquote>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T09:36:53+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André :-)</title><subtitle>Welcome to my developer portfolio and blog.</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Hugo - as my static page blog</title><link href="http://localhost:4000/hugo/" rel="alternate" type="text/html" title="Hugo - as my static page blog" /><published>2019-01-08T00:00:00+01:00</published><updated>2019-01-08T00:00:00+01:00</updated><id>http://localhost:4000/hugo-static-site-generator</id><content type="html" xml:base="http://localhost:4000/hugo/">&lt;p&gt;After the setup of my Jekyll site I came across Hugo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T09:37:58+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André :-)</title><subtitle>Welcome to my developer portfolio and blog.</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Hugo - as my static page blog</title><link href="http://localhost:4000/hugo/" rel="alternate" type="text/html" title="Hugo - as my static page blog" /><published>2019-01-08T00:00:00+01:00</published><updated>2019-01-08T00:00:00+01:00</updated><id>http://localhost:4000/hugo-static-site-generator</id><content type="html" xml:base="http://localhost:4000/hugo/">&lt;p&gt;After the setup of my Jekyll site I came across Hugo.&lt;/p&gt;
 
 &lt;p&gt;Hugo is a static site generator, on the same line as Jekyll as it uses &lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; to create blog posts.&lt;/p&gt;
 
@@ -16,34 +16,26 @@
 
 &lt;p&gt;Get the &lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; package managment, then you can install Hugo with:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-choco install hugo -confirm
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;choco install hugo -confirm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;linux&quot;&gt;Linux&lt;/h4&gt;
 
 &lt;p&gt;Get &lt;a href=&quot;https://brew.sh/&quot;&gt;Brew&lt;/a&gt; and follow the directions there.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Run the &lt;code class=&quot;highlighter-rouge&quot;&gt;brew&lt;/code&gt; commend to install &lt;code class=&quot;highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-brew install hugo
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install hugo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-2-create-a-new-site&quot;&gt;Step 2: Create a new site:&lt;/h2&gt;
 
 &lt;p&gt;Go to the directory where you want to create your &lt;code class=&quot;highlighter-rouge&quot;&gt;Hugo&lt;/code&gt; repo, then run this command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-hugo new site &amp;lt;name-of-site-dir&amp;gt;
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hugo new site &amp;lt;name-of-site-dir&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Will create a new Hugo site in a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;name-of-site-dir&lt;/code&gt;.&lt;/p&gt;
@@ -60,44 +52,36 @@ hugo new site &amp;lt;name-of-site-dir&amp;gt;
 
 &lt;p&gt;Step into the site folder and run the folloing commands:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-git init
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
 
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; configuration file and add the Ananke theme:&lt;/p&gt;
 
 &lt;p&gt;Either echo it in from commandline:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-echo 'theme = &quot;ananke&quot;' &amp;gt;&amp;gt; config.toml
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo 'theme = &quot;ananke&quot;' &amp;gt;&amp;gt; config.toml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Or edit it from your text editor:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-baseURL = &quot;http://example.org/&quot;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;baseURL = &quot;http://example.org/&quot;
 languageCode = &quot;en-us&quot;
 title = &quot;My New Hugo Site&quot;
 theme = &quot;ananke&quot;
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-4-add-content&quot;&gt;Step 4: Add content&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-hugo new posts/my-first-post.md
-``` Edit the file if you like, you can use both `Markdown` or `Html`, your choice.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hugo new posts/my-first-post.md
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Edit the file if you like, you can use both &lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Html&lt;/code&gt;, your choice.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-5-start-the-server&quot;&gt;Step 5: Start the server&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-hugo server -D
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hugo server -D
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then navigate to &lt;a href=&quot;http://localhost:1313/.&quot;&gt;http://localhost:1313/.&lt;/a&gt;&lt;/p&gt;
@@ -112,12 +96,10 @@ hugo server -D
 
 &lt;p&gt;Then replace &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; with something personal and &lt;code class=&quot;highlighter-rouge&quot;&gt;baseUrl&lt;/code&gt; (if you have a domain already), like i did:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
-baseURL = &quot;http://andrehatlo.org/&quot;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;baseURL = &quot;http://andrehatlo.org/&quot;
 languageCode = &quot;en-us&quot;
 title = &quot;Hello! I'm André :)&quot;
 theme = &quot;ananke&quot;
-```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
