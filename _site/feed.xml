@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-08T15:32:27+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André :-)</title><subtitle>Welcome to my developer portfolio and blog.</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Jekyll + Github: Free website hosting tutorial</title><link href="http://localhost:4000/jekyll-and-github-makes-love" rel="alternate" type="text/html" title="Jekyll + Github: Free website hosting tutorial" /><published>2019-01-07T00:00:00+01:00</published><updated>2019-01-07T00:00:00+01:00</updated><id>http://localhost:4000/jekyll-and-github-makes-love</id><content type="html" xml:base="http://localhost:4000/jekyll-and-github-makes-love">&lt;h2 id=&quot;requirements&quot;&gt;Requirements:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T09:33:58+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André :-)</title><subtitle>Welcome to my developer portfolio and blog.</subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Hugo - as my static page blog</title><link href="http://localhost:4000/hugo/" rel="alternate" type="text/html" title="Hugo - as my static page blog" /><published>2019-01-08T00:00:00+01:00</published><updated>2019-01-08T00:00:00+01:00</updated><id>http://localhost:4000/hugo-static-site-generator</id><content type="html" xml:base="http://localhost:4000/hugo/">&lt;hr /&gt;
+&lt;p&gt;title: “Hugo - as my static page blog”
+date: 2019-01-09T08:45:32+01:00
+draft: true
+—&lt;/p&gt;
+
+&lt;h1 id=&quot;hugo-as-a-static-page-blog&quot;&gt;Hugo as a static page blog&lt;/h1&gt;
+
+&lt;p&gt;After the setup of my Jekyll site I came across Hugo.&lt;/p&gt;
+
+&lt;p&gt;Hugo is a static site generator, on the same line as Jekyll as it uses &lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; to create blog posts.&lt;/p&gt;
+
+&lt;p&gt;The main difference i noticed after testing Jekyll against Hugo is that it’s fast. It seems like it has Go under the hood.&lt;/p&gt;
+
+&lt;p&gt;Let me do a quick tutorial to setup Hugo, its very easy and almost only done in the commandline:&lt;/p&gt;
+
+&lt;h2 id=&quot;hugo-quicksetup-tutorial&quot;&gt;Hugo quicksetup tutorial:&lt;/h2&gt;
+
+&lt;h2 id=&quot;step-1-install-hugo&quot;&gt;Step 1: Install &lt;code class=&quot;highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;I use mac, so for those other operating systems out there:&lt;/p&gt;
+
+&lt;h4 id=&quot;windows&quot;&gt;Windows:&lt;/h4&gt;
+
+&lt;p&gt;Get the &lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; package managment, then you can install Hugo with:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+choco install hugo -confirm
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;linux&quot;&gt;Linux&lt;/h4&gt;
+
+&lt;p&gt;Get &lt;a href=&quot;https://brew.sh/&quot;&gt;Brew&lt;/a&gt; and follow the directions there.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run the &lt;code class=&quot;highlighter-rouge&quot;&gt;brew&lt;/code&gt; commend to install &lt;code class=&quot;highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+brew install hugo
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-2-create-a-new-site&quot;&gt;Step 2: Create a new site:&lt;/h2&gt;
+
+&lt;p&gt;Go to the directory where you want to create your &lt;code class=&quot;highlighter-rouge&quot;&gt;Hugo&lt;/code&gt; repo, then run this command:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+hugo new site &amp;lt;name-of-site-dir&amp;gt;
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Will create a new Hugo site in a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;name-of-site-dir&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3-add-a-theme&quot;&gt;Step 3: Add a Theme&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Requirement: &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; is installed&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;See &lt;a href=&quot;themes.gohugo.io&quot;&gt;themes.gohugo.io&lt;/a&gt; to browse themes.&lt;/p&gt;
+
+&lt;p&gt;I will use the &lt;a href=&quot;https://themes.gohugo.io/gohugo-theme-ananke/&quot;&gt;Ananke theme&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Step into the site folder and run the folloing commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+git init
+
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; configuration file and add the Ananke theme:&lt;/p&gt;
+
+&lt;p&gt;Either echo it in from commandline:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+echo 'theme = &quot;ananke&quot;' &amp;gt;&amp;gt; config.toml
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or edit it from your text editor:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+theme = &quot;ananke&quot;
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-4-add-content&quot;&gt;Step 4: Add content&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+hugo new posts/my-first-post.md
+``` Edit the file if you like, you can use both `Markdown` or `Html`, your choice.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-5-start-the-server&quot;&gt;Step 5: Start the server&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+hugo server -D
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then navigate to &lt;a href=&quot;http://localhost:1313/.&quot;&gt;http://localhost:1313/.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-6-customize-the-theme&quot;&gt;Step 6: Customize the Theme&lt;/h2&gt;
+
+&lt;p&gt;You can tweak your site to personalise it before you release it to the public.&lt;/p&gt;
+
+&lt;h3 id=&quot;site-config&quot;&gt;Site config&lt;/h3&gt;
+
+&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; in your favourite text editor.&lt;/p&gt;
+
+&lt;p&gt;Then replace &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; with something personal and &lt;code class=&quot;highlighter-rouge&quot;&gt;baseUrl&lt;/code&gt; (if you have a domain already), like i did:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+baseURL = &quot;http://andrehatlo.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Hello! I'm André :)&quot;
+theme = &quot;ananke&quot;
+```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tip:
+Making changes to files in your new Hugo site
+while the server is running will automatically update
+the site and you will see the changes right away.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;now-your-site-is-up-and-running-you-can-find-more-to-do-by-reading-the-hugo-docs-here&quot;&gt;Now your site is up and running you can find more to do by reading the Hugo docs &lt;a href=&quot;https://gohugo.io/documentation/&quot;&gt;here&lt;/a&gt;&lt;/h2&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Hugo is a static site generator, on the same line as Jekyll as it uses `Markdown` to create blog posts. The main difference i noticed after testing Jekyll against Hugo is that it's fast. It seems like it has Go under the hood. Let me do a quick tutorial to setup Hugo, its very easy and almost only done in the commandline:</summary></entry><entry><title type="html">Jekyll + Github: Free website hosting tutorial</title><link href="http://localhost:4000/jekyll-and-github-makes-love" rel="alternate" type="text/html" title="Jekyll + Github: Free website hosting tutorial" /><published>2019-01-07T00:00:00+01:00</published><updated>2019-01-07T00:00:00+01:00</updated><id>http://localhost:4000/jekyll-and-github-makes-love</id><content type="html" xml:base="http://localhost:4000/jekyll-and-github-makes-love">&lt;h2 id=&quot;requirements&quot;&gt;Requirements:&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Terminal&lt;/li&gt;
@@ -246,4 +383,4 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
 
 &lt;p&gt;Follow my tutorial on how i used Jekyll and Github to create this blog/portfolio you are on right now:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.andrehatlo.com/jekyll-and-github-makes-love&quot;&gt;Free Blog/Portfolio with Jekyll and Github tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-05T00:00:00+01:00</published><updated>2019-01-05T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-04T00:00:00+01:00</published><updated>2019-01-04T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-01T00:00:00+01:00</published><updated>2019-01-01T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-31T00:00:00+01:00</published><updated>2018-12-31T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-30T00:00:00+01:00</published><updated>2018-12-30T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-29T00:00:00+01:00</published><updated>2018-12-29T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.andrehatlo.com/jekyll-and-github-makes-love&quot;&gt;Free Blog/Portfolio with Jekyll and Github tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-04T00:00:00+01:00</published><updated>2019-01-04T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2019-01-01T00:00:00+01:00</published><updated>2019-01-01T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-31T00:00:00+01:00</published><updated>2018-12-31T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-30T00:00:00+01:00</published><updated>2018-12-30T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-29T00:00:00+01:00</published><updated>2018-12-29T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry><entry><title type="html">Lorem Ipsem</title><link href="http://localhost:4000/lorem/ipsem/" rel="alternate" type="text/html" title="Lorem Ipsem" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/lorem/lorem</id><content type="html" xml:base="http://localhost:4000/lorem/ipsem/">&lt;p&gt;Aenean id lacinia neque nec bibendum odio risus a arcu imperdiet metus id velit augue id magna iaculis quis, pretium quam iaculis quis, sit amet nibh ullamcorper nec, pretium quam nonummy ac, erat libero tristique tellus, turpis at pulvinar vulputate, sed nisl molestie nec bibendum odio risus erat libero tristique tellus, a arcu imperdiet pretium quam turpis at pulvinar vulputate, sit amet nibh rutrum non, pretium quam augue id magna ullamcorper nec, porttitor ut, porttitor ut, nec bibendum odio risus sit amet nibh sit amet ante.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Lorem Ipsem s erat libero tristique tell</summary></entry></feed>

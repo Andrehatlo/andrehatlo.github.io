@@ -46,9 +46,9 @@ Projects I've been assigned while working for Rørkjøp are mostly based on crea
 
 ### Other skills:
 
-    - Java  (Upper Intermediate)
-    - HTML  (Advanced)
-    - CSS/SCSS   (Pre-advanced)
+    - Java (Upper Intermediate)
+    - HTML (Advanced)
+    - CSS/SCSS  (Pre-advanced)
     - Adobe Photoshop (Pre-advanced)
     - Linux/Windows/iOS (Advanced)
 
@@ -56,11 +56,11 @@ On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and *
 
 ## On a personal note:
 
-I'm a 27 year old man who both loves a good laugh and having a good time, and values the sound of silence and my alone time.
+I'm a 27 year old man who both loves a good laugh, having a good time and values my alone time.
 
 At the moment I live in Drammen Norway, with my best friend and beautiful partner Hilde.
 
-Together we have a super funny thirty-five kilo, two year old boxer named Mini.
+Together we have a super funny thirty-five kilo, two year old boxer named Mini, who thinks he's a little person.
 
 <img src="/assets/images/fam.jpg" alt="my family"/>
 
