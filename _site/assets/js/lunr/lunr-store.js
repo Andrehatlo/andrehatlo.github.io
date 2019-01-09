@@ -60,7 +60,7 @@ var store = [{
         "url": "http://localhost:4000/jekyll-and-github-makes-love",
         "teaser":"http://localhost:4000/assets/images/me.png"},{
         "title": "Hugo - as my static page blog",
-        "excerpt":"Hugo as a static page blog After the setup of my Jekyll site I came across Hugo. Hugo is a static site generator, on the same line as Jekyll as it uses Markdown to create blog posts. The main difference i noticed after testing Jekyll against Hugo is that it’s...","categories": [],
+        "excerpt":"After the setup of my Jekyll site I came across Hugo. Hugo is a static site generator, on the same line as Jekyll as it uses Markdown to create blog posts. The main difference i noticed after testing Jekyll against Hugo is that it’s fast. It seems like it has...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hugo/",
         "teaser":"http://localhost:4000/assets/images/me.png"}]
