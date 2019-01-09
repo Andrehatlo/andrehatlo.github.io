@@ -24,32 +24,31 @@ I use mac, so for those other operating systems out there:
 
 Get the [Chocolatey](https://chocolatey.org/) package managment, then you can install Hugo with:
 
-    ```
-    choco install hugo -confirm
-    ```
+```
+choco install hugo -confirm
+```
 
 #### Linux
 
 Get [Brew](https://brew.sh/) and follow the directions there.
 
-    ```
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    ```
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 Run the `brew` commend to install `hugo`
 
-    ```
-    brew install hugo
-    ```
-
+```
+brew install hugo
+```
 
 ## Step 2: Create a new site:
 
 Go to the directory where you want to create your `Hugo` repo, then run this command:
 
-    ```
-    hugo new site <name-of-site-dir>
-    ```
+```
+hugo new site <name-of-site-dir>
+```
 
 Will create a new Hugo site in a folder named `name-of-site-dir`.
 
@@ -63,41 +62,42 @@ I will use the [Ananke theme](https://themes.gohugo.io/gohugo-theme-ananke/)
 
 Step into the site folder and run the folloing commands:
 
-    ```
-    git init
+```
+git init
 
-    git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-    ```
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+```
 
 Now edit the `config.toml` configuration file and add the Ananke theme:
 
 Either echo it in from commandline:
 
-    ```
-    echo 'theme = "ananke"' >> config.toml
-    ```
+```
+echo 'theme = "ananke"' >> config.toml
+```
 
 Or edit it from your text editor:
 
-    ```
-    baseURL = "http://example.org/"
-    languageCode = "en-us"
-    title = "My New Hugo Site"
-    theme = "ananke"
-    ```
+```
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "ananke"
+```
 
 ## Step 4: Add content
 
-    ```
-    hugo new posts/my-first-post.md
-    ```
+```
+hugo new posts/my-first-post.md
+```
+
 Edit the file if you like, you can use both `Markdown` or `Html`, your choice.
 
 ## Step 5: Start the server
 
-    ```
-    hugo server -D
-    ```
+```
+hugo server -D
+```
 
 Then navigate to [http://localhost:1313/.](http://localhost:1313/.)
 
@@ -111,12 +111,12 @@ Open `config.toml` in your favourite text editor.
 
 Then replace `title` with something personal and `baseUrl` (if you have a domain already), like i did:
 
-    ```
-    baseURL = "http://andrehatlo.org/"
-    languageCode = "en-us"
-    title = "Hello! I'm André :)"
-    theme = "ananke"
-    ```
+```
+baseURL = "http://andrehatlo.org/"
+languageCode = "en-us"
+title = "Hello! I'm André :)"
+theme = "ananke"
+```
 
 > Tip:
 > Making changes to files in your new Hugo site
