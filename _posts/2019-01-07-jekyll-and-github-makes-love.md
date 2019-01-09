@@ -9,11 +9,12 @@ permalink: /:title
 
 1. Terminal
 2. Check whether you have Ruby 2.1.0 or higher installed:
-    ```
+    ```©
     $ ruby -v
     ruby 2.x.x
     ```
 3. Install Bundler:
+
     ```
     $ gem install bundler
     ```
@@ -27,18 +28,16 @@ permalink: /:title
     $ git init <GitHubUsername>.github.io
     Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
     # creates a new file directory on your local computer, Initialized as a Git repo
-    ````
+    ```
 
     * Then change directory to the new repository created:
     ```
     $ cd <
     ```    
 
-
 ## Step 1: Install Jekyll using Bundler
 
 1. Check if you have a Gemfile in your newly created repo
-
     ```
     $ ls
     Gemfile
