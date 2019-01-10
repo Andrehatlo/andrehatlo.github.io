@@ -31,7 +31,7 @@ I wanted the right platform, for a simple programming blog and portfolio for my 
 
 This was until i stumbled into the best place on the internet; *Reddit*, and found a post about **Jekyll**.
 
-*For those who does now know what Jekyll is:*
+*For those who does not know what Jekyll is:*
 
 >*Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub's co-founder, it is distributed under the open source MIT license*
 

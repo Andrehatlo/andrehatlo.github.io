@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Jekyll + Github: Free website hosting tutorial - Hi! I’m André :-)</title>
+<!-- begin _includes/seo.html --><title>Jekyll + Github = Free hosting: Tutorial - Hi! I’m André :-)</title>
 <meta name="description" content="Create your own blog/portofolio using these technologies, with no hosting fee!">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="Hi! I'm André :-)">
-<meta property="og:title" content="Jekyll + Github: Free website hosting tutorial">
-<meta property="og:url" content="http://localhost:4000/jekyll-and-github-makes-love">
+<meta property="og:title" content="Jekyll + Github = Free hosting: Tutorial">
+<meta property="og:url" content="http://localhost:4000/jekyll-github-free-host">
 
 
   <meta property="og:description" content="Create your own blog/portofolio using these technologies, with no hosting fee!">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/jekyll-and-github-makes-love">
+<link rel="canonical" href="http://localhost:4000/jekyll-github-free-host">
 
 
 
@@ -157,7 +157,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Jekyll + Github: Free website hosting tutorial</li>
+        <li class="current">Jekyll + Github = Free hosting: Tutorial</li>
       
     
   </ol>
@@ -282,7 +282,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Jekyll + Github: Free website hosting tutorial">
+    <meta itemprop="headline" content="Jekyll + Github = Free hosting: Tutorial">
     <meta itemprop="description" content="Create your own blog/portofolio using these technologies, with no hosting fee!">
     <meta itemprop="datePublished" content="January 07, 2019">
     
@@ -290,7 +290,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Jekyll + Github: Free website hosting tutorial
+          <h1 id="page-title" class="page__title" itemprop="headline">Jekyll + Github = Free hosting: Tutorial
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -310,10 +310,13 @@
 
 <ol>
   <li>Terminal</li>
-  <li>Check whether you have Ruby 2.1.0 or higher installed:
-    <pre><code class="language-©"> $ ruby -v
+  <li>
+    <p>Check whether you have Ruby 2.1.0 or higher installed:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> $ ruby -v
  ruby 2.x.x
-</code></pre>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Install Bundler:</p>
@@ -322,36 +325,37 @@
 <div class="highlight"><pre class="highlight"><code> $ gem install bundler
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Create a local repository for your Jekyll site. (Jump to step 1 if this is done)</p>
+  <li>Create a local repository for your Jekyll site. (Jump to step 1 if this is done)</li>
+</ol>
 
-    <ul>
-      <li>Install git, see <a href="https://help.github.com/articles/set-up-git/">Set up Git</a>
+<ul>
+  <li>Install git, see <a href="https://help.github.com/articles/set-up-git/">set up Git</a>
 </li>
-      <li>Open terminal</li>
-      <li>Initialize a new Git repo for your jekyll site:</li>
-    </ul>
+  <li>Open terminal</li>
+  <li>
+    <p>Initialize a new Git repo for your jekyll site:</p>
 
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> $ git init &lt;GitHubUsername&gt;.github.io
- Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
- # creates a new file directory on your local computer, Initialized as a Git repo
+<div class="highlight"><pre class="highlight"><code>$ git init &lt;GitHubUsername&gt;.github.io
+Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
+# creates a new file directory on your local computer, Initialized as a Git repo
 </code></pre></div>    </div>
-
-    <ul>
-      <li>Then change directory to the new repository created:
-        <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> $ cd &lt;
-</code></pre></div>        </div>
-      </li>
-    </ul>
   </li>
-</ol>
+  <li>
+    <p>Then change directory to the new repository created:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>$ cd &lt;GitHubUsername&gt;.github.io
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h2 id="step-1-install-jekyll-using-bundler">Step 1: Install Jekyll using Bundler</h2>
 
 <ol>
-  <li>Check if you have a Gemfile in your newly created repo
+  <li>
+    <p>Check if you have a Gemfile in your newly created repo</p>
+
     <div class="highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ ls
  Gemfile
@@ -376,19 +380,19 @@
     <p><strong>Only</strong> if you already have a Gemfile. Open your favorite editor, mine is <a href="https://atom.io/">Atom</a>, and add these lines to your Gemfile:</p>
 
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
+<div class="highlight"><pre class="highlight"><code> source 'https://rubygems.org'
+ gem 'github-pages', group: :jekyll_plugins
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Install Jekyll and other dependencies from the GitHub Pages gem by running:</p>
 
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>$ bundle install
-Fetching gem metadata from https://rubygems.org/......
-Fetching version metadata from https://rubygems.org/...
-Fetching dependency metadata from https://rubygems.org/..
-Resolving dependencies...
+<div class="highlight"><pre class="highlight"><code> $ bundle install
+ Fetching gem metadata from https://rubygems.org/......
+ Fetching version metadata from https://rubygems.org/...
+ Fetching dependency metadata from https://rubygems.org/..
+ Resolving dependencies...
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -438,7 +442,7 @@ Resolving dependencies...
     <p>To edit the Jekyll site, open your jekyll local repository in an text editor. Make as much changes as you want and save them.</p>
   </li>
   <li>
-    <p>Preview changes locally by running a Jekyll command yo build your site:</p>
+    <p>Preview changes locally by running a Jekyll command to build your site:</p>
   </li>
 </ol>
 
@@ -496,48 +500,56 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
   </li>
 </ol>
 
-<h1 id="step-3-make-github-host-the-site-for-you">Step 3: Make github host the site for you</h1>
+<h2 id="step-3-make-github-host-it">Step 3: Make github host it</h2>
 
-<ol>
-  <li>Navigate to your repository. Which should be called something like <code class="highlighter-rouge">&lt;username&gt;.github.io</code>
-</li>
-</ol>
+<h3 id="navigate-to-your-repository">Navigate to your repository.</h3>
 
-<ul>
-  <li>If your repository is called something else, we can change it at the next step.</li>
-</ul>
+<p>Which should be named in this format:</p>
 
-<ol>
-  <li>Enter into the repository settings.</li>
-</ol>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;github-username&gt;.github.io
+</code></pre></div></div>
 
-<ul>
-  <li>
-    <p>First thing you see is <code class="highlighter-rouge">Repository name</code>, edit it so that it maches the syntax <code class="highlighter-rouge">&lt;username&gt;.github.io</code>.</p>
-  </li>
-  <li>
-    <p>Scroll down to <code class="highlighter-rouge">GitHub Pages</code></p>
-  </li>
-</ul>
+<p>If your repository is called something else, we can change it at the next step.</p>
 
-<ol>
-  <li>At <code class="highlighter-rouge">GitHub Pages</code>, there can be all kind of messages. But hopefully it should say:</li>
-</ol>
+<h3 id="enter-into-your-repository-settings">Enter into your repository settings.</h3>
+
+<p>First thing you see is <code class="highlighter-rouge">Repository name</code>, edit it so that it matches the syntax:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;github-username&gt;.github.io
+</code></pre></div></div>
+
+<p>Next scroll further down in repo settings until you see <code class="highlighter-rouge">GitHub Pages</code></p>
+
+<h3 id="-github-pages">@ <code class="highlighter-rouge">GitHub Pages</code>
+</h3>
+
+<p>Hopefully it should now say:</p>
 
 <blockquote>
-  <p><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2714.png" height="20" width="20"> Your site is published at <a href="http://andrehatlo.com">http://www.andrehatlo.github.io</a></p>
+  <p><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2714.png" height="20" width="20"> Your site is published at: <a href="http://andrehatlo.com">http://www.andrehatlo.github.io</a></p>
 </blockquote>
 
-<ul>
-  <li>If not, there is possibly something wrong with your repository or github setup.</li>
-</ul>
+<blockquote>
+  <p>If not, there is possibly something wrong with your repository or github setup.</p>
+</blockquote>
 
-<ol>
-  <li>Just keep tweaking your website and check out all the different themes out there! I will be coming with more tutorials about Jekyll in the future <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
-</li>
-</ol>
+<h2 id="applying-a-custom-domain">Applying a custom domain</h2>
 
-<h3 id="hope-this-helps-it-is-my-first-blog-post-i-know-its-not-the-best-but-ill-try-to-excel-as-fast-as-possible-by-writing-many-many-more-wave-wave">Hope this helps, it is my first blog post (I know its not the best). But i’ll try to excel as fast as possible by writing MANY MANY more! <img class="emoji" title=":wave:" alt=":wave:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20"> <img class="emoji" title=":wave:" alt=":wave:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20">
+<p>Scroll down on the github repo settings page until you see <code class="highlighter-rouge">Custom domain</code> under <code class="highlighter-rouge">GitHub Pages</code>.</p>
+
+<p>Fill in your domain name, and click save.</p>
+
+<p>Now go to your domain hoster website and create a CNAME record that points to your repo, this can be done in the settings of your DNS records.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>www.andrehatlo.com -&gt;  CNAME -&gt; &lt;github-username&gt;.github.io
+</code></pre></div></div>
+
+<h2 id="now-you-should-have-your-own-domain-hosted-for-free">Now you should have your own domain hosted for free</h2>
+
+<p>Just keep tweaking your website and check out all the different themes out there! I will be coming with more tutorials about Jekyll in the future <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
+
+<h3 id="hope-this-was-helpfull-enough-as-my-first-blog-post">Hope this was helpfull enough as my first blog post.</h3>
+<h3 id="but-ill-try-to-excel-as-fast-as-possible-by-writing-many-many-more-wave-wave">But i’ll try to excel as fast as possible by writing MANY MANY more! <img class="emoji" title=":wave:" alt=":wave:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20"> <img class="emoji" title=":wave:" alt=":wave:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20">
 </h3>
 
         
