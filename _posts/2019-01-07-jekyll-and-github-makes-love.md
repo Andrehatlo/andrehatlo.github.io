@@ -197,4 +197,4 @@ Just keep tweaking your website and check out all the different themes out there
 
 
 ### Hope this was helpfull enough as my first blog post.
-### But i'll try to excel as fast as possible by writing MANY MANY more! :wave: :wave:
+### I'll try to excel as fast as possible by writing MANY MANY more! :wave: :wave:
