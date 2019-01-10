@@ -2,7 +2,7 @@
 layout: single
 title: "Jekyll + Github = Free hosting: Tutorial"
 excerpt: "Create your own blog/portofolio using these technologies, with no hosting fee!"
-permalink: /jekyll-github-free-host
+permalink: /jekyll-github-free-host/
 ---
 
 ## Requirements:

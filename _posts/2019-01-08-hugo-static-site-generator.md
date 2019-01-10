@@ -42,6 +42,8 @@ Run the `brew` commend to install `hugo`
 brew install hugo
 ```
 
+#### MAC (command above)
+
 ## Step 2: Create a new site:
 
 Go to the directory where you want to create your `Hugo` repo, then run this command:
