@@ -1,6 +1,7 @@
 ---
+type: page
 title: ""
-permalink: /about
+permalink: /about/
 author_profile: false
 header:
   image: '/assets/images/about-color.jpg'
