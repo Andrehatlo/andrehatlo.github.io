@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /about/
+permalink: /about
 author_profile: false
 header:
   image: '/assets/images/about-color.jpg'
@@ -60,7 +60,7 @@ I'm a 27 year old man who both loves a good laugh, having a good time and values
 
 At the moment I live in Drammen Norway, with my best friend and beautiful partner Hilde.
 
-Together we have a super funny thirty-five kilo, two year old boxer named Mini, who thinks he's a little person.
+Together we have a super funny thirty-five kilo, two year old boxer named Mini.
 
 <img src="/assets/images/fam.jpg" alt="my family"/>
 

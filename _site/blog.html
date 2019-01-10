@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Hi! I'm André</title>
+<!-- begin _includes/seo.html --><title>  Hi! I’m André</title>
 <meta name="description" content="Welcome to my developer portfolio and blog.">
 
 
@@ -18,12 +18,12 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="Hi! I'm André">
 <meta property="og:title" content="Hi! I’m André">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:url" content="http://localhost:4000/blog">
 
 
 
 
-  <meta property="og:image" content="http://localhost:4000/">
+  <meta property="og:image" content="http://localhost:4000/assets/images/blog.jpg">
 
 
 
@@ -32,13 +32,13 @@
 
 
 
-
-  
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/">
+
+<link rel="canonical" href="http://localhost:4000/blog">
 
 
 
@@ -102,7 +102,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--posts">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -150,129 +150,43 @@
   style=" "
 >
   
-    <img src="" alt="" class="page__hero-image">
+    <img src="/assets/images/blog.jpg" alt="" class="page__hero-image">
   
   
 </div>
 
 
 
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current"></li>
+      
+    
+  </ol>
+</nav>
+
+  
 
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="https://schema.org/Person">
-
-  
-    <div class="author__avatar">
-      
-
-      
-        <img src="/assets/images/me.png" alt="André Hatlo-Johansen" itemprop="image">
-      
-    </div>
-  
-
-  <div class="author__content">
-    
-      <h3 class="author__name" itemprop="name">André Hatlo-Johansen</h3>
-    
-    
-      <p class="author__bio" itemprop="description">
-        Coding, tech, portfolio and thoughts
-      </p>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Drammen, Norway</span>
-        </li>
-      
-
-      
-        
-          
-            <li><a href="http://www.github.com/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-          
-        
-          
-            <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
-          
-        
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
 
   <div class="archive">
     
@@ -280,10 +194,25 @@
     
     
 
-<h3 class="archive__subtitle">Recent posts</h3>
 
-
+<ul class="taxonomy__index">
   
+  
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -309,8 +238,8 @@
   </article>
 </div>
 
-
-  
+      
+        
 
 
 
@@ -337,8 +266,8 @@
   </article>
 </div>
 
-
-  
+      
+        
 
 
 
@@ -365,9 +294,10 @@
   </article>
 </div>
 
-
-
-
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
 
 
   </div>

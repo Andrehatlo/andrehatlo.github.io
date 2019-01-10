@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Hi! I'm André :-)"
+title                    : "Hi! I'm André"
 title_separator          : "-"
 name                     : "André Hatlo-Johansen"
 description              : "Welcome to my developer portfolio and blog."
@@ -94,13 +94,13 @@ social:
   links:
     - "http://www.linkedin.com/in/andrehatlo"
     - "http://www.github.com/andrehatlo"
-    - "http://www.instagram.com/thehatlo/"
+
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-132201744-1"
     anonymize_ip         : # true, false (default)
 
 
