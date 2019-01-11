@@ -1,0 +1,821 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>TypeScript syntax summary - Hi! I’m André.</title>
+<meta name="description" content="A brief summary of typescript syntax">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Hi! I'm André.">
+<meta property="og:title" content="TypeScript syntax summary">
+<meta property="og:url" content="http://localhost:4000/typescript-summary/">
+
+
+  <meta property="og:description" content="A brief summary of typescript syntax">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/ts.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-01-11T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/typescript-summary/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo-Johansen",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hi! I'm André. Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Hi! I'm André.</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/ts.jpg" alt="TypeScript syntax summary" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">TypeScript syntax summary</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="TypeScript syntax summary">
+    <meta itemprop="description" content="A brief summary of typescript syntax">
+    <meta itemprop="datePublished" content="January 11, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">TypeScript syntax summary
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>TypeScript is one of the fastest rising technologies of 2018. This brief summary is filled with what you need to know to understand its key concepts.</p>
+
+<hr />
+
+<p>TypeScript is built by Microsoft, by one of its creators Anders Hejlsberg, a danish software engineer known for Turbo Pascal and Delphi. Its open source, developed public at <a href="https://github.com/Microsoft/TypeScript">https://github.com/Microsoft/TypeScript</a>.</p>
+
+<p>It’s a superset of ECMAScript 2015, also know as ES6, which means that any valid JS is also valid TypeScript. So if you ever wrote a line of JavaScript, you already wrote a line of TypeScript code!</p>
+
+<p>Run <code class="highlighter-rouge">npm install -g typescript</code>  to globally install the TypeScript compiler on your system, available to you using the <code class="highlighter-rouge">tsc</code> command.</p>
+
+<p>Create an <code class="highlighter-rouge">app.ts</code> file.</p>
+
+<p>Write your first program:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">greet</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello world!'</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">greet</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>As you see, its just plain JavaScript, but stored in a <code class="highlighter-rouge">.ts</code> file.</p>
+
+<p>Compile the program using the <code class="highlighter-rouge">tsc app.ts</code> command.</p>
+
+<p>The compiler compiles the program into a new file: <code class="highlighter-rouge">app.js</code>, with this content:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">greet</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello world!'</span><span class="p">)</span>
+<span class="p">};</span>
+<span class="nx">greet</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>Just like <em>old JavaScript</em>, the TS compiler compiles TypeScript to ES5 by default, which means that its almost guaranteed to be suppored by all modern browsers. If you want to change the compilation target to another version, for example ES2018 use <code class="highlighter-rouge">tsc app.ts --target ES2018</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">greet</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello world!'</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="nx">greet</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>Here almost nothing changed except for the additional semicolons.</p>
+
+<p>If you would like to play around with TS to JS compilation, check out <a href="https://www.typescriptlang.org/play/">https://www.typescriptlang.org/play/</a>.</p>
+
+<p><br />
+<br /></p>
+
+<h1 id="typing">TYPING</h1>
+<hr />
+
+<p>The most important functionality provided by TypeScript is the type system:</p>
+
+<ul>
+  <li>static types</li>
+  <li>interfaces</li>
+  <li>type interence</li>
+  <li>enums</li>
+  <li>hybrid types</li>
+  <li>generics</li>
+  <li>union/intersection types</li>
+  <li>access modifiers</li>
+  <li>null checking</li>
+</ul>
+
+<p>This resembles languages like Go or C, so if you’ve coded these languages you already know how this works. Unike dynamic languages like Python or Ruby, this is all new.</p>
+
+<p>The type system allows adding types to:</p>
+
+<ul>
+  <li>variables</li>
+  <li>function arguments</li>
+  <li>function return types</li>
+</ul>
+
+<p>Giving a more rigid structure to your programs.</p>
+
+<p>This is how:</p>
+
+<h3 id="you-define-a-string-variable-in-typescript">You define a string variable in TypeScript:</h3>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">greeting</span> <span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">"hello!"</span>
+</code></pre></div></div>
+
+<h3 id="a-function-accepts-an-argument-of-a-specific-type">A function accepts an argument of a specific type:</h3>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">multiply</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="nx">number</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="nx">number</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="you-declare-their-return-value">You declare their return value:</h3>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">multiply</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="nx">number</span><span class="p">,</span> <span class="nx">b</span><span class="p">:</span> <span class="nx">number</span><span class="p">):</span> <span class="nx">number</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<p>Valid types are:</p>
+<ul>
+  <li><code class="highlighter-rouge">number</code></li>
+  <li><code class="highlighter-rouge">string</code></li>
+  <li><code class="highlighter-rouge">boolean</code></li>
+  <li><code class="highlighter-rouge">enum</code></li>
+  <li><code class="highlighter-rouge">void</code></li>
+  <li><code class="highlighter-rouge">null</code></li>
+  <li><code class="highlighter-rouge">undefined</code></li>
+  <li><code class="highlighter-rouge">any</code></li>
+  <li><code class="highlighter-rouge">never</code></li>
+  <li><code class="highlighter-rouge">Array</code></li>
+  <li><code class="highlighter-rouge">tuple</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">any</code> is a type that identifies, as its name says, <strong>any</strong> type.</p>
+
+<p><br /></p>
+
+<h1 id="classes">CLASSES</h1>
+<hr />
+
+<p>Like JavsScript, you declare classes like this:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Defining class fields:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">string</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fields are public by default. You can set a field to be <code class="highlighter-rouge">private</code> or <code class="highlighter-rouge">protected</code>:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="kr">public</span> <span class="nx">color</span><span class="p">:</span> <span class="nx">string</span>
+  <span class="kr">private</span> <span class="nx">name</span><span class="p">:</span> <span class="nx">string</span>
+  <span class="kr">protected</span> <span class="nx">brand</span><span class="p">:</span> <span class="nx">string</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Like other languages, private fields can only be accessed by the class that its declared in. Protected fields can only be accessed by deriving classes.</p>
+
+<p>TypeScript also has <code class="highlighter-rouge">static</code> fields, which are class fields instead of object fields:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">numberOfWheels</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">initialize</code> fields with a constructor:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">string</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">theColor</span><span class="p">:</span> <span class="nx">string</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="nx">theColor</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Shorthand syntax to make it simpler:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">color</span><span class="p">:</span> <span class="nx">string</span><span class="p">){}</span>
+
+  <span class="nx">printColor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">color</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">(</span><span class="k">new</span> <span class="nx">Car</span><span class="p">(</span><span class="s1">'red'</span><span class="p">)).</span><span class="nx">printColor</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>A field can be <code class="highlighter-rouge">read only</code>:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nx">readonly</span> <span class="nx">color</span><span class="p">:</span> <span class="nx">string</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>in this case its value can only be set in the constructor.</p>
+</blockquote>
+
+<p>Class methods:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">string</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">color</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="nx">color</span>
+  <span class="p">}</span>
+  <span class="nx">drive</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You are driving the car'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You create objects from those classes, like in JavaScript, using the <code class="highlighter-rouge">new</code> keyword:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">myCar</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Car</span><span class="p">(</span><span class="s1">'red'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>You can extend an existing class using the <code class="highlighter-rouge">extend</code> keyword:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">ElectricCar</span> <span class="kd">extends</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="c1">//..</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Call <code class="highlighter-rouge">super()</code> in the constructor and in methods to call the extended class corresponding method.</p>
+
+<p><br /></p>
+
+<h1 id="accessors">ACCESSORS</h1>
+<hr />
+
+<p>Getters and setters:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="kr">private</span> <span class="nx">_color</span><span class="p">:</span> <span class="nx">string</span>
+
+  <span class="kd">get</span> <span class="nx">color</span><span class="p">():</span> <span class="nx">string</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_color</span>
+  <span class="p">}</span>
+
+  <span class="kd">set</span> <span class="nx">color</span><span class="p">(</span><span class="nx">color</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_color</span> <span class="o">=</span> <span class="nx">color</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<h1 id="abstact-classes">ABSTACT CLASSES</h1>
+<hr />
+
+<p>To define an abstract class there needs to be a class that extends it, and implements its eventual abstact methods:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abstact</span> <span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="kr">abstract</span> <span class="nx">drive</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">SportsCar</span> <span class="kd">extends</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nx">drive</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You are driving a sports car'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h1 id="interfaces">INTERFACES</h1>
+<hr />
+
+<p>Interfaces build upon basic types. Use an interface as a type, and its interface can contain other type definitions:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">SetOfNumbers</span> <span class="p">{</span>
+  <span class="nl">a</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+  <span class="nl">b</span><span class="p">:</span> <span class="nx">number</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">multiply</span> <span class="o">=</span> <span class="p">(</span><span class="kd">set</span><span class="p">:</span> <span class="nx">SetOfNumbers</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">set</span><span class="p">.</span><span class="nx">a</span> <span class="o">*</span> <span class="kd">set</span><span class="p">.</span><span class="nx">b</span>
+<span class="p">}</span>
+
+<span class="nx">multiply</span><span class="p">({</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span> <span class="p">})</span>
+</code></pre></div></div>
+
+<p>An interface can also be an interface for a class implementation:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nl">name</span><span class="p">:</span> <span class="s1">'string'</span>
+  <span class="k">new</span> <span class="p">(</span><span class="nx">brand</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span>
+  <span class="nx">drive</span><span class="p">():</span> <span class="k">void</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">SportsCar</span> <span class="kr">implements</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="kr">public</span> <span class="nx">name</span>
+
+  <span class="kd">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">brand</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//..</span>
+  <span class="p">}</span>
+
+  <span class="nx">drive</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You are driving a sports car'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h1 id="function-features">FUNCTION FEATURES</h1>
+<hr />
+
+<p>Functions can have optional parameters using the <code class="highlighter-rouge">?</code> symbol after the parameter name:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nx">drive</span><span class="p">(</span><span class="nx">kilometers</span><span class="p">?:</span> <span class="nx">number</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">kilometers</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Drive the car for ${kilometers} kilometers'</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Drive the car'</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Parameters can have default values:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nx">drive</span><span class="p">(</span><span class="nx">kilometers</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Drive the car for ${kilometers} kilometers'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Functions can accept a verying number of parameters by using rest parameters:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Car</span> <span class="p">{</span>
+  <span class="nx">drive</span><span class="p">(</span><span class="nx">kilometers</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="p">...</span><span class="nx">occupants</span><span class="p">:</span> <span class="nx">string</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Drive the car for ${kilometers} kilometers, with those people on it:'</span><span class="p">)</span>
+    <span class="nx">occupants</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">person</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">))</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">(</span><span class="k">new</span> <span class="nx">Car</span><span class="p">()).</span><span class="nx">drive</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">'Andre'</span><span class="p">,</span> <span class="s1">'Peter'</span><span class="p">,</span> <span class="s1">'Roger'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h1 id="enums">ENUMS</h1>
+<hr />
+
+<p>A great way to defined named constants.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">Order</span> <span class="p">{</span>
+  <span class="nx">First</span><span class="p">,</span>
+  <span class="nx">Second</span><span class="p">,</span>
+  <span class="nx">Third</span><span class="p">,</span>
+  <span class="nx">Fourth</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Simply reference <code class="highlighter-rouge">Order.First</code>, <code class="highlighter-rouge">Order.Second</code> etc.</p>
+
+<p>You can assign values to constants explicitly:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">Order</span> <span class="p">{</span>
+  <span class="nx">First</span>   <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nx">Second</span>  <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nx">Third</span>   <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">Fourth</span>  <span class="o">=</span> <span class="mi">3</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>or use strings:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">Order</span> <span class="p">{</span>
+  <span class="nx">First</span> <span class="o">=</span> <span class="s1">'FIRST'</span> <span class="p">,</span>
+  <span class="nx">Second</span> <span class="o">=</span> <span class="s1">'SECOND'</span><span class="p">,</span>
+  <span class="nx">Third</span> <span class="o">=</span> <span class="s1">'THIRD'</span><span class="p">,</span>
+  <span class="nx">Fourth</span> <span class="o">=</span> <span class="s1">'FOURTH'</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h1 id="generics">GENERICS</h1>
+<hr />
+
+<p>A new feature not available in many programming languages. You can create a function, interface or class that works with different types, without specifying the type up front.</p>
+
+<p>If you change the type at compile time, the compiler will throw an error.</p>
+
+<p>We could do this by omitting types to all or using <code class="highlighter-rouge">any</code>.</p>
+
+<p>But with generics all the tooling is going to be able to help us.</p>
+
+<p>Example:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">greet</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hi ${a.name}'</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">greet</span><span class="p">({</span><span class="na">name</span><span class="p">:</span> <span class="s1">'André'</span><span class="p">})</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">T</code> symbol identifies a generic type.</p>
+
+<p>the type can be resistricted to a certain class family or interface, using the <code class="highlighter-rouge">extends</code> keyword:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">Greetable</span> <span class="p">{</span> <span class="nl">name</span><span class="p">:</span> <span class="nx">string</span> <span class="p">}</span>
+<span class="kd">function</span> <span class="nx">greet</span><span class="o">&lt;</span><span class="nx">T</span> <span class="kd">extends</span> <span class="nx">Greetable</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">a</span><span class="p">:</span> <span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s1">'Hi ${a.name}!'</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">greet</span><span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'André'</span><span class="p">})</span>
+</code></pre></div></div>
+
+<h1 id="want-more">WANT MORE?</h1>
+
+<p>We just went over the basics of TypeScript, go to the <a href="https://www.typescriptlang.org/docs">official docs</a> for more!</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-01-11T00:00:00+01:00">January 11, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/hugo/" class="pagination--pager" title="Hugo - as my static page blog
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/me.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/hugo/" rel="permalink">Hugo - as my static page blog
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Hugo is a static site generator, on the same line as Jekyll as it uses Markdown to create blog posts. The main difference i noticed after testing Jekyll agai...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/me.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll-github-free-host/" rel="permalink">Jekyll + Github = Free hosting: Tutorial
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Create your own blog/portofolio using these technologies, with no hosting fee!
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/me.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll-creating-blog/" rel="permalink">Jekyll: Creating a blog is easy and FREE
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 André Hatlo-Johansen </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

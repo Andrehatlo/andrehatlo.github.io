@@ -13,4 +13,9 @@ var store = [{
         "excerpt":"After the setup of my Jekyll site I came across Hugo. Hugo is a static site generator, on the same line as Jekyll as it uses Markdown to create blog posts. The main difference i noticed after testing Jekyll against Hugo is that it’s fast. It seems like it has...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/hugo/",
+        "teaser":"http://localhost:4000/assets/images/me.png"},{
+        "title": "TypeScript syntax summary",
+        "excerpt":"TypeScript is one of the fastest rising technologies of 2018. This brief summary is filled with what you need to know to understand its key concepts. TypeScript is built by Microsoft, by one of its creators Anders Hejlsberg, a danish software engineer known for Turbo Pascal and Delphi. Its open...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/typescript-summary/",
         "teaser":"http://localhost:4000/assets/images/me.png"}]

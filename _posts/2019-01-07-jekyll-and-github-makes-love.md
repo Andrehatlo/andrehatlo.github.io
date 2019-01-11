@@ -3,6 +3,8 @@ layout: single
 title: "Jekyll + Github = Free hosting: Tutorial"
 excerpt: "Create your own blog/portofolio using these technologies, with no hosting fee!"
 permalink: /jekyll-github-free-host/
+header:
+  image: '/assets/images/jekyllgit.jpg'
 ---
 
 ## Requirements:
@@ -44,7 +46,7 @@ permalink: /jekyll-github-free-host/
 
     * If you have a Gemfile, skip to step 4.
 
-2. Open up your favorite text editor, mine is [Atom](https://atom.io/), and add these lines to a new file
+2. Open up your favorite text editor, if you need one: [Atom](https://atom.io/). Then add these lines to a new file, and save.
 
 
         source 'http://rubygems.org'
