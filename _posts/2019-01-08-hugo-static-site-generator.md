@@ -5,6 +5,8 @@ permalink: /hugo/
 excerpt: "Hugo is a static site generator, on the same line as Jekyll as it uses `Markdown` to create blog posts. The main difference i noticed after testing Jekyll against Hugo is that it's fast. It seems like it has Go under the hood. Let me do a quick tutorial to setup Hugo, its very easy and almost only done in the commandline:"
 header:
   image: '/assets/images/hugogit.jpg'
+  teaser: '/assets/images/hugogit.jpg'
+author_profile: false
 ---
 
 After the setup of my Jekyll site I came across Hugo.

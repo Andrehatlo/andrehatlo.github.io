@@ -5,6 +5,8 @@ excerpt: "Create your own blog/portofolio using these technologies, with no host
 permalink: /jekyll-github-free-host/
 header:
   image: '/assets/images/jekyllgit.jpg'
+  teaser: '/assets/images/jekyllgit.jpg'
+author_profile: false
 ---
 
 ## Requirements:

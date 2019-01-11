@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 */
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* Variables */
 @import "minimal-mistakes/variables";
 

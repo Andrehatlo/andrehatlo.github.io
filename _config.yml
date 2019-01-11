@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Hi! I'm André."
+title                    : "Hi! I'm André, a computer engineer"
 title_separator          : "-"
 name                     : "André Hatlo-Johansen"
-description              : "Welcome to my developer portfolio and blog."
+description              : "Welcome to my "
 url                      : "www.andrehatlo.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "andrehatlo/andrehatlo.github.io"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/me.png"
-  bio              : "Coding, tech, portfolio and thoughts"
+  bio              : "Welcome to my blog and portofolio!"
   location         : "Drammen, Norway"
   email            : #"iam@andrehatlo.com"
   links:
@@ -118,9 +118,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "http://www.linkedin.com/in/andrehatlo"
-    # - label: "StackOverflow"
-    #   icon: "fab fa-fw fa-stack-overflow"
-    #   url: "http://stackoverflow.com"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
     #   url: "mailto:iam@andrehatlo.com"
@@ -143,19 +143,10 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "http://www.linkedin.com/in/andrehatlo"
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-at"
-    #   url: "mailto:iam@andrehatlo.com"
-    # - label: "StackOverflow"
-    #   icon: "fab fa-fw fa-stack-overflow"
-    #   url: "http://stackoverflow.com"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
 
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
-    #   url: "https://www.facebook.com/Andre.Hatlo"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://www.instagram.com/thehatlo/"
 
 
 # Reading Files

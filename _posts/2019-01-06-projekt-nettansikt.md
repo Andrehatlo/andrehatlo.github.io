@@ -6,6 +6,8 @@ excerpt: "Jekyll is a light weight, easy to setup system that does exactly what 
 permalink: /jekyll-creating-blog/
 header:
   image: '/assets/images/jekyll-head.jpg'
+  teaser: '/assets/images/jekyll-head.jpg'
+author_profile: false
 ---
 
 So, i've chosen to start blogging my experiences/insights/thoughts as a developer. Both to learn and to share knowledge.

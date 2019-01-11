@@ -20,6 +20,13 @@
 
 .archive__item {
   position: relative;
+
+  a:before{
+    opacity: 0.5;
+  }
+  a:hover{
+    opacity: 1;
+  }
 }
 
 .archive__subtitle {

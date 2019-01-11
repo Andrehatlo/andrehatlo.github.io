@@ -1,10 +1,11 @@
 ---
-type: post
+type: single
 title: 'TypeScript syntax summary'
 permalink: /typescript-summary/
 excerpt: "A brief summary of typescript syntax"
 header:
   image: '/assets/images/ts.jpg'
+  teaser: '/assets/images/ts.jpg'
 author_profile: false
 ---
 

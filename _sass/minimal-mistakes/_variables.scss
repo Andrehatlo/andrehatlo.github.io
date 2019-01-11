@@ -14,9 +14,10 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
+$sans-serif: 'Inconsolata', monospace !default;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace: Monaco, Consolas, 'Inconsolata', monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -30,8 +31,8 @@ $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
 $global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
-$caption-font-family: $serif !default;
+$header-font-family: $monospace !default;
+$caption-font-family: $monospace !default;
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
@@ -141,8 +142,8 @@ $x-large: 1280px !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
+$right-sidebar-width-narrow: 100px !default;
+$right-sidebar-width: 200px !default;
 $right-sidebar-width-wide: 400px !default;
 
 /*
@@ -151,7 +152,7 @@ $right-sidebar-width-wide: 400px !default;
 
 $border-radius: 4px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-$nav-height: 2em !default;
+$nav-height: 4em !default;
 $nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
