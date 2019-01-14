@@ -71,7 +71,7 @@ Together we have a super funny thirty-five kilo, two year old boxer named Mini.
   - Ski, snowboarding.
   - Keeping up with my favourite tv-shows.
   - Playing with my dog.
-  - Hanging out friends and my better half.
+  - Hanging out with friends and my better half.
 
 
 ## Phrases i live by:
