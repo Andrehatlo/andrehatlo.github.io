@@ -11,7 +11,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <!-- <div class="box"> -->
+  <div class="box">
     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
       {% if include.type == "grid" and teaser %}
         <div class="archive__item-teaser">
@@ -34,5 +34,5 @@
       {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
     </a>
     </article>
-  <!-- </div> -->
+  </div>
 </div>
