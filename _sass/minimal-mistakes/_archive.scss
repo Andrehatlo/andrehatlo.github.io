@@ -22,6 +22,8 @@
 
 .archive__item {
   position: relative;
+  padding: 20px 12px;
+  border-bottom: 1px dotted #303030;
 
   a:before{
     opacity: 0.5;
