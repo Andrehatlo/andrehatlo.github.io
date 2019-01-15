@@ -8,6 +8,7 @@ header:
   image: '/assets/images/jekyll-head.jpg'
   teaser: '/assets/images/jekyll-head.jpg'
 author_profile: false
+comments: true
 ---
 
 So, i've chosen to start blogging my experiences/insights/thoughts as a developer. Both to learn and to share knowledge.

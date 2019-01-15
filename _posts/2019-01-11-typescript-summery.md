@@ -7,6 +7,7 @@ header:
   image: '/assets/images/ts.jpg'
   teaser: '/assets/images/ts.jpg'
 author_profile: false
+comments: true
 ---
 
 

@@ -7,6 +7,7 @@ header:
   image: '/assets/images/jekyllgit.jpg'
   teaser: '/assets/images/jekyllgit.jpg'
 author_profile: false
+comments: true
 ---
 
 ## Requirements:

@@ -7,6 +7,7 @@ header:
   image: '/assets/images/hugogit.jpg'
   teaser: '/assets/images/hugogit.jpg'
 author_profile: false
+comments: true
 ---
 
 After the setup of my Jekyll site I came across Hugo.
