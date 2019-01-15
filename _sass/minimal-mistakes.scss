@@ -83,3 +83,26 @@ a {
 .box:hover::after {
     opacity: 1;
 }
+
+.highlight .p {
+    color: #999;
+}
+.highlight .nl {
+    color: #999;
+}
+
+p {
+  margin: 0 0 30px;
+  line-height: 1.2em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-size: 20px;
+}
+
+div.highlighter-rouge, figure.highlight {
+  color: #eee;
+}

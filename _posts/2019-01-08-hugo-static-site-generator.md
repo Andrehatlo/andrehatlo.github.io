@@ -29,7 +29,7 @@ I use mac, so for those other operating systems out there:
 
 Get the [Chocolatey](https://chocolatey.org/) package managment, then you can install Hugo with:
 
-```
+```ruby
 choco install hugo -confirm
 ```
 
@@ -37,13 +37,13 @@ choco install hugo -confirm
 
 Get [Brew](https://brew.sh/) and follow the directions there.
 
-```
+```ruby
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Run the `brew` commend to install `hugo`
 
-```
+```ruby
 brew install hugo
 ```
 
@@ -51,9 +51,9 @@ brew install hugo
 
 ## Step 2: Create a new site:
 
-Go to the directory where you want to create your `Hugo` repo, then run this command:
+Go to the directory where you want to create your `Hugo`{:ruby} repo, then run this command:
 
-```
+```ruby
 hugo new site <name-of-site-dir>
 ```
 
@@ -69,7 +69,7 @@ I will use the [Ananke theme](https://themes.gohugo.io/gohugo-theme-ananke/)
 
 Step into the site folder and run the folloing commands:
 
-```
+```ruby
 git init
 
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
@@ -79,13 +79,13 @@ Now edit the `config.toml` configuration file and add the Ananke theme:
 
 Either echo it in from commandline:
 
-```
+```ruby
 echo 'theme = "ananke"' >> config.toml
 ```
 
 Or edit it from your text editor:
 
-```
+```ruby
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
@@ -94,7 +94,7 @@ theme = "ananke"
 
 ## Step 4: Add content
 
-```
+```ruby
 hugo new posts/my-first-post.md
 ```
 
@@ -102,7 +102,7 @@ Edit the file if you like, you can use both `Markdown` or `Html`, your choice.
 
 ## Step 5: Start the server
 
-```
+```ruby
 hugo server -D
 ```
 
@@ -118,7 +118,7 @@ Open `config.toml` in your favourite text editor.
 
 Then replace `title` with something personal and `baseUrl` (if you have a domain already), like i did:
 
-```
+```ruby
 baseURL = "http://andrehatlo.org/"
 languageCode = "en-us"
 title = "Hello! I'm André :)"

@@ -80,6 +80,7 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
 
 <!--[if IE ]>
   <style>
@@ -235,19 +236,19 @@
 
 <p>Get the <a href="https://chocolatey.org/">Chocolatey</a> package managment, then you can install Hugo with:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install hugo -confirm
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">choco</span> <span class="n">install</span> <span class="n">hugo</span> <span class="o">-</span><span class="n">confirm</span>
 </code></pre></div></div>
 
 <h4 id="linux">Linux</h4>
 
 <p>Get <a href="https://brew.sh/">Brew</a> and follow the directions there.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ruby</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span>
 </code></pre></div></div>
 
 <p>Run the <code class="highlighter-rouge">brew</code> commend to install <code class="highlighter-rouge">hugo</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install hugo
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brew</span> <span class="n">install</span> <span class="n">hugo</span>
 </code></pre></div></div>
 
 <h4 id="mac-command-above">MAC (command above)</h4>
@@ -256,7 +257,7 @@
 
 <p>Go to the directory where you want to create your <code class="highlighter-rouge">Hugo</code> repo, then run this command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hugo new site &lt;name-of-site-dir&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hugo</span> <span class="n">new</span> <span class="n">site</span> <span class="o">&lt;</span><span class="nb">name</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">dir</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p>Will create a new Hugo site in a folder named <code class="highlighter-rouge">name-of-site-dir</code>.</p>
@@ -273,36 +274,36 @@
 
 <p>Step into the site folder and run the folloing commands:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">git</span> <span class="n">init</span>
 
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+<span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">budparr</span><span class="o">/</span><span class="n">gohugo</span><span class="o">-</span><span class="n">theme</span><span class="o">-</span><span class="n">ananke</span><span class="p">.</span><span class="nf">git</span> <span class="n">themes</span><span class="o">/</span><span class="n">ananke</span>
 </code></pre></div></div>
 
 <p>Now edit the <code class="highlighter-rouge">config.toml</code> configuration file and add the Ananke theme:</p>
 
 <p>Either echo it in from commandline:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'theme = "ananke"' &gt;&gt; config.toml
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">echo</span> <span class="s1">'theme = "ananke"'</span> <span class="o">&gt;&gt;</span> <span class="n">config</span><span class="p">.</span><span class="nf">toml</span>
 </code></pre></div></div>
 
 <p>Or edit it from your text editor:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">baseURL</span> <span class="o">=</span> <span class="s2">"http://example.org/"</span>
+<span class="n">languageCode</span> <span class="o">=</span> <span class="s2">"en-us"</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s2">"My New Hugo Site"</span>
+<span class="n">theme</span> <span class="o">=</span> <span class="s2">"ananke"</span>
 </code></pre></div></div>
 
 <h2 id="step-4-add-content">Step 4: Add content</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hugo new posts/my-first-post.md
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hugo</span> <span class="n">new</span> <span class="n">posts</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">first</span><span class="o">-</span><span class="n">post</span><span class="p">.</span><span class="nf">md</span>
 </code></pre></div></div>
 
 <p>Edit the file if you like, you can use both <code class="highlighter-rouge">Markdown</code> or <code class="highlighter-rouge">Html</code>, your choice.</p>
 
 <h2 id="step-5-start-the-server">Step 5: Start the server</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hugo server -D
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hugo</span> <span class="n">server</span> <span class="o">-</span><span class="no">D</span>
 </code></pre></div></div>
 
 <p>Then navigate to <a href="http://localhost:1313/.">http://localhost:1313/.</a></p>
@@ -317,10 +318,10 @@ theme = "ananke"
 
 <p>Then replace <code class="highlighter-rouge">title</code> with something personal and <code class="highlighter-rouge">baseUrl</code> (if you have a domain already), like i did:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>baseURL = "http://andrehatlo.org/"
-languageCode = "en-us"
-title = "Hello! I'm André :)"
-theme = "ananke"
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">baseURL</span> <span class="o">=</span> <span class="s2">"http://andrehatlo.org/"</span>
+<span class="n">languageCode</span> <span class="o">=</span> <span class="s2">"en-us"</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s2">"Hello! I'm André :)"</span>
+<span class="n">theme</span> <span class="o">=</span> <span class="s2">"ananke"</span>
 </code></pre></div></div>
 
 <blockquote>
