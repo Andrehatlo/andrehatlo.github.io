@@ -55,6 +55,8 @@ Projects I've been assigned while working for Rørkjøp are mostly based on crea
 
 On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and **skills in different technologies** available while keeping an eye open for new trends to explore.
 
+[Take a look at my CV for additional information](https://drive.google.com/file/d/1YhH8U9hb2Ym1GSNY357iKamTAMfcBrCV/view)
+
 ## On a personal note:
 
 I'm a 27 year old man who both loves a good laugh, having a good time and values my alone time.
