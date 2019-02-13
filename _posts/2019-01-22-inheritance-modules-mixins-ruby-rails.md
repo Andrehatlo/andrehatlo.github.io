@@ -464,3 +464,6 @@ end
 ```
 
 There are no absolute rules for how to organise your code. Hopefully the patterns and tools presented here can give some ideas for better/cleaner code structure for when your project is starting to feel unwieldy.
+
+By John Stemler
+Ref: https://www.webascender.com/blog/tutorial-classes-inheritance-modules-mixins-ruby-rails/
