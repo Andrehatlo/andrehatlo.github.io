@@ -8,6 +8,7 @@ header:
   teaser: '/assets/images/ts.jpg'
 author_profile: false
 comments: true
+draft: true
 ---
 
 
