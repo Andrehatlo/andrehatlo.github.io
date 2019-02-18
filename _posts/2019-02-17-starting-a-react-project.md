@@ -4,8 +4,8 @@ title:  "Starting a React Native project with Expo"
 permalink: /starting-a-react-project/
 excerpt: "How to start using react native with Expo"
 header:
-  image: '/assets/images/start-react.png'
-  teaser: '/assets/images/start-react.png'
+  image: '/assets/images/start-react.jpg'
+  teaser: '/assets/images/start-react.jpg'
 author_profile: false
 comments: true
 ---
