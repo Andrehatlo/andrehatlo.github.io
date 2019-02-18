@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Starting a React Native project with Expo"
-permalink: /react-native-boilerplates-overview/
+permalink: /starting-a-react-project/
 excerpt: "How to start using react native with Expo"
 header:
   image: '/assets/images/start-react.png'
