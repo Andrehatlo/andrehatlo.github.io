@@ -7,8 +7,8 @@ header:
   image: '/assets/images/react-boiler.jpg'
   teaser: '/assets/images/react-boiler.jpg'
 author_profile: false
-comments: trues
-draft: trues
+comments: true
+draft: true
 ---
 
 # React Native Boilerplates Overview
@@ -19,9 +19,11 @@ There are three boilerplates worth considering:
 * [Pepperoni App Kit](https://github.com/futurice/pepperoni-app-kit) - 4,453 stars
 * [Snowflake](https://github.com/bartonhammond/snowflake) - 4,399 stars
 
+We will be taking a closer look at the most popular of them all, the `ignite` boilerplate.
+
 ## Ignitee CLI
 
-Ingnite is now the 'hottest' CLI for React Native.
+Ignite is now the 'hottest' CLI for React Native.
 
 It includes boilerplates, plugins, generators and more.
 
@@ -40,8 +42,6 @@ $ yarn global add ignite-cli
 ```
 
 #### Ignite includes two primary boilerplates
-
-We will take a closer look at both.
 
 ##### Andross:
 

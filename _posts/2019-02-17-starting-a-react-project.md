@@ -13,16 +13,16 @@ comments: true
 For React Native we need `node`, `Watchman`, React Native CLI and `Xcode`.
 
 **node:**
-A javascript package manager.
+* A javascript package manager.
 
 **Watchman:**
-A service for watching changes in files and trigger actions when files are changed.
+* A service for watching changes in files and trigger actions when files are changed.
 
 **React Native CLI:**
-A command line interface module for React Native.
+* A command line interface module for React Native.
 
 **Xcode:**
-Apples IDE to test your application on an Iphone simulator.
+* Apples IDE to test your application on an Iphone simulator.
 
 ## 1. Install `node` and `Watchman`
 
