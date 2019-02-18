@@ -8,6 +8,7 @@ header:
   teaser: '/assets/images/rails.jpg'
 author_profile: false
 comments: true
+draft: true
 ---
 
 Good organisation helps make code easier to read and easier to maintain. Also encourages separation of concerns and a scalable codebase, making future development more efficient.
