@@ -4,8 +4,8 @@ title:  "Starting a React Native project with Expo"
 permalink: /react-native-boilerplates-overview/
 excerpt: "How to start using react native with Expo"
 header:
-  image: '/assets/images/react-start.png'
-  teaser: '/assets/images/react-start.png'
+  image: '/assets/images/start-react.png'
+  teaser: '/assets/images/start-react.png'
 author_profile: false
 comments: true
 ---
@@ -86,8 +86,6 @@ You will also notice it pops open the Expo Dev Tools, a control panel for develo
 Looking at the Expo Dev Tools, you have available options on which type of simulator you would like to run (Android or iOS). And you have the option to scan the QR code to run the app on your phone in real time using Live Reload.
 
 All you have to do is download the [Expo app](https://expo.io/tools#client) on either Android or iPhone and scan the QR code, and you are ready to go.
-
-
 
 
 ### React Native Documentation:
