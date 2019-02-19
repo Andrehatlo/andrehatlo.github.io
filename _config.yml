@@ -110,7 +110,7 @@ author:
   avatar           : "/assets/images/me.png"
   bio              : "Welcome to my blog and portofolio! This is a place where i will be posting all notes when learning new fundementals of different technologies."
   location         : "Drammen, Norway"
-  email            : #"iam@andrehatlo.com"
+  email            : #"ahatloj@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -121,9 +121,9 @@ author:
     - label: "StackOverflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:iam@andrehatlo.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ahatloj@gmail.com"
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"fas fa-at
     #   url: "www.facebook.com/Andre.Hatlo"
