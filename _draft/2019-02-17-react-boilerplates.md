@@ -228,6 +228,18 @@ This is where stories will be registered and where the Storybook configs will li
 
 This is where your Jest configs and mocks live. As well as storyshots test files.
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## Attaching to Expo
 
 If you are like me and use the `expo` toolchain to kick of your project, and you would still like to use one of Ignites boilerplates simply use the command:

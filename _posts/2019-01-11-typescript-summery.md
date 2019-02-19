@@ -16,9 +16,9 @@ TypeScript is one of the fastest rising technologies of 2018. This brief summary
 
 ---
 
-TypeScript is built by Microsoft, by one of its creators Anders Hejlsberg, a danish software engineer known for Turbo Pascal and Delphi. Its open source, developed public at [https://github.com/Microsoft/TypeScript](https://github.com/Microsoft/TypeScript).
+TypeScript is built by Microsoft. Its open source, developed public at [https://github.com/Microsoft/TypeScript](https://github.com/Microsoft/TypeScript).
 
-It's a superset of ECMAScript 2015, also know as ES6, which means that any valid JS is also valid TypeScript. So if you ever wrote a line of JavaScript, you already wrote a line of TypeScript code!
+A superset of ECMAScript 2015, also know as ES6, which means that any valid JS is also valid TypeScript.
 
 Run `npm install -g typescript`  to globally install the TypeScript compiler on your system, available to you using the `tsc` command.
 
@@ -57,7 +57,7 @@ greet();
 
 Here almost nothing changed except for the additional semicolons.
 
-If you would like to play around with TS to JS compilation, check out [https://www.typescriptlang.org/play/](https://www.typescriptlang.org/play/).
+Play around with TS to JS compilation, check out [https://www.typescriptlang.org/play/](https://www.typescriptlang.org/play/).
 
 <br>
 <br>
@@ -77,7 +77,7 @@ The most important functionality provided by TypeScript is the type system:
 * access modifiers
 * null checking
 
-This resembles languages like Go or C, so if you've coded these languages you already know how this works. Unike dynamic languages like Python or Ruby, this is all new.
+It resembles languages like Go or C, so if you've coded these languages you already know how this works. Unike dynamic languages like Python or Ruby, this is all new.
 
 The type system allows adding types to:
 
