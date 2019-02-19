@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Hugo - as my static page blog"
+title:  "Hugo - as a static page blog"
 permalink: /hugo/
 excerpt: "Create your own blog with Hugo, a static site generator, on the same line as Jekyll."
 header:

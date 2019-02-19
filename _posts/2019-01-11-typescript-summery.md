@@ -14,6 +14,8 @@ draft: true
 
 TypeScript is one of the fastest rising technologies of 2018. This brief summary is filled with what you need to know to understand its key concepts.
 
+Reference to FlavioCopes blog, a great place to learn.
+
 ---
 
 TypeScript is built by Microsoft. Its open source, developed public at [https://github.com/Microsoft/TypeScript](https://github.com/Microsoft/TypeScript).
@@ -46,7 +48,14 @@ var greet = function () {
 greet();
 ```
 
-Just like *old JavaScript*, the TS compiler compiles TypeScript to ES5 by default, which means that its almost guaranteed to be suppored by all modern browsers. If you want to change the compilation target to another version, for example ES2018 use `tsc app.ts --target ES2018`:
+Just like *old JavaScript*, the TS compiler compiles TypeScript to ES5 by default, which means that its almost guaranteed to be suppored by all modern browsers.
+
+To change the compilation target to another version, for example to ES2018 run the following:
+
+```javascript
+`tsc app.ts --target ES2018`:
+```
+
 
 ```javascript
 const greet = () => {
@@ -65,7 +74,7 @@ Play around with TS to JS compilation, check out [https://www.typescriptlang.org
 # TYPING
 ---
 
-The most important functionality provided by TypeScript is the type system:
+Most important functionality provided by TypeScript is the type system:
 
 * static types
 * interfaces
@@ -158,7 +167,9 @@ class Car {
 }
 ```
 
-Like other languages, private fields can only be accessed by the class that its declared in. Protected fields can only be accessed by deriving classes.
+Private fields can only be accessed by the class that its declared in.
+
+Protected fields can only be accessed by deriving classes.
 
 TypeScript also has `static` fields, which are class fields instead of object fields:
 
@@ -406,7 +417,7 @@ enum Order {
 
 A new feature not available in many programming languages. You can create a function, interface or class that works with different types, without specifying the type up front.
 
-If you change the type at compile time, the compiler will throw an error.
+It is mutable, so if you change the type at compile time, the compiler will throw an error.
 
 We could do this by omitting types to all or using `any`.
 
