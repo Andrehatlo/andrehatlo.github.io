@@ -51,7 +51,7 @@ class Counters extends Component {
 export default Counters;
 ```
 
-If you take a closer look at the `render` part of the `Counter` component:
+If you take a closer look at the `render` method of the `Counters` component:
 
 ```javascript
 <Counter key={counter.id} value={counter.value} id={counter.id}></Counter>
@@ -110,7 +110,7 @@ handleIncrement = product => {
 
 And we increment it in the view, we would get this error:
 
-<img src="https://i.ibb.co/gyXg32t/Screenshot-2019-02-19-at-09-51-31.png" alt="react-native prop error" width="400">
+<img src="https://i.ibb.co/gyXg32t/Screenshot-2019-02-19-at-09-51-31.png" alt="react-native prop error" width="600">
 
 So react does not allow you to change any props to any component.
 
