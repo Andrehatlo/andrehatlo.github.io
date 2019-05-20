@@ -1,0 +1,159 @@
+---
+layout: single
+title:  "Home Assistant - Configuring devices: Step 2"
+permalink: /home-assinstant-configurate-devices-step-2/
+excerpt: "In this section we will go through the fundamentals of the Home Assistant web interface, and how to add/configure smart devices in your network"
+header:
+  image: '/assets/images/ha1.png'
+  teaser: '/assets/images/ha1.png'
+author_profile: false
+comments: true
+---
+
+If you haven't seen my last post on how to install Home Assistant on a Rapsberry Pi, follow [this](https://www.andrehatlo.com/home-assinstant-and-rapsberry-pi-3-step-1/) link before starting with this section.
+
+## Requirements
+
+- Successfully installed Home assistant on a Raspberry Pi
+- Some type of smart device and gateway
+
+## Configuration of devices:
+
+Go to your HA web interface by typing http://ipaddress:8123 in your browser.
+
+The main menu will look something like this:
+
+### The `sMain menu`
+
+<center>
+  <img src="/assets/images/ha-step2/main-menu.png" height="40%" width="40%"></img>
+</center>
+<br/>
+
+- __Overview__
+  - This is where your UI exists.
+- __Map__
+  - HA has a map interface for tracking and estimating time.
+- __Logbook__
+  - Here HA logs all events that happen in your smart home.
+- __History__
+  - Check out your sensors/devices/places history, how they act over time.
+- __MDI Icon Index__
+  - This is a custom icon page i added, i will get back to this and show you how this is done.
+- __Configuration__
+  - Everything you can do with HA gets configured here.
+
+
+### `Configuration`
+
+Select `configuration` in the `main menu`.
+
+You will see a menu that looks something like this:
+
+<center>
+  <img src="/assets/images/ha-step2/conf-menu-1.png" height="70%" width="70%"></img>
+</center>
+<br/>
+
+- __Home Assistant Cloud__
+  - Sign up for the HA Cloud service, this makes it possible to use your interface from all around the world. Without any port forwarding.
+
+- __Integrations__
+  - All new devices on your network has to get setup here before anything else.
+
+- __Users__
+  - Add user accounts that can access HA web interface here.
+
+- __General__
+  - Here you can restart your server/core/groups/automations/scripts and validate your configuration files for quick debugging.
+
+- __Persons__
+  - Add people and connect them to the user account you would like.
+
+- __Entity Registry__
+  - An overview over all devices. Also possible to override naming for each device.
+
+- __Area Registry__
+  - Define the places in your home. For example bathroom, kitchen, livingroom etc. These places can then be assigned to each of your devices.
+
+- __Automation__
+  - Here is where the magic happens. Where you can automate your smart devices as you see fit. Turn off all lights after 23:00 or set the temperature up after 07:00.
+
+- __Script__
+  - Script actions to be used in Lovelace UI. For example create a `restart HA` script that calls action `homeassistant.restart` so you can easily restart the server from your UI.
+
+- __Z-Wave__
+  - You will probably not have this in your configuration unless you've activated z-wave in your `configration.yaml` file. Here is where you can add Z-wave nodes and configure them.
+
+- __Customization__
+  - Tweak entity attributes or add/edit customizations that override the enities attributes.
+
+
+## `Integrations`
+
+In the configuration menu, go to `Integrations`.
+
+Under `Discovered` you'll see all devices Home Assistant can find on your network.
+
+<center>
+  <img src="/assets/images/ha-step2/int-discovered-device.png" height="80%" width="80%"></img>
+</center>
+<br/>
+
+Home assistant has made integrating devices as easy as pie. Just hit the button `CONFIGURE` and follow the steps:
+
+### IKEA tradfri integration
+
+Click `CONFIGURE` next to IKEA TRÅDFRI.
+
+<center>
+  <img src="/assets/images/ha-step2/ikea-gw.png" height="80%" width="80%"></img>
+</center>
+<br/>
+
+Fill inn the `Security Code` from underneath your IKEA Trådfri Gateway.
+
+<center>
+  <img src="/assets/images/ha-step2/ikea-gw-pw.png" height="60%" width="60%"></img>
+</center>
+<br/>
+
+Click `Submit` and accept the list of IKEA Trådfri devices HA lists up.
+
+
+### Phillips hue integration
+
+Click `CONFIGURE` next to Philips Hue.
+
+<center>
+  <img src="/assets/images/ha-step2/philips-gw.png" height="80%" width="80%"></img>
+</center>
+<br/>
+
+Locate your Philips gateway and press the button located on topp of the gateway.
+
+Then accept all devices HA lists up in the next step.
+
+
+### Back in `Integrations`
+
+You should now have a list of devices depending on what you have configured from integrations.
+
+This is what my list looks like:
+
+<center>
+  <img src="/assets/images/ha-step2/configured-devices.png" height="80%" width="80%"></img>
+</center>
+<br/>
+
+
+
+
+
+
+
+Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
+
+
+# Want more?
+## Get familiar with Home Assistant by reading the [docs](https://www.home-assistant.io/docs/)!
