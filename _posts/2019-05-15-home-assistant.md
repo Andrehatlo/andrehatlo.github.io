@@ -39,7 +39,10 @@ To create a setup where all these different brands of devices can talk to each o
 Follow this guide for a easy setup. And follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
 
 ## Requirements:
-
+<center>
+  <img src='https://cdn.instructables.com/FFU/VNV0/IY4Q7ROG/FFUVNV0IY4Q7ROG.LARGE.jpg' height="70%" width="70%"></img>
+</center>
+<br>
 - Raspberry Pi 3B+ (Recommended)
 - Micro SD (At least 32gb)
 - [Raspbian (Stretch light)](https://www.raspberrypi.org/downloads/raspbian/) installed on micro sd card
