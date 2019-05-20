@@ -4,9 +4,10 @@ title:  "Smart home with Home Assistant & PI 3: Step 1"
 permalink: /home-assinstant-and-rapsberry-pi-3-step-1/
 excerpt: "Automating my home with home assistant and raspberry pi. How to install HA on the RPi 3B+?"
 header:
-  image: '/assets/images/ha.jpg'
-  teaser: '/assets/images/ha.jpg'
+  image: '/assets/images/ha1.png'
+  teaser: '/assets/images/ha1.png'
 author_profile: false
+comments: true
 ---
 
 There are almost 8.4 billion internet of things (IoT) across the world right now. The number of devices are expected to more than double the next couple of years to the stage of 20.4 billion in 2020. The problem with all these devices are that each and every brand of smart device has their own gateway and platform to automate and control. This is where Home Assistant steps in.
