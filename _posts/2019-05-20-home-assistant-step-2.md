@@ -15,7 +15,7 @@ If you haven't seen my last post on how to install Home Assistant on a Rapsberry
 ## Requirements
 
 - Successfully installed Home assistant on a Raspberry Pi
-- Some type of smart device and gateway
+- Some type of smart device and gateway connected to your network
 
 ## Configuration of devices:
 
@@ -23,10 +23,11 @@ Go to your HA web interface by typing http://ipaddress:8123 in your browser.
 
 The main menu will look something like this:
 
-### The `sMain menu`
+### The `Main menu`
 
+<br>
 <center>
-  <img src="/assets/images/ha-step2/main-menu.png" height="40%" width="40%"></img>
+  <img src="/assets/images/ha-step2/main-menu.png" height="40%" width="40%">
 </center>
 <br/>
 
@@ -51,7 +52,7 @@ Select `configuration` in the `main menu`.
 You will see a menu that looks something like this:
 
 <center>
-  <img src="/assets/images/ha-step2/conf-menu-1.png" height="70%" width="70%"></img>
+  <img src="/assets/images/ha-step2/conf-menu-1.png" height="70%" width="70%">
 </center>
 <br/>
 
@@ -96,7 +97,7 @@ In the configuration menu, go to `Integrations`.
 Under `Discovered` you'll see all devices Home Assistant can find on your network.
 
 <center>
-  <img src="/assets/images/ha-step2/int-discovered-device.png" height="80%" width="80%"></img>
+  <img src="/assets/images/ha-step2/int-discovered-device.png" height="80%" width="80%">
 </center>
 <br/>
 
@@ -107,14 +108,14 @@ Home assistant has made integrating devices as easy as pie. Just hit the button 
 Click `CONFIGURE` next to IKEA TRÅDFRI.
 
 <center>
-  <img src="/assets/images/ha-step2/ikea-gw.png" height="80%" width="80%"></img>
+  <img src="/assets/images/ha-step2/ikea-gw.png" height="80%" width="80%">
 </center>
 <br/>
 
 Fill inn the `Security Code` from underneath your IKEA Trådfri Gateway.
 
 <center>
-  <img src="/assets/images/ha-step2/ikea-gw-pw.png" height="60%" width="60%"></img>
+  <img src="/assets/images/ha-step2/ikea-gw-pw.png" height="60%" width="60%">
 </center>
 <br/>
 
@@ -126,7 +127,7 @@ Click `Submit` and accept the list of IKEA Trådfri devices HA lists up.
 Click `CONFIGURE` next to Philips Hue.
 
 <center>
-  <img src="/assets/images/ha-step2/philips-gw.png" height="80%" width="80%"></img>
+  <img src="/assets/images/ha-step2/philips-gw.png" height="80%" width="80%">
 </center>
 <br/>
 
@@ -142,15 +143,11 @@ You should now have a list of devices depending on what you have configured from
 This is what my list looks like:
 
 <center>
-  <img src="/assets/images/ha-step2/configured-devices.png" height="80%" width="80%"></img>
+  <img src="/assets/images/ha-step2/configured-devices.png" height="80%" width="80%">
 </center>
 <br/>
 
-
-
-
-
-
+In the next section we will check out the Lovelace UI and some automation examples. 
 
 Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
 

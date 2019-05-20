@@ -184,7 +184,7 @@ $ sudo systemctl start home-assistant@homeassistant.service
 
 Now go to your Home Assistant web interface by going to http://ipaddress:8123.
 
-Next time we will show how to setup your smart devices in HA and how to configure and controll them in Home Assistant's Lovelace UI.
+Next time we will show how to setup your smart devices in HA and configure them so that you can access them all.
 
 Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
 
