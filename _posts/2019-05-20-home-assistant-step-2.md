@@ -45,7 +45,7 @@ The main menu will look something like this:
   - Everything you can do with HA gets configured here.
 
 
-### `Configuration`
+### The `Configuration` menu
 
 Select `configuration` in the `main menu`.
 
@@ -147,7 +147,7 @@ This is what my list looks like:
 </center>
 <br/>
 
-In the next section we will check out the Lovelace UI and some automation examples. 
+In the next section we will check out the Lovelace UI and some automation examples.
 
 Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
 
