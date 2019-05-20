@@ -48,4 +48,4 @@ Using Jekyll you can get *FREE* hosting through Github!
 
 Follow my tutorial on how i used Jekyll and Github to create this blog/portfolio you are on right now:
 
-[Free Blog/Portfolio with Jekyll and Github tutorial](http://www.andrehatlo.com/jekyll-and-github-makes-love)
+[Free Blog/Portfolio with Jekyll and Github tutorial](https://www.andrehatlo.com/jekyll-github-free-host/)
