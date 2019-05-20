@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Hi! I'm André, a computer engineer"
+title                    : "Hi! I'm André, a developer"
 title_separator          : "-"
 name                     : "André Hatlo-Johansen"
 description              : "Welcome to my "
@@ -108,7 +108,6 @@ analytics:
 author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/me.png"
-  bio              : "Welcome to my blog and portofolio! This is a place where i will be posting all notes when learning new fundementals of different technologies."
   location         : "Drammen, Norway"
   email            : #"ahatloj@gmail.com"
   links:
@@ -118,9 +117,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "http://www.linkedin.com/in/andrehatlo"
-    - label: "StackOverflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:ahatloj@gmail.com"
@@ -143,9 +139,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "http://www.linkedin.com/in/andrehatlo"
-    - label: "StackOverflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
+    # - label: "StackOverflow"
+    #   icon: "fab fa-fw fa-stack-overflow"
+    #   url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
 
 
 
