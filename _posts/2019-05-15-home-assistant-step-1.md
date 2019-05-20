@@ -30,9 +30,14 @@ My smart devices range from:
   - Temperature sensor
   - Light sensor
   - Gateway
-- Telldus z-wave
+- Sonos
+  - Two speakers
+- Gooogle Cast
+  - Livingroom tv with Android OS
+  - Nvidea Shield on my bedroom tv
+- Z-wave
   - Door/Window sensor
-- Z-wave USB dongle gateway
+  - USB gateway
 
 To create a setup where all these different brands of devices can talk to each other i'll create a new home automation server on my Raspberry Pi 3B+.
 
