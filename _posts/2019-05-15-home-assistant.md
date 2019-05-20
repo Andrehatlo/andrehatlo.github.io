@@ -43,6 +43,7 @@ Follow this guide for a easy setup. And follow my blog for more information, ide
   <img src='https://cdn.instructables.com/FFU/VNV0/IY4Q7ROG/FFUVNV0IY4Q7ROG.LARGE.jpg' height="70%" width="70%"></img>
 </center>
 <br>
+
 - Raspberry Pi 3B+ (Recommended)
 - Micro SD (At least 32gb)
 - [Raspbian (Stretch light)](https://www.raspberrypi.org/downloads/raspbian/) installed on micro sd card
@@ -181,6 +182,12 @@ To start the service run this command:
 $ sudo systemctl start home-assistant@homeassistant.service
 ```
 
+Now go to your Home Assistant web interface by going to http://ipaddress:8123.
+
+Next time we will show how to setup your smart devices in HA and how to configure and controll them in Home Assistant's Lovelace UI.
+
 Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
 
-## Now get familiar with Home Assistant by reading the [docs](https://www.home-assistant.io/docs/)!
+
+# Want more?
+## Get familiar with Home Assistant by reading the [docs](https://www.home-assistant.io/docs/)!
