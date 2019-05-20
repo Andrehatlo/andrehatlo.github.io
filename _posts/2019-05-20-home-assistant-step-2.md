@@ -159,7 +159,7 @@ Underneath the Main menu you will see the `Developer tools`, this is worth menti
 - Services (remote control icon)
   - Here its possible to run/test all services that HA has integrated.
 
-- States (< >)
+- States (< > icons)
   - This is the place to have total control over ALL your entities.
   - Check if their online, or if they exist at all.
 
