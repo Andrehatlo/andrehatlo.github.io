@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "Smart home with Home Assistant & PI 3: Step 1"
+title:  "Home Assistant - HA & PI: Step 1"
 permalink: /home-assinstant-and-rapsberry-pi-3-step-1/
-excerpt: "Automating my home with home assistant and raspberry pi. How to install HA on the RPi 3B+?"
+excerpt: "Automating my home with home assistant and raspberry pi. How to install HA on the Raspberry Pi 3 B+ ?"
 header:
   image: '/assets/images/ha1.png'
   teaser: '/assets/images/ha1.png'

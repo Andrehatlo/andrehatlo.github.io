@@ -2,7 +2,7 @@
 layout: single
 title:  "Home Assistant - Configuring devices: Step 2"
 permalink: /home-assinstant-configurate-devices-step-2/
-excerpt: "In this section we will go through the fundamentals of the Home Assistant web interface, and how to add/configure smart devices in your network"
+excerpt: "Going through the fundamentals of the Home Assistant web interface, and how to add/configure smart devices in your network with HA"
 header:
   image: '/assets/images/ha1.png'
   teaser: '/assets/images/ha1.png'
@@ -147,10 +147,36 @@ This is what my list looks like:
 </center>
 <br/>
 
+## Developer tools
+
+Underneath the Main menu you will see the `Developer tools`, this is worth mentioning since it will be used a lot during the device automation/configuration stage.
+
+<center>
+  <img src="/assets/images/ha-step2/dev-tools.png" height="40%" width="40%">
+</center>
+<br/>
+
+- Services (remote control icon)
+  - Here its possible to run/test all services that HA has integrated.
+
+- States (< >)
+  - This is the place to have total control over ALL your entities.
+  - Check if their online, or if they exist at all.
+
+- Events (radio tower icon)
+  - I havent personally used this function much, but as far as i know this is the place to run events.
+
+- Templates (document <> icon)
+  - When doing advanced configuration with HA, its possible to create templates that act as sensors. This is the place to test your tempates and see if you get the return values your looking for.
+
+- About (info icon)
+  - The place to check your HA version or to check what the HA log is outputting.
+
+Hope this gives a better understanding of the fundamentals of HA and how to configure devices on your network.
+
 In the next section we will check out the Lovelace UI and some automation examples.
 
 Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
-
 
 # Want more?
 ## Get familiar with Home Assistant by reading the [docs](https://www.home-assistant.io/docs/)!
