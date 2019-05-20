@@ -108,6 +108,7 @@ analytics:
 author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/me.png"
+  bio              : "Welcome to my personal blog! Take a look around :) I will continually post articles when learning new fundementals of different tech."
   location         : "Drammen, Norway"
   email            : #"ahatloj@gmail.com"
   links:
