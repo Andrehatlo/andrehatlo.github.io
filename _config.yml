@@ -11,7 +11,7 @@ minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Hi! I'm André, a developer"
+title                    : "Hi! I'm André, a computer engineer"
 title_separator          : "-"
 name                     : "André Hatlo-Johansen"
 description              : "Welcome to my "
