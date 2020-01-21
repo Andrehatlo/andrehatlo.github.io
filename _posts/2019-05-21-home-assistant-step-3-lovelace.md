@@ -8,7 +8,7 @@ header:
   teaser: "/assets/images/ha1.png"
 author_profile: false
 comments:
-draft: true
+draft: false
 ---
 
 Home Assistant recently came out with their new UI in January. A ui called Lovelace it has now become their default ui interface. Taking a new approach for building user interfaces for Home Assistant.
