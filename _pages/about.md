@@ -13,7 +13,9 @@ header:
 
 A developer, worked on an ecommerce project for Rørkjøp Nett AS for 2 years, and worked on a WebBank project for Nordea for about 1 year which entailed building API microservices.
 
-Rørkjøp hired me after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
+### Rørkjøp
+
+Hired me after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
 
 On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS.
 
@@ -27,7 +29,7 @@ This entailed setting up a machine learning system that learned by looking at pe
       - Amazon AWS
       - ApacheSpark
 
-### Working here I've become:
+#### Working here I've become:
 
      Very comfortable with:
       - Ruby
@@ -43,6 +45,21 @@ This entailed setting up a machine learning system that learned by looking at pe
       - Heroku
 
 Projects I've been assigned while working for Rørkjøp are mostly based on creating features too speed up productivity, scalability or maintainability of Rørkjøp's e-commerce platform.
+
+#### Nordea AS
+
+My second job at Nordea AS i was stationed mostly backend, building microservice API's.
+Working here i've utilized Java foremost with reactive libraries to create rich streaming applications:
+
+Technologies used at Nordea AS:
+
+- Java
+  - RxJava library
+  - Reactor
+  - SpringBoot
+- Maven
+- SQL
+- IntelliJ (IDE)
 
 ### Other skills:
 
