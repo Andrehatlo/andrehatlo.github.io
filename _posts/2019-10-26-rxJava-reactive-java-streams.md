@@ -1,7 +1,7 @@
 ---
 type: single
-title: "IntelliJ IDE - Productivity Tricks"
-permalink: /intelliJ-ide-productivity-tricks/
+title: "Reactive Data Streams - quick rxJava Summery"
+permalink: /reactive-data-streams-rxjava/
 excerpt: "Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix. "
 header:
   image: "/assets/images/netflix.png"
