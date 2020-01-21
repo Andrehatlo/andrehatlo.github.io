@@ -1,11 +1,11 @@
 ---
 layout: single
-title:  "Home Assistant - Lovelace introduction: Step 3"
+title: "Home Assistant - Lovelace introduction: Step 3"
 permalink: /home-assinstant-step-3-lovelace/
 excerpt: "An introduction to the Lovelace UI used in HA"
 header:
-  image: '/assets/images/ha1.png'
-  teaser: '/assets/images/ha1.png'
+  image: "/assets/images/ha1.png"
+  teaser: "/assets/images/ha1.png"
 author_profile: false
 comments:
 draft: true
@@ -13,7 +13,10 @@ draft: true
 
 Home Assistant recently came out with their new UI in January. A ui called Lovelace it has now become their default ui interface. Taking a new approach for building user interfaces for Home Assistant.
 
+Note! I had to cut this project short because of the timeframe for my new job, but here is a quick overview over my custom Lovelace UI which i was able to put together.
+
 A dynamic UI with a whole new set of features:
+
 - 24 card grid.
 - A UI editor.
 - Faster!
@@ -29,8 +32,6 @@ A dynamic UI with a whole new set of features:
 
 This is whats so fun about this new platform is that the community is blooming. Make HA work for you!
 
-
-
 Take a look at my UI in mobile view:
 
 <center >
@@ -42,6 +43,3 @@ Take a look at my UI in mobile view:
   <img src='/assets/images/ha-step3/ui-6.png' height="40%" width="40%" style="padding:10px;"/>
 </center>
 <br>
-
-
-## LoveLace UI
