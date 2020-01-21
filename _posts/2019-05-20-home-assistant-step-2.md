@@ -1,11 +1,11 @@
 ---
 layout: single
-title:  "Home Assistant - Configuring devices: Step 2"
+title: "Home Assistant - Configuring devices: Step 2"
 permalink: /home-assinstant-configurate-devices-step-2/
 excerpt: "Going through the fundamentals of the Home Assistant web interface, and how to add/configure smart devices in your network with HA"
 header:
-  image: '/assets/images/ha1.png'
-  teaser: '/assets/images/ha1.png'
+  image: "/assets/images/ha1.png"
+  teaser: "/assets/images/ha1.png"
 author_profile: false
 comments: true
 ---
@@ -31,19 +31,18 @@ The main menu will look something like this:
 </center>
 <br/>
 
-- __Overview__
+- **Overview**
   - This is where your UI exists.
-- __Map__
+- **Map**
   - HA has a map interface for tracking and estimating time.
-- __Logbook__
+- **Logbook**
   - Here HA logs all events that happen in your smart home.
-- __History__
+- **History**
   - Check out your sensors/devices/places history, how they act over time.
-- __MDI Icon Index__
+- **MDI Icon Index**
   - This is a custom icon page i added, i will get back to this and show you how this is done.
-- __Configuration__
+- **Configuration**
   - Everything you can do with HA gets configured here.
-
 
 ### The `Configuration` menu
 
@@ -56,39 +55,48 @@ You will see a menu that looks something like this:
 </center>
 <br/>
 
-- __Home Assistant Cloud__
+- **Home Assistant Cloud**
+
   - Sign up for the HA Cloud service, this makes it possible to use your interface from all around the world. Without any port forwarding.
 
-- __Integrations__
+- **Integrations**
+
   - All new devices on your network has to get setup here before anything else.
 
-- __Users__
+- **Users**
+
   - Add user accounts that can access HA web interface here.
 
-- __General__
+- **General**
+
   - Here you can restart your server/core/groups/automations/scripts and validate your configuration files for quick debugging.
 
-- __Persons__
+- **Persons**
+
   - Add people and connect them to the user account you would like.
 
-- __Entity Registry__
+- **Entity Registry**
+
   - An overview over all devices. Also possible to override naming for each device.
 
-- __Area Registry__
+- **Area Registry**
+
   - Define the places in your home. For example bathroom, kitchen, livingroom etc. These places can then be assigned to each of your devices.
 
-- __Automation__
+- **Automation**
+
   - Here is where the magic happens. Where you can automate your smart devices as you see fit. Turn off all lights after 23:00 or set the temperature up after 07:00.
 
-- __Script__
+- **Script**
+
   - Script actions to be used in Lovelace UI. For example create a `restart HA` script that calls action `homeassistant.restart` so you can easily restart the server from your UI.
 
-- __Z-Wave__
+- **Z-Wave**
+
   - You will probably not have this in your configuration unless you've activated z-wave in your `configration.yaml` file. Here is where you can add Z-wave nodes and configure them.
 
-- __Customization__
+- **Customization**
   - Tweak entity attributes or add/edit customizations that override the enities attributes.
-
 
 ## `Integrations`
 
@@ -121,7 +129,6 @@ Fill inn the `Security Code` from underneath your IKEA Trådfri Gateway.
 
 Click `Submit` and accept the list of IKEA Trådfri devices HA lists up.
 
-
 ### Phillips hue integration
 
 Click `CONFIGURE` next to Philips Hue.
@@ -134,7 +141,6 @@ Click `CONFIGURE` next to Philips Hue.
 Locate your Philips gateway and press the button located on topp of the gateway.
 
 Then accept all devices HA lists up in the next step.
-
 
 ### Back in `Integrations`
 
@@ -157,16 +163,20 @@ Underneath the Main menu you will see the `Developer tools`, this is worth menti
 <br/>
 
 - Services (remote control icon)
+
   - Here its possible to run/test all services that HA has integrated.
 
 - States (< > icons)
+
   - This is the place to have total control over ALL your entities.
   - Check if their online, or if they exist at all.
 
 - Events (radio tower icon)
+
   - I havent personally used this function much, but as far as i know this is the place to run events.
 
 - Templates (document <> icon)
+
   - When doing advanced configuration with HA, its possible to create templates that act as sensors. This is the place to test your tempates and see if you get the return values your looking for.
 
 - About (info icon)
@@ -174,9 +184,6 @@ Underneath the Main menu you will see the `Developer tools`, this is worth menti
 
 Hope this gives a better understanding of the fundamentals of HA and how to configure devices on your network.
 
-In the next section we will check out the Lovelace UI and some automation examples.
-
-Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!
-
 # Want more?
+
 ## Get familiar with Home Assistant by reading the [docs](https://www.home-assistant.io/docs/)!
