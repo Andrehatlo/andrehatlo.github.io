@@ -1,7 +1,7 @@
 ---
 type: single
 title: "IntelliJ IDE - Productivity Tricks"
-permalink: /typescript-summary/
+permalink: /intelliJ-ide-productivity-tricks/
 excerpt: "A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE"
 header:
   image: "/assets/images/intellij-logo.png"

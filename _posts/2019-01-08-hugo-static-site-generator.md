@@ -1,11 +1,11 @@
 ---
 layout: single
-title:  "Hugo - as a static page blog"
+title: "Hugo - as a static page blog"
 permalink: /hugo/
 excerpt: "Create your own blog with Hugo, a static site generator, on the same line as Jekyll."
 header:
-  image: '/assets/images/hugogit.jpg'
-  teaser: '/assets/images/hugogit.jpg'
+  image: "/assets/images/hugogit.jpg"
+  teaser: "/assets/images/hugogit.jpg"
 author_profile: false
 comments: true
 ---
@@ -19,7 +19,6 @@ The main difference i noticed after testing Jekyll against Hugo is that it's fas
 Let me do a quick tutorial to setup Hugo, its very easy and almost only done in the commandline:
 
 ## Hugo quicksetup tutorial:
-
 
 ## Step 1: Install `hugo`
 
@@ -108,7 +107,7 @@ hugo server -D
 
 Then navigate to [http://localhost:1313/.](http://localhost:1313/.)
 
-##  Step 6: Customize the Theme
+## Step 6: Customize the Theme
 
 You can tweak your site to personalise it before you release it to the public.
 
@@ -131,3 +130,5 @@ theme = "ananke"
 > the site and you will see the changes right away.
 
 ## Now your site is up and running you can find more to do by reading the Hugo docs [here](https://gohugo.io/documentation/)
+
+> Note that i stayed with Jekyll even though Hugo was an awesome choice for a personal blog with the same features > but fast. This is mostly because i found that Jekyll was more intuitive when coming to posting and doing simple > customization. What ever you pick if you choose to start a blog/portfolio you cant go wrong either way!
