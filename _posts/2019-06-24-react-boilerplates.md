@@ -1,23 +1,23 @@
 ---
 layout: single
-title:  "React Native: Boilerplates overview"
+title: "React Native: Boilerplates overview"
 permalink: /react-native-boilerplates-overview/
 excerpt: "It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?"
 header:
-  image: '/assets/images/react-boiler.jpg'
-  teaser: '/assets/images/react-boiler.jpg'
+  image: "/assets/images/react-boiler.jpg"
+  teaser: "/assets/images/react-boiler.jpg"
 author_profile: false
 comments: true
-draft: true
+draft: false
 ---
 
-# React Native Boilerplates Overview
+It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?
 
 There are three boilerplates worth considering:
 
-* [Ignitee](https://github.com/infinitered/ignite) - 9,375 stars
-* [Pepperoni App Kit](https://github.com/futurice/pepperoni-app-kit) - 4,453 stars
-* [Snowflake](https://github.com/bartonhammond/snowflake) - 4,399 stars
+- [Ignitee](https://github.com/infinitered/ignite) - 9,375 stars
+- [Pepperoni App Kit](https://github.com/futurice/pepperoni-app-kit) - 4,453 stars
+- [Snowflake](https://github.com/bartonhammond/snowflake) - 4,399 stars
 
 We will be taking a closer look at the most popular of them all, the `ignite` boilerplate.
 
@@ -51,11 +51,11 @@ $ yarn global add ignite-cli
 
 It includes:
 
-* React Native 0.57.7
-* React Navigation 3.0.0
-* Redux
-* Redux Sagas
-* And more!
+- React Native 0.57.7
+- React Navigation 3.0.0
+- Redux
+- Redux Sagas
+- And more!
 
 ##### Bowser:
 
@@ -65,12 +65,12 @@ It includes:
 
 This boilerplate includes:
 
-* React Native
-* React Navigation
-* MobX State Tree
-* Typescript
-* Reactotron (requires 2.x)
-* And more!
+- React Native
+- React Navigation
+- MobX State Tree
+- Typescript
+- Reactotron (requires 2.x)
+- And more!
 
 I won't go into detail about these services in this post. I will choose a preferred boilerplate after testing and explain the services more in detail in a future post.
 
@@ -220,6 +220,7 @@ Your entry point to your application. The main App component that renders the re
 This is where the `ignite` CLI and all things `ignite` live. Generators, plugins and examples are included to help you get started.
 
 #### The `./storybook` directory:
+
 This is where stories will be registered and where the Storybook configs will live.
 
 [Storybook](https://storybook.js.org/basics/guide-react-native/) is a UI development environment for rapid iteration and testing of UI components. This allows you to visualise the different states of the individual components of your app and test the UI interactions.
@@ -227,18 +228,6 @@ This is where stories will be registered and where the Storybook configs will li
 #### The `./test` directory:
 
 This is where your Jest configs and mocks live. As well as storyshots test files.
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Attaching to Expo
 
@@ -252,9 +241,12 @@ ignite attach
 ```
 
 This also works for:
-* create-react-native-app
-* create-react-app
-* normal Reach JS projects
-* empty directories
+
+- create-react-native-app
+- create-react-app
+- normal Reach JS projects
+- empty directories
 
 Not all plugins work in all environments, but many features of Ignite CLI are available.
+
+For more info check out their documentation at https://expo.io/ !
