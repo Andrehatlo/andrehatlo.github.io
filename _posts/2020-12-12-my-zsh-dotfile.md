@@ -92,6 +92,10 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
 
+```
+
+
+```
 ################################
 # GET INTERNET SIGNAL IN Mb/s ##
 ################################
@@ -114,7 +118,9 @@ zsh_wifi_signal(){
                 echo -n "%{$color%}$ssid $speed Mb/s%{%f%}" # removed char not in my PowerLine font
         fi
 }
+```
 
+```
 ###########################
 ## POWERLEVEL9K SETTINGS ##
 ###########################
@@ -145,7 +151,9 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
 POWERLEVEL9K_OS_ICON_BACKGROUND="white"
 POWERLEVEL9K_OS_ICON_FOREGROUND="green"
+```
 
+```
 #########################
 # Terminal keybindings ##
 #########################
@@ -175,11 +183,7 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=UTF-8
 export LC_ALL=en_US.UTF-8
 
-#########
-## GPG ##
-#########
 
-export GPG_TTY=$(tty)
 
 #########
 ## NVM ##
