@@ -62,6 +62,7 @@ Shell aliases and scripts:
 - v for $VISUAL.
 
 
+## My .zshrc file
 
 ```
 ##########
@@ -206,3 +207,5 @@ if [ -f '/Users/horse/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 #### The next line enables shell command completion for gcloud.
 if [ -f '/Users/horse/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/horse/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 ```
+
+### Learn more about customizing your terminal line by checking out the [powerlevel9k's repository](https://github.com/Powerlevel9k/powerlevel9k)!
