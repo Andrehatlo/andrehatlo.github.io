@@ -4,8 +4,8 @@ title: "My ZSH Dotfile"
 permalink: /my-personal-zsh-dotfiles/
 excerpt: "This is my ZSH configuration file, which gives me a custom terminal line where i can load POWERLEVEL9K UI, which makes it possible to get git repo feedback and display wifi strength."
 header:
-  image: "/assets/images/git-banner.png"
-  teaser: "/assets/images/git-banner.png"
+  image: "https://raw.githubusercontent.com/bhilburn/powerlevel9k-logo/master/logo-banner.png"
+  teaser: "https://raw.githubusercontent.com/bhilburn/powerlevel9k-logo/master/logo-banner.png"
 author_profile: false
 comments: true
 draft: false
