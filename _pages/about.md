@@ -9,6 +9,9 @@ header:
 
 # Hi! I'm André Hatlo-Johansen!
 
+
+[Take a look at my CV here](https://drive.google.com/file/d/1hsQ-YoPXCy-37s0ataECXT1CD7Bl_IAi/view)
+
 ## Professionally:
 
 A developer, worked on an ecommerce project for Rørkjøp Nett AS for 2 years, and worked on a WebBank project for Nordea for about 1 year which entailed building API microservices.
@@ -57,7 +60,7 @@ Technologies used at Nordea AS:
   - RxJava library
   - Reactor
   - SpringBoot
-- Maven
+- Maven 
 - SQL
 - IntelliJ (IDE)
 
@@ -76,8 +79,6 @@ On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and *
 Having my own e-commerce site and trying to gain organic growth has made me efficient at SEO and website structuring for website traffic. Which again forces me to be creative and use some of my spare time to write articles about subjects that i've never thought about.
 
 Also i am very comfortable with Facebook Ads and Google Ads, which i've used to convert customers.
-
-[Take a look at my CV for additional information](https://drive.google.com/file/d/1YhH8U9hb2Ym1GSNY357iKamTAMfcBrCV/view)
 
 ## On a personal note:
 
