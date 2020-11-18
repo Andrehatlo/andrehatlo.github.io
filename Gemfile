@@ -29,4 +29,5 @@ gem "minimal-mistakes-jekyll", :github => "mmistakes/minimal-mistakes"
 #
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
+  gem "kramdown", ">= 2.3.0"
 end
