@@ -9,17 +9,17 @@ header:
 
 # Hi! I'm André Hatlo-Johansen!
 
-I've come to understand over the last years that people are quite different.
+I've come to learn over the last years that people are quite different.
 
-This is in respect to the inner essences and personal "powers" that one is born with and eventually with enough self-mastery can harness to its fullest potensial. This came to me after observing my life from a distance, that entailed my and others thought process, planning process to execution process.
+This is in respect to the inner essences and personal "powers" that one is born with and eventually with enough self-mastery can harness to its fullest potensial. This came to me after observing my life from a distance, that entailed my own and others thought process, planning process to execution process.
 
-This is why i call my self a **creative engineer**, because I see my self as unique in that field of thought, planning and execution to be the most creative in the room while also having the mentality to think of solutions to issues for easier or more perfected solution grasping.
+This is why i call my self a **creative engineer**, because I see my self as highly creative in the field of thought, planning and execution. I can hold a room, which means anyone can say anything to me, i dont offend, judge and always give my honest feedback. While also having the mentality to think of solutions to issues for easier and or more perfected solution mastering.
 
 ## Creative Engineer
 
-A creative engineer is someone who is abstract and dynamic with creative ideas that flow like a fosset when faced with an issue. They see all threads available to create in the most effective manner possible, while floating close to earth so a project stays in its track.
+A creative engineer is someone who is abstract and dynamic with creative ideas that flow like a fosset when faced with an issue. They see all threads available to create solutions in the most effective manner possible, while floating close to earth so a project stays in its track.
 
-I am a highly creative individual comparing myself to those i have worked close with in the last years, and i do all i can to harness this part of myself for the best of my abilities by painting, creating lighting installations and photographing/photoshopping weekly to stay in this part of myself.
+I am a creative individual comparing myself to those i have worked close with in the last years, and i do all i can to harness this part of myself for the best of my abilities by painting, creating lighting installations and photographing/photoshopping weekly to stay in this part of myself.
 
 This also reflects through in my development process as i adapt like a gecko to any type of syntax or issue i've met.
 
@@ -35,9 +35,9 @@ Also i've built, designed, structured and marketed my private E-Commerce store, 
 
 ### Rørkjøp
 
-Hired after writing a bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
+* Hired after writing a bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
 
-In this thesis my main work area in the group was to implement a working machine learning solution code base for Rørkjøp AS. This entailed setting up a machine learning system that was taught by looking at customers personalised data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations.
+In the thesis my main work area in the group was to implement a working machine learning solution code base for Rørkjøp AS. This entailed setting up a machine learning system that was taught by looking at customers personalised data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations.
 
     Technologies utilised:
       - Linux
@@ -66,11 +66,11 @@ Projects assigned while working for Rørkjøp were for the most part based on bu
 
 It was hard work coming from basically no coding knowledge to be able to develop my last project for Rørkjøp, a ETL system (Extract, Transfer, Load), which basically is a way of automating a database migration/importing process.  
 
-But loved my time here.
+I must say I LOVED my time there, a challange worth the sweat and tears it took to speed up my knowledge and intellect in the development world.
 
 #### Nordea AS
 
-At Nordea AS i was stationed mostly backend, building micro-service API's that communicated with third party services to add features such as payment, adding balance to an account and loans. Working at Nordea i've utilised Java foremost with reactive libraries to create rich streaming applications:
+At Nordea AS i was stationed mostly backend, building micro-service API's that communicated with third party services to add features such as payment, adding balance to an account and loans. Working at Nordea I utilised Java foremost with reactive libraries to create rich streaming applications:
 
 Technologies used at Nordea AS:
 
@@ -104,17 +104,17 @@ Also i am very comfortable with Facebook Ads and Google Ads, which i've used to 
 
 I'm a 29 year old man who both loves a good laugh, having a good time and values my alone time.
 
-At the moment I live in Drammen Norway, with my other half Hilde.
+At the moment I live in Drammen Norway with my girlfriend.
 
-We have a super funny thirty-five kilo, three year old boxer named **Mini**.
+I have a super funny thirty-five kilo, three year old boxer named **Mini**.
 
 <img src="/assets/images/fam.jpg" alt="my family"/>
 
-## Hobbies:
+## I have Hobbies!
 
 - Improv - Once a week! Which i LOVE, keeps my social mind sharp
-- Cooking - I love to both make food and eat
-- Dog walks/play - This is where most of my best thinking comes through, the most creative art.
+- Cooking - I love to both make food and eat, nomnom
+- Dog walks/play - This is where most of my best thinking comes through, the most creative part of me.
 - Keeping up with my favourite tv-shows. (not the Kardashians)
 - Playing some computer games still.
 - Yoga is something i practise religiously as i've benefited so much from it.
@@ -133,3 +133,10 @@ We have a super funny thirty-five kilo, three year old boxer named **Mini**.
 
 6. Last but not least, live in the now, which is all that actually exists, then enjoy the ride.
    - You only get **ONE!**
+
+# Hope this leaves an impression worth considering for your next project, i create solutions for anything.
+
+## Feel free to contact me for ANY enquiries @ -> [andrehatlo@icloud.com](mailto:andrehatlo@icloud.com)
+
+## "HAVE A BEAUTIFULL DAY!"
+#### Best regards André Hatlo, the creative engineer.

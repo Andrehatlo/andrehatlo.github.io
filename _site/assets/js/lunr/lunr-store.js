@@ -63,4 +63,9 @@ var store = [{
         "excerpt":"A short post to all those who have difficulty with repository hell. This Git command parts the sea, brings peace and makes the local repository die for your sins. Especially in IntelliJ i was faced with this issue numerous times, not being able to switch branches without going through some...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/git-overwrite-trick/",
-        "teaser":"http://localhost:4000/assets/images/git-banner.png"}]
+        "teaser":"http://localhost:4000/assets/images/git-banner.png"},{
+        "title": "Break from reality - Soul Searching",
+        "excerpt":"A short post to all those who have difficulty with repository hell. This Git command parts the sea, brings peace and makes the local repository die for your sins.  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/a-break-from-reality/",
+        "teaser":"http://localhost:4000/assets/images/soul-banner.png"}]
