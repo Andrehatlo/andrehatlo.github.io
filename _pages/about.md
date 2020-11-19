@@ -96,11 +96,12 @@ We have a super funny thirty-five kilo, three year old boxer named **Mini**.
 
 ## Hobbies:
 
+- Improv - Once a week! Which i LOVE
 - Cooking - I love to both make food and eat
-- Walks with my dog, while i question reality to keep my mind in top shape.
-- Keeping up with my favourite tv-shows through services such as Trakt.
-- Playing computer games.
-- Yoga has literally changed my life and I love it.
+- Dog walks/play - This is where most of my best thinking comes through, the most creative art.
+- Keeping up with my favourite tv-shows. (not the Kardashians)
+- Playing some computer games still.
+- Yoga is something i practise religiously as i've benefited so much from this.
 
 ## Phrases i live by:
 
