@@ -9,6 +9,15 @@ header:
 
 # Hi! I'm André Hatlo-Johansen!
 
+I've come to understand over the last years that people are quite different. This is in respect to the inner essences and personal "powers" that one is born with. This came to me after observing a teams thought process, planning process to execution process. That's why i call my self a **creative engineer**, because I see my self as unique in that field of thought, planning and execution to be the most creative in the room while also having the mentality to think of solutions to issues for the easier or more perfected solution to a issue.
+
+## Create Engineer
+
+A creative engineer is someone who is abstract and dynamic with creative ideas that flow like a fosset when faced with an issue. They see all threads available to create in the most effective manner possible, while floating close to earth so a project stays in its track.
+
+I am a highly creative and i do all i can to harness this part of myself for the best of my abilities by painting, creating installations and photographing/photoshopping weekly to stay in this part of myself.
+
+This also reflects through in my development process as i adapt like a gecko to any type of syntax or issue i've met.
 
 [Take a look at my newly updated CV here](https://drive.google.com/file/d/1hsQ-YoPXCy-37s0ataECXT1CD7Bl_IAi/view)
 
