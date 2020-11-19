@@ -9,15 +9,15 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Hugo - as my static page blog - Hi! I’m André, a computer engineer</title>
+<!-- begin _includes/seo.html --><title>Hugo - as a static page blog - A Creative Engineer</title>
 <meta name="description" content="Create your own blog with Hugo, a static site generator, on the same line as Jekyll.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
-<meta property="og:site_name" content="Hi! I'm André, a computer engineer">
-<meta property="og:title" content="Hugo - as my static page blog">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="Hugo - as a static page blog">
 <meta property="og:url" content="http://localhost:4000/hugo/">
 
 
@@ -54,7 +54,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "André Hatlo-Johansen",
+      "name": "André Hatlo",
       "url": "http://localhost:4000",
       "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
     }
@@ -69,7 +69,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hi! I'm André, a computer engineer Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,7 +117,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Hi! I'm André, a computer engineer</a>
+        <a class="site-title" href="/">A Creative Engineer</a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/blog/" >blog</a>
             </li><li class="masthead__menu-item">
@@ -155,7 +155,7 @@
   style=" "
 >
   
-    <img src="/assets/images/hugogit.jpg" alt="Hugo - as my static page blog" class="page__hero-image">
+    <img src="/assets/images/hugogit.jpg" alt="Hugo - as a static page blog" class="page__hero-image">
   
   
 </div>
@@ -181,7 +181,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Hugo - as my static page blog</li>
+        <li class="current">Hugo - as a static page blog</li>
       
     
   </ol>
@@ -194,7 +194,7 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Hugo - as my static page blog">
+    <meta itemprop="headline" content="Hugo - as a static page blog">
     <meta itemprop="description" content="Create your own blog with Hugo, a static site generator, on the same line as Jekyll.">
     <meta itemprop="datePublished" content="January 08, 2019">
     
@@ -202,7 +202,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Hugo - as my static page blog
+          <h1 id="page-title" class="page__title" itemprop="headline">Hugo - as a static page blog
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -210,7 +210,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
           
         </header>
@@ -220,7 +220,7 @@
         
         <p>After the setup of my Jekyll site I came across Hugo.</p>
 
-<p>Hugo is a static site generator, on the same line as Jekyll as it uses <code class="highlighter-rouge">Markdown</code> to create blog posts.</p>
+<p>Hugo is a static site generator, on the same line as Jekyll as it uses <code class="language-plaintext highlighter-rouge">Markdown</code> to create blog posts.</p>
 
 <p>The main difference i noticed after testing Jekyll against Hugo is that it’s fast. It seems like it has Go under the hood.</p>
 
@@ -228,7 +228,7 @@
 
 <h2 id="hugo-quicksetup-tutorial">Hugo quicksetup tutorial:</h2>
 
-<h2 id="step-1-install-hugo">Step 1: Install <code class="highlighter-rouge">hugo</code></h2>
+<h2 id="step-1-install-hugo">Step 1: Install <code class="language-plaintext highlighter-rouge">hugo</code></h2>
 
 <p>I use mac, so for those other operating systems out there:</p>
 
@@ -246,7 +246,7 @@
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ruby</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span>
 </code></pre></div></div>
 
-<p>Run the <code class="highlighter-rouge">brew</code> commend to install <code class="highlighter-rouge">hugo</code></p>
+<p>Run the <code class="language-plaintext highlighter-rouge">brew</code> commend to install <code class="language-plaintext highlighter-rouge">hugo</code></p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brew</span> <span class="n">install</span> <span class="n">hugo</span>
 </code></pre></div></div>
@@ -255,17 +255,17 @@
 
 <h2 id="step-2-create-a-new-site">Step 2: Create a new site:</h2>
 
-<p>Go to the directory where you want to create your <code class="highlighter-rouge">Hugo</code> repo, then run this command:</p>
+<p>Go to the directory where you want to create your <code class="language-plaintext highlighter-rouge">Hugo</code> repo, then run this command:</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hugo</span> <span class="n">new</span> <span class="n">site</span> <span class="o">&lt;</span><span class="nb">name</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">dir</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
-<p>Will create a new Hugo site in a folder named <code class="highlighter-rouge">name-of-site-dir</code>.</p>
+<p>Will create a new Hugo site in a folder named <code class="language-plaintext highlighter-rouge">name-of-site-dir</code>.</p>
 
 <h2 id="step-3-add-a-theme">Step 3: Add a Theme</h2>
 
 <blockquote>
-  <p>Requirement: <code class="highlighter-rouge">git</code> is installed</p>
+  <p>Requirement: <code class="language-plaintext highlighter-rouge">git</code> is installed</p>
 </blockquote>
 
 <p>See <a href="themes.gohugo.io">themes.gohugo.io</a> to browse themes.</p>
@@ -279,7 +279,7 @@
 <span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">budparr</span><span class="o">/</span><span class="n">gohugo</span><span class="o">-</span><span class="n">theme</span><span class="o">-</span><span class="n">ananke</span><span class="p">.</span><span class="nf">git</span> <span class="n">themes</span><span class="o">/</span><span class="n">ananke</span>
 </code></pre></div></div>
 
-<p>Now edit the <code class="highlighter-rouge">config.toml</code> configuration file and add the Ananke theme:</p>
+<p>Now edit the <code class="language-plaintext highlighter-rouge">config.toml</code> configuration file and add the Ananke theme:</p>
 
 <p>Either echo it in from commandline:</p>
 
@@ -299,7 +299,7 @@
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hugo</span> <span class="n">new</span> <span class="n">posts</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">first</span><span class="o">-</span><span class="n">post</span><span class="p">.</span><span class="nf">md</span>
 </code></pre></div></div>
 
-<p>Edit the file if you like, you can use both <code class="highlighter-rouge">Markdown</code> or <code class="highlighter-rouge">Html</code>, your choice.</p>
+<p>Edit the file if you like, you can use both <code class="language-plaintext highlighter-rouge">Markdown</code> or <code class="language-plaintext highlighter-rouge">Html</code>, your choice.</p>
 
 <h2 id="step-5-start-the-server">Step 5: Start the server</h2>
 
@@ -314,9 +314,9 @@
 
 <h3 id="site-config">Site config</h3>
 
-<p>Open <code class="highlighter-rouge">config.toml</code> in your favourite text editor.</p>
+<p>Open <code class="language-plaintext highlighter-rouge">config.toml</code> in your favourite text editor.</p>
 
-<p>Then replace <code class="highlighter-rouge">title</code> with something personal and <code class="highlighter-rouge">baseUrl</code> (if you have a domain already), like i did:</p>
+<p>Then replace <code class="language-plaintext highlighter-rouge">title</code> with something personal and <code class="language-plaintext highlighter-rouge">baseUrl</code> (if you have a domain already), like i did:</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">baseURL</span> <span class="o">=</span> <span class="s2">"http://andrehatlo.org/"</span>
 <span class="n">languageCode</span> <span class="o">=</span> <span class="s2">"en-us"</span>
@@ -332,6 +332,10 @@ the site and you will see the changes right away.</p>
 </blockquote>
 
 <h2 id="now-your-site-is-up-and-running-you-can-find-more-to-do-by-reading-the-hugo-docs-here">Now your site is up and running you can find more to do by reading the Hugo docs <a href="https://gohugo.io/documentation/">here</a></h2>
+
+<blockquote>
+  <p>Note that i stayed with Jekyll even though Hugo was an awesome choice for a personal blog with the same features &gt; but fast. This is mostly because i found that Jekyll was more intuitive when coming to posting and doing simple &gt; customization. What ever you pick if you choose to start a blog/portfolio you cant go wrong either way!</p>
+</blockquote>
 
         
       </section>
@@ -382,18 +386,18 @@ the site and you will see the changes right away.</p>
         <div class="archive__item-teaser">
           <img src=
             
-              "/assets/images/clean-code-head.jpg"
+              "/assets/images/git-banner.png"
             
             alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/typescript-summary/" rel="permalink">Clean Coder - Robert Martin: Summary
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">A brief summary of the book Clean Coder by Robert Martin
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
 </p>
     </a>
     </article>
@@ -412,18 +416,18 @@ the site and you will see the changes right away.</p>
         <div class="archive__item-teaser">
           <img src=
             
-              "/assets/images/ts.jpg"
+              "/assets/images/intellij-logo.png"
             
             alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/typescript-summary/" rel="permalink">TypeScript syntax summary
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">A brief summary of typescript syntax
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
 </p>
     </a>
     </article>
@@ -442,18 +446,18 @@ the site and you will see the changes right away.</p>
         <div class="archive__item-teaser">
           <img src=
             
-              "/assets/images/jekyllgit.jpg"
+              "/assets/images/netflix.png"
             
             alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/jekyll-github-free-host/" rel="permalink">Jekyll + Github = Free hosting: Tutorial
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">Create your own blog/portofolio using these technologies, with no hosting fee!
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
 </p>
     </a>
     </article>
@@ -472,19 +476,18 @@ the site and you will see the changes right away.</p>
         <div class="archive__item-teaser">
           <img src=
             
-              "/assets/images/jekyll-head.jpg"
+              "/assets/images/react-boiler.jpg"
             
             alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/jekyll-creating-blog/" rel="permalink">Jekyll: Creating a blog is easy and FREE
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.
-</p>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
     </a>
     </article>
   </div>
@@ -522,17 +525,13 @@ the site and you will see the changes right away.</p>
           <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
         
       
-        
-          <li><a href="https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> StackOverflow</a></li>
-        
-      
     
 
     <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 André Hatlo-Johansen </div>
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
 
       </footer>
     </div>

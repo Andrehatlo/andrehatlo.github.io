@@ -1,0 +1,612 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Reactive Data Streams - quick rxJava Summery - A Creative Engineer</title>
+<meta name="description" content="Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="Reactive Data Streams - quick rxJava Summery">
+<meta property="og:url" content="http://localhost:4000/reactive-data-streams-rxjava/">
+
+
+  <meta property="og:description" content="Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/netflix.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-10-26T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/reactive-data-streams-rxjava/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">A Creative Engineer</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/netflix.png" alt="Reactive Data Streams - quick rxJava Summery" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Reactive Data Streams - quick rxJava Summery</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Reactive Data Streams - quick rxJava Summery">
+    <meta itemprop="description" content="Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.">
+    <meta itemprop="datePublished" content="October 26, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Reactive Data Streams - quick rxJava Summery
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Inspired by the (Reactive movement - manifesto)[https://www.reactivemanifesto.org/], rxJava is an implementation of Reactive Stream specification created by Netflix. Reactive streams is a concept for handling data streams asynchronous. It is built by Netflix to be able to effectively reduce network chattiness. Their goal with rxJava is to allow the client to invoke a single “heavy” client request that is executed in parallel on the server.</p>
+
+<p>Its concept is based on an <code class="language-plaintext highlighter-rouge">Observable</code>/<code class="language-plaintext highlighter-rouge">Iterable</code> type and <code class="language-plaintext highlighter-rouge">Subscribing</code> on these to send data streams async.</p>
+
+<p>The following notes are not explained in high detail. Since in the process of writing this i switched to the <code class="language-plaintext highlighter-rouge">Reactor</code> library, because of upgrading to Spring Boot 2, which needs Java 8 and rxJava only runs Java 6. Both are based on a similar concept but different in structure.</p>
+
+<h2 id="observable--iterable">Observable / Iterable</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Observable</code></strong> data type can be thought of as a “push” equivaltent to <code class="language-plaintext highlighter-rouge">Iterable</code> which is “pull”.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">Iterable</code></strong> data type pulls values from the producer and the thread blocks until those values arrive.</p>
+
+<p>The producer pushes values to the consumer whenever values are available.</p>
+
+<p>Which creates an approach which is more flexible, because values can arrive synchronously or async.</p>
+
+<h4 id="observable-type"><code class="language-plaintext highlighter-rouge">Observable</code> type</h4>
+
+<p>Adds two missing semantiqcs which are present in the <code class="language-plaintext highlighter-rouge">Iterable</code> type:</p>
+
+<ul>
+  <li>Producer can signal to the consumer that there is no more data available.</li>
+  <li>Producer can signal to the consumer that an error har occured.</li>
+</ul>
+
+<p>This makes <code class="language-plaintext highlighter-rouge">Observable</code> and <code class="language-plaintext highlighter-rouge">Iterable</code> unified.</p>
+
+<p>The only difference is the direction which the data flows.</p>
+
+<p>Always return <code class="language-plaintext highlighter-rouge">Observable</code>, always request <code class="language-plaintext highlighter-rouge">Iterable</code>.</p>
+
+<h4 id="creating-an-observable-from-existing-data-structures">Creating an Observable from existing Data structures</h4>
+
+<ul>
+  <li>From existing data structures:</li>
+  <li>Use the Observable <code class="language-plaintext highlighter-rouge">just()</code> and <code class="language-plaintext highlighter-rouge">from()</code> methods to convert objects, lists, or arrays of objects into Observables that can emit those objects.</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nc">Observable</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">o</span> <span class="o">=</span> <span class="nc">Observable</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span><span class="s">"b"</span><span class="o">,</span><span class="s">"c"</span><span class="o">);</span>
+
+<span class="c1">// Inserting a list into an observable</span>
+<span class="n">def</span> <span class="n">list</span> <span class="o">=</span> <span class="o">[</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">8</span><span class="o">]</span>
+<span class="nc">Observable</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">o</span> <span class="o">=</span> <span class="nc">Observable</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">list</span><span class="o">);</span>
+
+<span class="c1">//</span>
+<span class="nc">Observable</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">o</span> <span class="o">=</span> <span class="nc">Observable</span><span class="o">.</span><span class="na">just</span><span class="o">(</span><span class="s">"one object"</span><span class="o">);</span>
+
+</code></pre></div></div>
+
+<h4 id="creating-an-observable-via-the-create-method">Creating an Observable via the <code class="language-plaintext highlighter-rouge">create()</code> method</h4>
+
+<ul>
+  <li>Via the <code class="language-plaintext highlighter-rouge">create()</code> method, you can implement async i/o, computational operations, or even ‘infinite’ streams of data by designing your own Observable.</li>
+</ul>
+
+<h6 id="synchronous-observable-example">Synchronous Observable example:</h6>
+
+<ul>
+  <li>Custom Observable that blocks when subscribed to (does not spawn an extra thread)</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">def</span> <span class="nf">customObservableBlocking</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="nc">Observable</span><span class="o">.</span><span class="na">create</span><span class="o">(</span>
+        <span class="o">{</span> <span class="n">aSub</span> <span class="o">-&gt;</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">50</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="kc">false</span> <span class="o">==</span> <span class="n">aSub</span><span class="o">.</span><span class="na">isUnsubscribed</span><span class="o">())</span> <span class="o">{</span>
+                    <span class="n">aSub</span><span class="o">.</span><span class="na">onNext</span><span class="o">(</span><span class="s">"value_"</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+                <span class="o">};</span>
+        <span class="o">}</span>
+        <span class="c1">// after sending all values we complete the sequence</span>
+        <span class="k">if</span> <span class="o">(</span><span class="kc">false</span> <span class="o">==</span> <span class="n">aSub</span><span class="o">.</span><span class="na">isUnsubscribed</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">aSub</span><span class="o">.</span><span class="na">onCompleted</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">});</span>
+<span class="o">}</span>
+
+<span class="c1">// Output:</span>
+<span class="n">customObservableBlocking</span><span class="o">().</span><span class="na">sub</span><span class="o">({</span> <span class="n">it</span> <span class="o">-&gt;</span> <span class="n">println</span><span class="o">(</span><span class="n">it</span><span class="o">);</span> <span class="o">});</span>
+</code></pre></div></div>
+
+<h6 id="asynchronous-observable-example">Asynchronous Observable example:</h6>
+
+<ul>
+  <li>Observable that emits 75 strings.</li>
+  <li>Doesn’t block when subscribed to as it spawns a separate thread.</li>
+</ul>
+
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">def</span> <span class="nf">customObservableNonBlocking</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Observable</span><span class="o">.</span><span class="na">create</span><span class="o">(</span>
+        <span class="o">{</span> <span class="n">sub</span> <span class="o">-&gt;</span>
+            <span class="kd">final</span> <span class="n">Thread</span> <span class="n">t</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Thread</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">75</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                        <span class="k">if</span> <span class="o">(</span><span class="kc">true</span> <span class="o">==</span> <span class="n">sub</span><span class="o">.</span><span class="na">isUnsubscribed</span><span class="o">())</span> <span class="o">{</span>
+                            <span class="k">return</span><span class="o">;</span>
+                        <span class="o">}</span>
+                        <span class="n">sub</span><span class="o">.</span><span class="na">onNext</span><span class="o">(</span><span class="s2">"value_"</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+                    <span class="o">}</span>
+                    <span class="k">if</span> <span class="o">(</span><span class="kc">false</span> <span class="o">==</span> <span class="n">sub</span><span class="o">.</span><span class="na">isUnsubscribed</span><span class="o">())</span>
+                <span class="o">}</span>
+            <span class="o">});</span>
+            <span class="n">t</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">);</span>
+<span class="o">}</span>
+<span class="c1">// Output:</span>
+<span class="n">customObservableNonBlocking</span><span class="o">().</span><span class="na">sub</span><span class="o">({</span> <span class="n">println</span><span class="o">(</span><span class="n">it</span><span class="o">)</span> <span class="o">})</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Fetch a list of Wiki articles async, in Groovy:</li>
+</ul>
+
+<div class="language-groovy highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">def</span> <span class="nf">fetchWikiArticleAsync</span><span class="o">(</span><span class="n">String</span><span class="o">...</span> <span class="n">wikiArticleNames</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Observable</span><span class="o">.</span><span class="na">create</span><span class="o">({</span> <span class="n">sub</span> <span class="o">-&gt;</span>
+        <span class="n">Thread</span><span class="o">.</span><span class="na">start</span><span class="o">(</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="n">articleName</span> <span class="k">in</span> <span class="n">wikiArticleNames</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="kc">true</span> <span class="o">==</span> <span class="n">sub</span><span class="o">.</span><span class="na">isUnsubscribed</span><span class="o">())</span> <span class="o">{</span>
+                    <span class="k">return</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="n">sub</span><span class="o">.</span><span class="na">onNext</span><span class="o">(</span><span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s2">"http://en.wikipedia.org/wiki/"</span> <span class="o">+</span> <span class="n">articleName</span><span class="o">).</span><span class="na">getText</span><span class="o">());</span>
+            <span class="o">}</span>
+            <span class="k">if</span> <span class="o">(</span><span class="kc">false</span> <span class="o">==</span> <span class="n">sub</span><span class="o">.</span><span class="na">isUnsubscribed</span><span class="o">())</span> <span class="o">{</span>
+                <span class="n">sub</span><span class="o">.</span><span class="na">onCompleted</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+        <span class="k">return</span><span class="o">(</span><span class="n">sub</span><span class="o">);</span>
+    <span class="o">});</span>
+<span class="o">}</span>
+
+<span class="c1">// Output:</span>
+<span class="n">fetchWikiArticleAsync</span><span class="o">(</span><span class="s2">"Tiger"</span><span class="o">,</span> <span class="s2">"Elephant"</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">sub</span><span class="o">({</span><span class="n">println</span> <span class="s2">"--- Article ---\n"</span> <span class="o">+</span> <span class="n">it</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">125</span><span class="o">);</span> <span class="o">});</span>
+</code></pre></div></div>
+
+<h4 id="transforming-observables-with-operatiors">Transforming Observables with Operatiors</h4>
+
+<ul>
+  <li>Chain <code class="language-plaintext highlighter-rouge">operators</code> together to transform and compose Observables</li>
+  <li>Async call <code class="language-plaintext highlighter-rouge">customObservableNonBlock</code> with chaining:</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">def</span> <span class="nf">simpleComposition</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">customObservableNonBlocking</span><span class="o">().</span><span class="na">skip</span><span class="o">(</span><span class="mi">10</span><span class="o">).</span><span class="na">take</span><span class="o">(</span><span class="mi">5</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">map</span><span class="o">({</span> <span class="n">stringValue</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="n">stringValue</span> <span class="o">+</span> <span class="s">"_xform"</span> <span class="o">})</span>
+        <span class="o">.</span><span class="na">subscribe</span><span class="o">({</span> <span class="n">println</span> <span class="s">"onNext =&gt; "</span> <span class="o">+</span> <span class="n">it</span> <span class="o">})</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">skip(10)</code> - Jumps to the 10th value</li>
+  <li><code class="language-plaintext highlighter-rouge">take(5)</code> - Grabs the 5 next values</li>
+  <li><code class="language-plaintext highlighter-rouge">map(...)</code> - maps each value and concatenates <code class="language-plaintext highlighter-rouge">stringValue</code> with <code class="language-plaintext highlighter-rouge">_xform</code> =&gt; <code class="language-plaintext highlighter-rouge">$stringValue_xform</code></li>
+  <li><code class="language-plaintext highlighter-rouge">subscribe(...)</code> - returns the mapped values with <code class="language-plaintext highlighter-rouge">onNext =&gt;</code> concatenated</li>
+</ul>
+
+<p>This is an early rxJava summery. Switching to the <code class="language-plaintext highlighter-rouge">reactor</code> library instead, the concepts are the same but structured differently/more simply and accepts Java 8.</p>
+
+<p>More information about rxJava, check it out here: (HERE)[https://github.com/ReactiveX/RxJava]</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-10-26T00:00:00+02:00">October 26, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/react-native-boilerplates-overview/" class="pagination--pager" title="React Native: Boilerplates overview
+">Previous</a>
+    
+    
+      <a href="/intelliJ-ide-productivity-tricks/" class="pagination--pager" title="IntelliJ IDE - Productivity Tricks
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/git-banner.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/intellij-logo.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/react-boiler.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/ha1.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/home-assinstant-step-3-lovelace/" rel="permalink">Home Assistant - Lovelace introduction: Step 3
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">An introduction to the Lovelace UI used in HA
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/reactive-data-streams-rxjava/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/rxJava-reactive-java-streams"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://andrehatlo-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

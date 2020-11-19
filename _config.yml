@@ -1,24 +1,17 @@
-# Welcome to Jekyll!
-#
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes@4.14.2"
 minimal_mistakes_skin    : "neon" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Hi! I'm André, a computer engineer"
+title                    : "A Creative Engineer"
 title_separator          : "-"
-name                     : "André Hatlo-Johansen"
-description              : "Welcome to my "
+name                     : "André Hatlo"
+description              : "Creative Knowledge Center"
 url                      : "www.andrehatlo.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "andrehatlo/andrehatlo.github.io"
-teaser                   : "/assets/images/me.png"
+teaser                   : "/assets/images/andrefocus.png"
 breadcrumbs              : true #, false (default)
 words_per_minute         : 200
 comments:
@@ -102,10 +95,10 @@ analytics:
 # Site Author
 author:
   name             : "André Hatlo-Johansen"
-  avatar           : "/assets/images/me.png"
+  avatar           : "/assets/images/andrefocus.png"
   bio              : "Welcome to my personal blog! Take a look around :) I will continually post articles when learning new fundementals of different tech."
   location         : "Drammen, Norway"
-  email            : #"ahatloj@gmail.com"
+  email            : "andrehatlo@icloud.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -115,16 +108,16 @@ author:
       url: "http://www.linkedin.com/in/andrehatlo"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ahatloj@gmail.com"
+      url: "mailto:andrehatlo@icloud.com"
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"fas fa-at
-    #   url: "www.facebook.com/Andre.Hatlo"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "www.andrehatlo.com"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "www.instagram.com/thehatlo/"
+    #   url: "https://www.facebook.com/Andre.Hatlo/"
+    - label: "E-Commerce Shop 1"
+      icon: "fas fa-fw fa-link"
+      url: "www.orientdesign.no"
+    - label: "Instagram - Creativity edition"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/q3_art/"
 
 # Site Footer
 footer:

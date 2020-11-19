@@ -1,0 +1,639 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Home Assistant - HA &amp; PI: Step 1 - A Creative Engineer</title>
+<meta name="description" content="Automating my home with home assistant and raspberry pi. How to install HA on the Raspberry Pi 3 B+ ?">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="Home Assistant - HA &amp; PI: Step 1">
+<meta property="og:url" content="http://localhost:4000/home-assinstant-and-rapsberry-pi-3-step-1/">
+
+
+  <meta property="og:description" content="Automating my home with home assistant and raspberry pi. How to install HA on the Raspberry Pi 3 B+ ?">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/ha1.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-05-15T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/home-assinstant-and-rapsberry-pi-3-step-1/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">A Creative Engineer</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/ha1.png" alt="Home Assistant - HA &amp; PI: Step 1" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Home Assistant - HA & PI: Step 1</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Home Assistant - HA &amp; PI: Step 1">
+    <meta itemprop="description" content="Automating my home with home assistant and raspberry pi. How to install HA on the Raspberry Pi 3 B+ ?">
+    <meta itemprop="datePublished" content="May 15, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Home Assistant - HA &amp; PI: Step 1
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>There are almost 8.4 billion internet of things (IoT) across the world right now. The number of devices are expected to more than double the next couple of years to the stage of 20.4 billion in 2020. The problem with all these devices are that each and every brand of smart device has their own gateway and platform to automate and control. This is where Home Assistant steps in.</p>
+
+<p>Home assistant is an open source platform where all your digital smart things can talk to each other. Implemented with an raspberry pi, you can shedual or command events for your smart devices (events as turn up heat when cold outside, or dim lights after 21:00).</p>
+
+<p>Home assistant can run on any always connected operating system that supports Python 3 apps, and its very lightweight and small. Which makes it great to run on a Raspberry Pi.</p>
+
+<p>My smart devices range from:</p>
+
+<ul>
+  <li>IKEA tradfri
+    <ul>
+      <li>Bulbs</li>
+      <li>Motion sensor</li>
+      <li>Gateway</li>
+    </ul>
+  </li>
+  <li>Philips hue bulbs and motion detectors
+    <ul>
+      <li>Bulbs</li>
+      <li>Motion sensor</li>
+      <li>Temperature sensor</li>
+      <li>Light sensor</li>
+      <li>Gateway</li>
+    </ul>
+  </li>
+  <li>Sonos
+    <ul>
+      <li>Two speakers</li>
+    </ul>
+  </li>
+  <li>Gooogle Cast
+    <ul>
+      <li>Livingroom tv with Android OS</li>
+      <li>Nvidea Shield on my bedroom tv</li>
+    </ul>
+  </li>
+  <li>Z-wave
+    <ul>
+      <li>Door/Window sensor</li>
+      <li>USB gateway</li>
+    </ul>
+  </li>
+</ul>
+
+<p>To create a setup where all these different brands of devices can talk to each other i’ll create a new home automation server on my Raspberry Pi 3B+.</p>
+
+<p>Follow this guide for a easy setup. And follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!</p>
+
+<h2 id="requirements">Requirements:</h2>
+<center>
+  <img src="https://cdn.instructables.com/FFU/VNV0/IY4Q7ROG/FFUVNV0IY4Q7ROG.LARGE.jpg" height="70%" width="70%" />
+</center>
+<p><br /></p>
+
+<ul>
+  <li>Raspberry Pi 3B+ (Recommended)</li>
+  <li>Micro SD (At least 32gb)</li>
+  <li><a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian (Stretch light)</a> installed on micro sd card</li>
+</ul>
+
+<h2 id="installing-home-assistant-on-raspbian">Installing Home Assistant on raspbian</h2>
+
+<h3 id="enable-ssh">Enable SSH</h3>
+
+<p>Assuming raspbian is already installed on the raspberry pi.</p>
+
+<p>Make sure your connected to your local network, control by running <code class="language-plaintext highlighter-rouge">ifconfig</code>.</p>
+
+<p>Activate SSH on the raspberry pi by running <code class="language-plaintext highlighter-rouge">sudo raspi-config</code> in the terminal window.</p>
+
+<p>Then select <code class="language-plaintext highlighter-rouge">Interfacing Options</code>.</p>
+
+<p>Navigate to <code class="language-plaintext highlighter-rouge">SSH</code> and select it.</p>
+
+<p>Choose <code class="language-plaintext highlighter-rouge">Yes</code> and select <code class="language-plaintext highlighter-rouge">Ok</code>.</p>
+
+<p>Then choose <code class="language-plaintext highlighter-rouge">Finish</code>.</p>
+
+<h3 id="connect-by-ssh-and-install-ha">Connect by SSH and install HA</h3>
+
+<p>To connect to your Raspberry Pi over SSH run the following command in terminal.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Default password is: raspberry
+$ ssh pi@piaddress
+</code></pre></div></div>
+
+<p>Change the default password by running:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ passwd
+</code></pre></div></div>
+
+<p>Update your pi:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get update
+$ sudo apt-get upgrade -y
+</code></pre></div></div>
+
+<p>Install dependencies:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install python3 python3-venv python3-pip libffi-dev libssl-dev
+</code></pre></div></div>
+
+<p>Add a homeassistant user with groups <code class="language-plaintext highlighter-rouge">dialout</code> and <code class="language-plaintext highlighter-rouge">gpio</code>. Dialout is required for using Z-Wave and Zigbee controllers, while GPIO is required to communicate with Raspberry’s GPIO.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo useradd -rm homeassistant -G dialout,gpio
+</code></pre></div></div>
+
+<p>Create a directory for the installation in <code class="language-plaintext highlighter-rouge">/srv</code> directory and set owner permissions to the <code class="language-plaintext highlighter-rouge">homeassistant</code> account:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd /srv
+$ sudo mkdir homeassistant
+$ sudo chown homeassistant:homeassistant homeassistant
+</code></pre></div></div>
+
+<p>Then create and change to a virtual environment for Home assistant as the <code class="language-plaintext highlighter-rouge">homeassistant</code> account:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo -u homeassistant -H -s
+$ cd /srv/homeassistant
+$ python3 -m venv .
+$ source bin/activate
+</code></pre></div></div>
+
+<p>Once the virtual environment is activated, run the following command to install a required python package:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ python3 -m pip install wheel
+</code></pre></div></div>
+
+<p>Last but not least, install Home Assistant:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install homeassistant
+</code></pre></div></div>
+
+<p>To complete the installation, start Home Assistant for the first time.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(homeassistant) $ hass
+</code></pre></div></div>
+
+<p>This will create the <code class="language-plaintext highlighter-rouge">.homeassistant</code> directory under the <code class="language-plaintext highlighter-rouge">home/homeassistant</code> directory.</p>
+
+<p>If the installation was successful you can reach the Home Assistant web interface on http://ipaddress:8121.</p>
+
+<h2 id="autostart-home-assistant-on-boot">Autostart Home Assistant on boot</h2>
+
+<p>Since the raspberry pi will host the Home Assistant server i would like to create a deamon that autostarts Home Assistant on boot.</p>
+
+<p>A service file is needed to control Home Assistant with <code class="language-plaintext highlighter-rouge">systemd</code>.</p>
+
+<p>Create the template below with <code class="language-plaintext highlighter-rouge">sudo</code> rights with the following path <code class="language-plaintext highlighter-rouge">/etc/systemd/system/home-assistant@homeassistant.service</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># /etc/systemd/system/home-assistant@homeassistant.service
+
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=ExecStart=/srv/homeassistant/bin/hass -c "/home/%i/.homeassistant"
+
+[Install]
+WantedBy=multi-user.target
+</code></pre></div></div>
+
+<p>Now reload <code class="language-plaintext highlighter-rouge">systemd</code> to make the deamon aware of the new configuration.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl --system daemon-reload
+</code></pre></div></div>
+
+<p>Enable the home assistant service to automatically start on boot:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl enable home-assistant@homeassistant.service
+</code></pre></div></div>
+
+<p>To start the service run this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo systemctl start home-assistant@homeassistant.service
+</code></pre></div></div>
+
+<p>Now go to your Home Assistant web interface by going to http://ipaddress:8123.</p>
+
+<p>Next time we will show how to setup your smart devices in HA and configure them so that you can access them all.</p>
+
+<p>Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!</p>
+
+<h1 id="want-more">Want more?</h1>
+<h2 id="get-familiar-with-home-assistant-by-reading-the-docs">Get familiar with Home Assistant by reading the <a href="https://www.home-assistant.io/docs/">docs</a>!</h2>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-05-15T00:00:00+02:00">May 15, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/react-native-state-vs-props/" class="pagination--pager" title="React Native: State vs Props
+">Previous</a>
+    
+    
+      <a href="/home-assinstant-configurate-devices-step-2/" class="pagination--pager" title="Home Assistant - Configuring devices: Step 2
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/git-banner.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/intellij-logo.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/netflix.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/react-boiler.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/home-assinstant-and-rapsberry-pi-3-step-1/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/home-assistant-step-1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://andrehatlo-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

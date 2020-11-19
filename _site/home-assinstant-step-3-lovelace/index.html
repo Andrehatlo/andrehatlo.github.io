@@ -1,0 +1,489 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Home Assistant - Lovelace introduction: Step 3 - A Creative Engineer</title>
+<meta name="description" content="An introduction to the Lovelace UI used in HA">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="Home Assistant - Lovelace introduction: Step 3">
+<meta property="og:url" content="http://localhost:4000/home-assinstant-step-3-lovelace/">
+
+
+  <meta property="og:description" content="An introduction to the Lovelace UI used in HA">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/ha1.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-05-21T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/home-assinstant-step-3-lovelace/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">A Creative Engineer</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/ha1.png" alt="Home Assistant - Lovelace introduction: Step 3" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Home Assistant - Lovelace introduction: Step 3</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Home Assistant - Lovelace introduction: Step 3">
+    <meta itemprop="description" content="An introduction to the Lovelace UI used in HA">
+    <meta itemprop="datePublished" content="May 21, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Home Assistant - Lovelace introduction: Step 3
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Home Assistant recently came out with their new UI in January. A ui called Lovelace it has now become their default ui interface. Taking a new approach for building user interfaces for Home Assistant.</p>
+
+<p>Note! I had to cut this project short because of the timeframe for my new job, but here is a quick overview over my custom Lovelace UI which i was able to put together.</p>
+
+<p>A dynamic UI with a whole new set of features:</p>
+
+<ul>
+  <li>24 card grid.</li>
+  <li>A UI editor.</li>
+  <li>Faster!</li>
+  <li>And fully customizable
+    <ul>
+      <li>Cards have a list of attributes and options which can alter how your data is presented.</li>
+      <li>Themes!</li>
+      <li>Entity overriding privileges (name and icon).</li>
+      <li>Custom cards built from the HA community.</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+  <img src="/assets/images/ha-step3/lovelace-default.png" height="80%" width="80%" style="padding:10px;" />
+</center>
+
+<p>This is whats so fun about this new platform is that the community is blooming. Make HA work for you!</p>
+
+<p>Take a look at my UI in mobile view:</p>
+
+<center>
+  <img src="/assets/images/ha-step3/ui-1.png" height="40%" width="40%" style="padding:10px;" />
+  <img src="/assets/images/ha-step3/ui-3.png" height="40%" width="40%" style="padding:10px;" />
+  <img src="/assets/images/ha-step3/ui-2.png" height="40%" width="40%" style="padding:10px;" />
+  <img src="/assets/images/ha-step3/ui-4.png" height="40%" width="40%" style="padding:10px;" />
+  <img src="/assets/images/ha-step3/ui-5.png" height="40%" width="40%" style="padding:10px;" />
+  <img src="/assets/images/ha-step3/ui-6.png" height="40%" width="40%" style="padding:10px;" />
+</center>
+<p><br /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-05-21T00:00:00+02:00">May 21, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/home-assinstant-configurate-devices-step-2/" class="pagination--pager" title="Home Assistant - Configuring devices: Step 2
+">Previous</a>
+    
+    
+      <a href="/react-native-boilerplates-overview/" class="pagination--pager" title="React Native: Boilerplates overview
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/git-banner.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/intellij-logo.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/netflix.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/react-boiler.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/home-assinstant-step-3-lovelace/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/home-assistant-step-3-lovelace"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://andrehatlo-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

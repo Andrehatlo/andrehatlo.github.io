@@ -1,0 +1,536 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Starting a React Native project with Expo - A Creative Engineer</title>
+<meta name="description" content="How to start using react native with Expo">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="Starting a React Native project with Expo">
+<meta property="og:url" content="http://localhost:4000/starting-a-react-project/">
+
+
+  <meta property="og:description" content="How to start using react native with Expo">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/start-react.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-02-17T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/starting-a-react-project/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">A Creative Engineer</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/start-react.jpg" alt="Starting a React Native project with Expo" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Starting a React Native project with Expo</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Starting a React Native project with Expo">
+    <meta itemprop="description" content="How to start using react native with Expo">
+    <meta itemprop="datePublished" content="February 17, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Starting a React Native project with Expo
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>For React Native we need <code class="language-plaintext highlighter-rouge">node</code>, <code class="language-plaintext highlighter-rouge">Watchman</code>, React Native CLI and <code class="language-plaintext highlighter-rouge">Xcode</code>.</p>
+
+<p><strong>node:</strong></p>
+<ul>
+  <li>A javascript package manager.</li>
+</ul>
+
+<p><strong>Watchman:</strong></p>
+<ul>
+  <li>A service for watching changes in files and trigger actions when files are changed.</li>
+</ul>
+
+<p><strong>React Native CLI:</strong></p>
+<ul>
+  <li>A command line interface module for React Native.</li>
+</ul>
+
+<p><strong>Xcode:</strong></p>
+<ul>
+  <li>Apples IDE to test your application on an Iphone simulator.</li>
+</ul>
+
+<h2 id="1-install-node-and-watchman">1. Install <code class="language-plaintext highlighter-rouge">node</code> and <code class="language-plaintext highlighter-rouge">Watchman</code></h2>
+
+<p>Install node and watchman using <a href="https://brew.sh/index_se.html">Homebrew</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install node
+brew install watchman
+</code></pre></div></div>
+
+<h2 id="2-install-react-native-cli">2. Install React Native CLI</h2>
+
+<p>Install React Native CLI with the node package manager (npm).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g react-native-cli
+</code></pre></div></div>
+<h2 id="3-install-xcode-and-the-xcode-command-line-tools">3. Install Xcode and the Xcode Command line tools.</h2>
+
+<p>Install <a href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">Xcode from the app store</a>.</p>
+
+<p>In Xcode preferences, go to <code class="language-plaintext highlighter-rouge">locations</code> and download the Xcode CLI found at <code class="language-plaintext highlighter-rouge">Command Line Tools</code>.</p>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">Components</code> and download a simulator of your choice, preferably the newest.</p>
+
+<h2 id="4-starting-a-react-native-project">4. Starting a React Native project</h2>
+
+<p>Now you can run these commands in your terminal to start of a React Native project:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>react-native init MyApp
+cd MyApp
+react-native run-ios
+</code></pre></div></div>
+
+<p>This will initiate a React Native project, and showcase it in an iOS simulator that should look similar to this:</p>
+
+<p><img src="../assets/images/React-native-ios.png" alt="react-native" width="400" /></p>
+
+<h2 id="expo">Expo</h2>
+
+<p>Expo is a free toolchain built around React Native like <code class="language-plaintext highlighter-rouge">react-native</code> to help build native iOS and Android projects.</p>
+
+<p>The toolchain provides tools to simplify development of React Native apps by supplying components of users interface and services that are normally available in third-party native React Native components. All these you can find in Expo SDK.</p>
+
+<p>Simply install the Expo CLI and run the simulator by running the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g expo-cli
+expo init MyApp
+cd MyApp
+npm start
+</code></pre></div></div>
+
+<p>The last command will start Metro Bundler, which is a HTTP server that compiles the JavaScript code of our app using Babel and serves it to the Expo app.</p>
+
+<p>You will also notice it pops open the Expo Dev Tools, a control panel for developing your app, in your default browser.</p>
+
+<h3 id="open-the-app-on-your-phone-or-simulator">Open the app on your phone or simulator</h3>
+
+<p>Looking at the Expo Dev Tools, you have available options on which type of simulator you would like to run (Android or iOS). And you have the option to scan the QR code to run the app on your phone in real time using Live Reload.</p>
+
+<p>All you have to do is download the <a href="https://expo.io/tools#client">Expo app</a> on either Android or iPhone and scan the QR code, and you are ready to go.</p>
+
+<h3 id="react-native-documentation">React Native Documentation:</h3>
+
+<p>Learn more about how React Native works by looking at the <a href="https://facebook.github.io/react-native/docs/tutorial.html">docs</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-17T00:00:00+01:00">February 17, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/typescript-summary/" class="pagination--pager" title="TypeScript syntax summary
+">Previous</a>
+    
+    
+      <a href="/react-native-state-vs-props/" class="pagination--pager" title="React Native: State vs Props
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/git-banner.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/intellij-logo.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/netflix.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/react-boiler.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/starting-a-react-project/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/starting-a-react-project"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://andrehatlo-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

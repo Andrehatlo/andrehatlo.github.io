@@ -1,0 +1,904 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>IntelliJ IDE - Productivity Tricks - A Creative Engineer</title>
+<meta name="description" content="A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="IntelliJ IDE - Productivity Tricks">
+<meta property="og:url" content="http://localhost:4000/intelliJ-ide-productivity-tricks/">
+
+
+  <meta property="og:description" content="A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/intellij-logo.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-01-05T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/intelliJ-ide-productivity-tricks/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">A Creative Engineer</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/intellij-logo.png" alt="IntelliJ IDE - Productivity Tricks" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">IntelliJ IDE - Productivity Tricks</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="IntelliJ IDE - Productivity Tricks">
+    <meta itemprop="description" content="A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE">
+    <meta itemprop="datePublished" content="January 05, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">IntelliJ IDE - Productivity Tricks
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="intellij-tricks-to-boost-productivity">IntelliJ Tricks to boost productivity</h1>
+
+<p>IntelliJ is a smart IDE used to code Java/Scala/Kotlin. It uses something called Jetbrains to almost code for you. Here is my favorite summery of keyboard shortcuts which made me WAY more productive in this heavy IDE.</p>
+
+<h2 id="moving-the-cursor"><strong>Moving the cursor</strong></h2>
+
+<ul>
+  <li>
+    <p>One word at a time:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + Cursor</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Move cursor to beginning of line:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Home</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Move cursor to end of line:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">End</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="moving-the-lines"><strong>Moving the lines</strong></h2>
+
+<ul>
+  <li>
+    <p>Move line up:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Alt + Up</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Move line down:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Alt + Down</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="format-code"><strong>Format code</strong></h2>
+
+<ul>
+  <li>
+    <p>Duplicate line:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + D</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Delete line:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + Y</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Parameter info:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + P</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Comment out selected line:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + /</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Comment out code block:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + /</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Fold code block:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + -/+</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="navigate-through-code"><strong>Navigate through code</strong></h2>
+
+<ul>
+  <li>
+    <p>To class:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + N</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>To file:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + N</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>To symbol:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + Alt + N</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Go back:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + &lt;-/-&gt;</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Find action:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + A</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Search everywhere</p>
+    <ul>
+      <li>Searches classes/files/symbols/actions)</li>
+      <li>Use tab to jump to type</li>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Shift</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-nr-1-productivity-killer"><strong>The Nr 1 Productivity killer</strong></h2>
+
+<h3 id="file-tabs">File tabs</h3>
+
+<p>When using intelliJ you collect file tabs of previous files you have looked through or coded in.</p>
+
+<p>This makes for bad productivity since you would have to pause your work and close the tabs one by one.</p>
+
+<p>Instead! Disable tabs and use the recent files function!</p>
+
+<ol>
+  <li>In the find action, search for “tabs placement”</li>
+  <li>Disable “tabs placement”</li>
+  <li>Then use the following shortcut to navigate your recent files:</li>
+</ol>
+
+<ul>
+  <li>
+    <p>Recent files</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + E</code></li>
+      <li>Search in recent files by writing the filename of the file you desire to look/work on.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Recent edited files:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + E</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="code-selection"><strong>Code selection</strong></h2>
+
+<ul>
+  <li>
+    <p>Select line</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Home/End</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Select words</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + &lt;-/-&gt;</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Select characters</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + &lt;-/-&gt;</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Extending selection</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + W</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Shrinking selection</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + W</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="code-completion"><strong>Code completion</strong></h2>
+
+<ul>
+  <li>
+    <p>Envoking smart code completion:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + Space</code></li>
+      <li>
+        <p>Most usefull:</p>
+
+        <ul>
+          <li>After the new keyword in an object declaration</li>
+          <li>In the list of parameters of a method call</li>
+          <li>In return statements</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + Space</code> <code class="language-plaintext highlighter-rouge">Twice</code></li>
+      <li>Invokes smart code which completes:
+        <ul>
+          <li>Static expressions</li>
+          <li>Collections, lists and arrays</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Static method completion:</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + Space + Ctrl + Space</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="postfix-completion">Postfix completion</h3>
+
+<p>What is postfix expressions?</p>
+
+<ul>
+  <li>Postfix notation is used to represent algebraic expressions.</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PostFixCompletion</span> <span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">method</span><span class="o">(</span><span class="nc">Collection</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Postfix expression:</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">s</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">//...</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">method</code> method takes in a colleciton of string <code class="language-plaintext highlighter-rouge">s</code>.
+By writing <code class="language-plaintext highlighter-rouge">s.</code> then using the <strong>postfix completion shortcut:</strong> <code class="language-plaintext highlighter-rouge">Ctrl + J</code>
+Will bring up a list of postfix expressions to choose.
+Filter the list by writing:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">nn</code> / <code class="language-plaintext highlighter-rouge">null</code> -&gt; Checks expression to be null.</li>
+  <li><code class="language-plaintext highlighter-rouge">notnull</code> -&gt; Checks expression to be not-null.</li>
+  <li><code class="language-plaintext highlighter-rouge">synchronized</code> -&gt; Produces synchronization statement.</li>
+  <li><code class="language-plaintext highlighter-rouge">try</code> -&gt; Inserts statement in try-catch block.</li>
+  <li><code class="language-plaintext highlighter-rouge">for</code> -&gt; Iterates over enumerable collection.</li>
+  <li><code class="language-plaintext highlighter-rouge">fori</code> -&gt; Iterates with index over collection</li>
+  <li><code class="language-plaintext highlighter-rouge">forr</code> -&gt; Iterates with index in reverse order.</li>
+</ul>
+
+<h2 id="code-generation"><strong>Code Generation</strong></h2>
+
+<p><strong>Getter &amp; Setter methods</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Alt + Insert</code></li>
+</ul>
+
+<p><strong>Stub test, setUp, tearDown methods</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Alt + Insert</code></li>
+</ul>
+
+<h2 id="version-control-tricks"><strong>Version Control tricks</strong></h2>
+
+<h3 id="commiting-changes"><strong>Commiting changes:</strong></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Ctrl + K</code>
+    <ul>
+      <li>Brings up the built inn commit interface</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="commit-flow">Commit flow:</h4>
+
+<p>Inside the <strong>commit interface</strong>, the focus starts in the <code class="language-plaintext highlighter-rouge">commit message</code> box.</p>
+
+<ol>
+  <li>
+    <p>Write your commit message.</p>
+  </li>
+  <li>
+    <p>Go to your <strong>change list</strong>:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Shift + Tab</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>See the <strong>differance</strong> in a file:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + D</code></li>
+      <li>Changes here are automatically sent to the change set.</li>
+      <li>Press <code class="language-plaintext highlighter-rouge">Esc</code> key to leave diff view.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Revert</strong> changes in a file:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Ctrl + Alt + Z</code></li>
+      <li><code class="language-plaintext highlighter-rouge">tab</code> to the <strong>revert</strong> button</li>
+      <li>Press <code class="language-plaintext highlighter-rouge">Enter</code> key to confirm <strong>revert</strong> file.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Before commit actions</strong>:</p>
+
+    <ul>
+      <li>Select to perform task before commit.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Press <code class="language-plaintext highlighter-rouge">Tab</code> button to move the focus to the <strong>Commit</strong> button</p>
+    <ul>
+      <li>Press <code class="language-plaintext highlighter-rouge">Enter</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="vc-popup-menu"><strong>VC Popup Menu</strong></h3>
+
+<ul>
+  <li>
+    <p>Get a popup list of alle VC operations directly from a keyboard shortcut</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Alt + Back Quote</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Each list item is accociated with a number which you can access by pressing on your keyboard.</p>
+  </li>
+  <li>
+    <p>When selecting branch, search by typing in your search word.</p>
+    <ul>
+      <li>Intellij will automatically filter the branch list as your typing.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="reformat"><strong>Reformat:</strong></h2>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Tab</code> to move selection one tab stop to the right</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Shift + Tab</code> to move selection one tab stop to the left</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Ctrl + Alt + L</code> to reformat current selection or current file</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Ctrl + W</code> to extend selection</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Alt + 1</code> to move focus to the project tool window</p>
+  </li>
+</ul>
+
+<p>TIP!</p>
+
+<blockquote>
+  <p>Use <code class="language-plaintext highlighter-rouge">Ctrl + W</code> to expand selection, then <code class="language-plaintext highlighter-rouge">Ctrl + Alt + L</code> to reformat the code.</p>
+</blockquote>
+
+<h2 id="optimaizing-imports"><strong>Optimaizing imports</strong></h2>
+
+<p>Imports can get messy when coding, which leads to libraries included that are not used.
+This can be solved easily by using the <code class="language-plaintext highlighter-rouge">optimizing imports</code> shortcut:;</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Ctrl + Alt + O</code></li>
+</ul>
+
+<h3 id="optimize-imports-on-the-fly">Optimize imports on the fly</h3>
+
+<p>When this is activated, intellij automatically changes and optimizes the imports as you code.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl + A</code> to open the <strong>Actions</strong> popup search field.</li>
+  <li>Search for “<em>optimizing imports on the fly</em>” and activate it.</li>
+</ul>
+
+<h3 id="only-optimize-imports-on-commited-files">Only optimize imports on commited files</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Ctrl + K</code> to bring up the commit interface.</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">Optimize imports</code> in the <strong>before commit</strong> field.</li>
+  <li>Select <code class="language-plaintext highlighter-rouge">Commit</code></li>
+</ul>
+
+<h2 id="navigate-to-compilation-error"><strong>Navigate to Compilation Error</strong></h2>
+
+<p>When compiling an application in IntelliJ you will receive errors in the <code class="language-plaintext highlighter-rouge">event log</code>.
+Instead of using the mouse to click the error that will send you to the errors location, simply do this:</p>
+
+<ul>
+  <li>After a compilation error.</li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Esc</code>.</li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Ctrl + Alt + Down</code> to move to next error.</li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Ctrl + Alt + Up</code> to move back to the previous error.</li>
+  <li>Then press <code class="language-plaintext highlighter-rouge">Esc</code> to move to the error location.</li>
+</ul>
+
+<h2 id="bonus"><strong>Bonus</strong></h2>
+
+<h3 id="language-injection">Language injection</h3>
+
+<h2 id="others"><strong>Other’s</strong></h2>
+
+<h3 id="multicursor">MultiCursor</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl + ctrl (hold last ctrl and move cursor)
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-01-05T00:00:00+01:00">January 05, 2020</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/reactive-data-streams-rxjava/" class="pagination--pager" title="Reactive Data Streams - quick rxJava Summery
+">Previous</a>
+    
+    
+      <a href="/git-overwrite-trick/" class="pagination--pager" title="GIT Command - Overwrite Trick
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/git-banner.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/netflix.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/react-boiler.jpg"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/ha1.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/home-assinstant-step-3-lovelace/" rel="permalink">Home Assistant - Lovelace introduction: Step 3
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">An introduction to the Lovelace UI used in HA
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/intelliJ-ide-productivity-tricks/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/intelliJ-productivity-tricks"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://andrehatlo-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

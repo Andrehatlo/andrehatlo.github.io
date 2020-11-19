@@ -1,0 +1,696 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.14.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>React Native: Boilerplates overview - A Creative Engineer</title>
+<meta name="description" content="It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="A Creative Engineer">
+<meta property="og:title" content="React Native: Boilerplates overview">
+<meta property="og:url" content="http://localhost:4000/react-native-boilerplates-overview/">
+
+
+  <meta property="og:description" content="It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/react-boiler.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-06-24T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/react-native-boilerplates-overview/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "André Hatlo",
+      "url": "http://localhost:4000",
+      "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">A Creative Engineer</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/" >blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >about</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" "
+>
+  
+    <img src="/assets/images/react-boiler.jpg" alt="React Native: Boilerplates overview" class="page__hero-image">
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">React Native: Boilerplates overview</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="React Native: Boilerplates overview">
+    <meta itemprop="description" content="It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?">
+    <meta itemprop="datePublished" content="June 24, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">React Native: Boilerplates overview
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?</p>
+
+<p>There are three boilerplates worth considering:</p>
+
+<ul>
+  <li><a href="https://github.com/infinitered/ignite">Ignitee</a> - 9,375 stars</li>
+  <li><a href="https://github.com/futurice/pepperoni-app-kit">Pepperoni App Kit</a> - 4,453 stars</li>
+  <li><a href="https://github.com/bartonhammond/snowflake">Snowflake</a> - 4,399 stars</li>
+</ul>
+
+<p>We will be taking a closer look at the most popular of them all, the <code class="language-plaintext highlighter-rouge">ignite</code> boilerplate.</p>
+
+<h2 id="ignitee-cli">Ignitee CLI</h2>
+
+<p>Ignite is now the ‘hottest’ CLI for React Native.</p>
+
+<p>It includes boilerplates, plugins, generators and more.</p>
+
+<p>Ignite requires a Node version of 7.6+ minimum, check your version by running:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node -v
+</code></pre></div></div>
+
+<p>Install <a href="https://yarnpkg.com/lang/en/docs/install/"><code class="language-plaintext highlighter-rouge">Yarn</code></a> for your system.</p>
+
+<p>Then run the following commands to add the <code class="language-plaintext highlighter-rouge">ignite-cli</code> and to create your <code class="language-plaintext highlighter-rouge">ignite</code> boilerplate.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span> <span class="nx">yarn</span> <span class="nb">global</span> <span class="nx">add</span> <span class="nx">ignite</span><span class="o">-</span><span class="nx">cli</span>
+</code></pre></div></div>
+
+<h4 id="ignite-includes-two-primary-boilerplates">Ignite includes two primary boilerplates</h4>
+
+<h5 id="andross">Andross:</h5>
+
+<blockquote>
+  <p>The tried and true (React Navigation, Redux, &amp; Redux Saga)</p>
+</blockquote>
+
+<p><img src="https://camo.githubusercontent.com/49c1245faf62f39e5a486e0df0f8e5fa281f06ac/687474703a2f2f69725f7075626c69632e73332e616d617a6f6e6177732e636f6d2f70726f6a656374732f69676e6974652f69676e6974652d616e64726f73732d6c61756e63682d73637265656e2e706e67" alt="Andross" width="400" /></p>
+
+<p>It includes:</p>
+
+<ul>
+  <li>React Native 0.57.7</li>
+  <li>React Navigation 3.0.0</li>
+  <li>Redux</li>
+  <li>Redux Sagas</li>
+  <li>And more!</li>
+</ul>
+
+<h5 id="bowser">Bowser:</h5>
+
+<blockquote>
+  <p>The latest and greatest (React Navigation, MobX State Tree, &amp; Typescript)</p>
+</blockquote>
+
+<p><img src="https://camo.githubusercontent.com/b598169ed7d3a9eea78e921acd10adee55bf53eb/687474703a2f2f69725f7075626c69632e73332e616d617a6f6e6177732e636f6d2f70726f6a656374732f69676e6974652f69676e6974652d626f777365722d6c61756e63682d73637265656e2e706e67" alt="bowser" width="400" /></p>
+
+<p>This boilerplate includes:</p>
+
+<ul>
+  <li>React Native</li>
+  <li>React Navigation</li>
+  <li>MobX State Tree</li>
+  <li>Typescript</li>
+  <li>Reactotron (requires 2.x)</li>
+  <li>And more!</li>
+</ul>
+
+<p>I won’t go into detail about these services in this post. I will choose a preferred boilerplate after testing and explain the services more in detail in a future post.</p>
+
+<h2 id="how-to">How to:</h2>
+
+<p>Lets choose <code class="language-plaintext highlighter-rouge">ignite</code>s newest boilerplate <code class="language-plaintext highlighter-rouge">bowser</code>.</p>
+
+<p>First of all to start of a bowser boilerplate, simply run the following command and choose <code class="language-plaintext highlighter-rouge">bowser</code> from the terminal menu:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ignite new MyNewAppName
+-----------------------------------------------
+  (                  )   (
+  )\ )   (        ( /(   )\ )    *   )
+ (()/(   )\ )     )\()) (()/(  ` )  /(   (
+  /(_)) (()/(    ((_)\   /(_))  ( )(_))  )\
+ (_))    /(_))_   _((_) (_))   (_(_())  ((_)
+ |_ _|  (_)) __| | \| | |_ _|  |_   _|  | __|
+  | |     | (_ | | .` |  | |     | |    | _|
+ |___|     \___| |_|\_| |___|    |_|    |___|
+-----------------------------------------------
+
+An unfair headstart for your React Native apps.
+https://infinite.red/ignite
+
+-----------------------------------------------
+
+🔥 igniting app BowserStyle
+? Which boilerplate would you like to use? Bowser (React Navigation, MobX State Tree, &amp; TypeScript)
+&gt; Bowser  *
+&gt; Andross
+</code></pre></div></div>
+
+<p>If you open your <code class="language-plaintext highlighter-rouge">NewAppProject</code> directory, you will see loads of files that come will the <code class="language-plaintext highlighter-rouge">ignite</code> boilerplate compared to the standard setup using <code class="language-plaintext highlighter-rouge">react-native new</code> or <code class="language-plaintext highlighter-rouge">expo init</code> command.</p>
+
+<p>Run simulator:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>For iOS:
+  cd ProjectFolder
+  react-native run-ios
+
+For Android:
+  cd ProjectFolder
+  react-native run-android
+</code></pre></div></div>
+
+<p>To see what else Ignite CLI can do in the command line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cd ProjectFolder
+  ignite
+</code></pre></div></div>
+
+<h3 id="project-directory-structure">Project directory structure</h3>
+
+<p>The project structure is some more advanced that a simple <code class="language-plaintext highlighter-rouge">react-native new</code> / <code class="language-plaintext highlighter-rouge">expo init</code> default project structure.</p>
+
+<p>The project structure will look similar to this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ignite-project
+├── app
+│   ├── components
+│   ├── i18n
+│   ├── models
+│   ├── navigation
+│   ├── screens
+│   ├── services
+│   ├── theme
+│   ├── utils
+│   ├── app.tsx
+│   ├── environment-variables.ts
+├── storybook
+│   ├── views
+│   ├── index.ts
+│   ├── storybook-registry.ts
+│   ├── storybook.ts
+├── test
+│   ├── __snapshots__
+│   ├── storyshots.test.ts.snap
+│   ├── mock-i18n.ts
+│   ├── mock-reactotron.ts
+│   ├── setup.ts
+│   ├── storyshots.test.ts
+├── README.md
+├── android
+├── ignite
+│   ├── ignite.json
+│   └── plugins
+├── index.js
+├── ios
+└── package.json
+</code></pre></div></div>
+
+<p>Lets go deeper into the directories included in <code class="language-plaintext highlighter-rouge">Bowser</code>.</p>
+
+<h4 id="the-app-directory">The <code class="language-plaintext highlighter-rouge">./app</code> directory:</h4>
+
+<p>Like when running the default structure commands, the <code class="language-plaintext highlighter-rouge">app</code> directory is present.</p>
+
+<p>Inside the <code class="language-plaintext highlighter-rouge">app</code> directory, it will look similar to this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app
+│── components
+│── i18n
+├── models
+├── navigation
+├── screens
+├── services
+├── theme
+├── utils
+├── app.tsx
+├── environment-variables.ts
+</code></pre></div></div>
+
+<p><strong>components:</strong>
+This is where your components live. Normally you would have components created with a <code class="language-plaintext highlighter-rouge">.js</code> file. Since <code class="language-plaintext highlighter-rouge">bowser</code> includes typescript, each component will have a directory containing a <code class="language-plaintext highlighter-rouge">.tsx</code> file, along with a <code class="language-plaintext highlighter-rouge">story.tsx</code> file. Optionally if the component is large, the component directory can include <code class="language-plaintext highlighter-rouge">preset.ts</code>, and <code class="language-plaintext highlighter-rouge">props.ts</code> files for better organisation.</p>
+
+<p><strong>i18n:</strong>
+If you included the <code class="language-plaintext highlighter-rouge">react-native-i18n</code> service, this is where your translations live.</p>
+
+<p><strong>models:</strong>
+This is where your models and model logic lives. Each model has a directory that contains the <code class="language-plaintext highlighter-rouge">mobx-state-tree</code> model file, test file, and other supported files like actions, types etc.</p>
+
+<p><strong>navigation:</strong>
+Your <code class="language-plaintext highlighter-rouge">react-navigation</code> files live here.</p>
+
+<p><strong>screens:</strong>
+The react screen component which takes up the entire screen and is part of the navigation hierarchy lives here. Each directory contains the <code class="language-plaintext highlighter-rouge">.tsx</code> file, assets or helper files.</p>
+
+<p><strong>services:</strong>
+Services that interface with the outside world like REST APIs, Push Notifications etc, live here.</p>
+
+<p><strong>theme:</strong>
+Your theme lives here, built including spacing, colors, typography, timing etc.</p>
+
+<p><strong>utils:</strong>
+Shared files like helpers, utilities like date helpers, formatters etc are often placed here. If a helper or utility is only used by a specific component/model in your application the file should live with that component/model.</p>
+
+<p><strong>app.tsx:</strong>
+Your entry point to your application. The main App component that renders the rest of the application. You can also choose if you would like to run the app in storybook mode.</p>
+
+<h4 id="the-ignite-directory">The <code class="language-plaintext highlighter-rouge">./ignite</code> directory:</h4>
+
+<p>This is where the <code class="language-plaintext highlighter-rouge">ignite</code> CLI and all things <code class="language-plaintext highlighter-rouge">ignite</code> live. Generators, plugins and examples are included to help you get started.</p>
+
+<h4 id="the-storybook-directory">The <code class="language-plaintext highlighter-rouge">./storybook</code> directory:</h4>
+
+<p>This is where stories will be registered and where the Storybook configs will live.</p>
+
+<p><a href="https://storybook.js.org/basics/guide-react-native/">Storybook</a> is a UI development environment for rapid iteration and testing of UI components. This allows you to visualise the different states of the individual components of your app and test the UI interactions.</p>
+
+<h4 id="the-test-directory">The <code class="language-plaintext highlighter-rouge">./test</code> directory:</h4>
+
+<p>This is where your Jest configs and mocks live. As well as storyshots test files.</p>
+
+<h2 id="attaching-to-expo">Attaching to Expo</h2>
+
+<p>If you are like me and use the <code class="language-plaintext highlighter-rouge">expo</code> toolchain to kick of your project, and you would still like to use one of Ignites boilerplates simply use the command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo init &lt;AppName&gt;
+cd &lt;AppName&gt;
+ignite attach
+// Then choose which boilerplate you would like to use
+</code></pre></div></div>
+
+<p>This also works for:</p>
+
+<ul>
+  <li>create-react-native-app</li>
+  <li>create-react-app</li>
+  <li>normal Reach JS projects</li>
+  <li>empty directories</li>
+</ul>
+
+<p>Not all plugins work in all environments, but many features of Ignite CLI are available.</p>
+
+<p>For more info check out their documentation at https://expo.io/ !</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-06-24T00:00:00+02:00">June 24, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/home-assinstant-step-3-lovelace/" class="pagination--pager" title="Home Assistant - Lovelace introduction: Step 3
+">Previous</a>
+    
+    
+      <a href="/reactive-data-streams-rxjava/" class="pagination--pager" title="Reactive Data Streams - quick rxJava Summery
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/git-banner.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/intellij-logo.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/netflix.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <div class="box">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src=
+            
+              "/assets/images/ha1.png"
+            
+            alt="">
+        </div>
+      
+      <h2 class="archive__item-title" itemprop="headline">
+        
+          <a href="/home-assinstant-step-3-lovelace/" rel="permalink">Home Assistant - Lovelace introduction: Step 3
+</a>
+        
+      </h2>
+      <p class="archive__item-excerpt" itemprop="description">An introduction to the Lovelace UI used in HA
+</p>
+    </a>
+    </article>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 André Hatlo </div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/react-native-boilerplates-overview/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/react-boilerplates"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://andrehatlo-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

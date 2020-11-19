@@ -9,14 +9,14 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Jekyll + Github = Free hosting: Tutorial - Hi! I’m André, a computer engineer</title>
+<!-- begin _includes/seo.html --><title>Jekyll + Github = Free hosting: Tutorial - A Creative Engineer</title>
 <meta name="description" content="Create your own blog/portofolio using these technologies, with no hosting fee!">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
-<meta property="og:site_name" content="Hi! I'm André, a computer engineer">
+<meta property="og:site_name" content="A Creative Engineer">
 <meta property="og:title" content="Jekyll + Github = Free hosting: Tutorial">
 <meta property="og:url" content="http://localhost:4000/jekyll-github-free-host/">
 
@@ -54,7 +54,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "André Hatlo-Johansen",
+      "name": "André Hatlo",
       "url": "http://localhost:4000",
       "sameAs": ["http://www.linkedin.com/in/andrehatlo","http://www.github.com/andrehatlo"]
     }
@@ -69,7 +69,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hi! I'm André, a computer engineer Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A Creative Engineer Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,7 +117,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Hi! I'm André, a computer engineer</a>
+        <a class="site-title" href="/">A Creative Engineer</a>
         <ul class="visible-links">
 <li class="masthead__menu-item">
               <a href="/blog/">blog</a>
@@ -227,7 +227,7 @@
   <li>
     <p>Check whether you have Ruby 2.1.0 or higher installed:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ ruby -v
  ruby 2.x.x
 </code></pre></div>    </div>
@@ -235,7 +235,7 @@
   <li>
     <p>Install Bundler:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ gem install bundler
 </code></pre></div>    </div>
   </li>
@@ -249,7 +249,7 @@
   <li>
     <p>Initialize a new Git repo for your jekyll site:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>$ git init &lt;GitHubUsername&gt;.github.io
 Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
 # creates a new file directory on your local computer, Initialized as a Git repo
@@ -258,7 +258,7 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>Then change directory to the new repository created:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>$ cd &lt;GitHubUsername&gt;.github.io
 </code></pre></div>    </div>
   </li>
@@ -270,7 +270,7 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>Check if you have a Gemfile in your newly created repo</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ ls
  Gemfile
 </code></pre></div>    </div>
@@ -282,18 +282,18 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>Open up your favorite text editor, if you need one: <a href="https://atom.io/">Atom</a>. Then add these lines to a new file, and save.</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> source 'http://rubygems.org'
  gem 'github-pages', group: :jekyll_plugins
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Save the file as <code class="highlighter-rouge">Gemfile</code>, in the root directory of your local Jekyll repository. Now skip to step 5 to install Jekyll.</p>
+    <p>Save the file as <code class="language-plaintext highlighter-rouge">Gemfile</code>, in the root directory of your local Jekyll repository. Now skip to step 5 to install Jekyll.</p>
   </li>
   <li>
     <p><strong>Only</strong> if you already have a Gemfile. Open your favorite editor, mine is <a href="https://atom.io/">Atom</a>, and add these lines to your Gemfile:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> source 'https://rubygems.org'
  gem 'github-pages', group: :jekyll_plugins
 </code></pre></div>    </div>
@@ -301,7 +301,7 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>Install Jekyll and other dependencies from the GitHub Pages gem by running:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ bundle install
  Fetching gem metadata from https://rubygems.org/......
  Fetching version metadata from https://rubygems.org/...
@@ -319,7 +319,7 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>If you don’t already have a Jekyll site localy on your computer, create a Jekyll template site in a new directory:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ bundle exec jekyll _3.3.0_ new &lt;new-jekyll-site-repo-name&gt;
  New jekyll site installed in /Users/horseforce/&lt;new-jekyll-site-repo-name&gt;.
 </code></pre></div>    </div>
@@ -327,28 +327,28 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>Navigate into your new site directory and edit your Gemfile by removing the following line:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ 'jekyll', "3.3.0"
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>In the same Gemfile, delete the <code class="highlighter-rouge">#</code> at the beginning of this line:</p>
+    <p>In the same Gemfile, delete the <code class="language-plaintext highlighter-rouge">#</code> at the beginning of this line:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ gem "github-pages", group: :jekyll_plugins
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Initialize the directory as a Git repo</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ git init
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Connect your remote repo on GitHub to your local repo for your site.</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ git remote add origin http://github.com/&lt;username/organization-name/your-remote-repo-name&gt;
 </code></pre></div>    </div>
   </li>
@@ -364,14 +364,14 @@ Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
   <li>
     <p>Navigate to your site root directory:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>$ cd &lt;GithubUsername&gt;.github.io
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Run the following command:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>$ bundle exec jekyll serve
 Configuration file: /Users/horseforce/andrehatlo.github.io/_config.yml
             Source: /Users/horseforce/andrehatlo.github.io
@@ -386,7 +386,7 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>In your browser, preview your local Jekyll site at <code class="highlighter-rouge">http://localhost:4000</code></p>
+    <p>In your browser, preview your local Jekyll site at <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></p>
   </li>
 </ul>
 
@@ -394,21 +394,21 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
   <li>
     <p>Add or stage your changes:</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ git add .
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Commit it</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> $ git commit -m "some stuff changed"
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Push your changes to your remote repository on GitHub</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-plaintext highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>$ git push -u origin master
 </code></pre></div>    </div>
   </li>
@@ -420,27 +420,27 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
 
 <p>Which should be named in this format:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;github-username&gt;.github.io
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;github-username&gt;.github.io
 </code></pre></div></div>
 
 <p>If your repository is called something else, we can change it at the next step.</p>
 
 <h3 id="enter-into-your-repository-settings">Enter into your repository settings.</h3>
 
-<p>First thing you see is <code class="highlighter-rouge">Repository name</code>, edit it so that it matches the syntax:</p>
+<p>First thing you see is <code class="language-plaintext highlighter-rouge">Repository name</code>, edit it so that it matches the syntax:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;github-username&gt;.github.io
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;github-username&gt;.github.io
 </code></pre></div></div>
 
-<p>Next scroll further down in repo settings until you see <code class="highlighter-rouge">GitHub Pages</code></p>
+<p>Next scroll further down in repo settings until you see <code class="language-plaintext highlighter-rouge">GitHub Pages</code></p>
 
-<h3 id="-github-pages">@ <code class="highlighter-rouge">GitHub Pages</code>
+<h3 id="-github-pages">@ <code class="language-plaintext highlighter-rouge">GitHub Pages</code>
 </h3>
 
 <p>Hopefully it should now say:</p>
 
 <blockquote>
-  <p><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2714.png" height="20" width="20"> Your site is published at: <a href="http://andrehatlo.com">http://www.andrehatlo.github.io</a></p>
+  <p><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"> Your site is published at: <a href="http://andrehatlo.com">http://www.andrehatlo.github.io</a></p>
 </blockquote>
 
 <blockquote>
@@ -449,21 +449,21 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
 
 <h2 id="applying-a-custom-domain">Applying a custom domain</h2>
 
-<p>Scroll down on the github repo settings page until you see <code class="highlighter-rouge">Custom domain</code> under <code class="highlighter-rouge">GitHub Pages</code>.</p>
+<p>Scroll down on the github repo settings page until you see <code class="language-plaintext highlighter-rouge">Custom domain</code> under <code class="language-plaintext highlighter-rouge">GitHub Pages</code>.</p>
 
 <p>Fill in your domain name, and click save.</p>
 
 <p>Now go to your domain hoster website and create a CNAME record that points to your repo, this can be done in the settings of your DNS records.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>www.andrehatlo.com -&gt;  CNAME -&gt; &lt;github-username&gt;.github.io
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>www.andrehatlo.com -&gt;  CNAME -&gt; &lt;github-username&gt;.github.io
 </code></pre></div></div>
 
 <h2 id="now-you-should-have-your-own-domain-hosted-for-free">Now you should have your own domain hosted for free</h2>
 
-<p>Just keep tweaking your website and check out all the different themes out there! I will be coming with more tutorials about Jekyll in the future <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
+<p>Just keep tweaking your website and check out all the different themes out there! I will be coming with more tutorials about Jekyll in the future <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
 
 <h3 id="hope-this-was-helpfull-enough-as-my-first-blog-post">Hope this was helpfull enough as my first blog post.</h3>
-<h3 id="ill-try-to-excel-as-fast-as-possible-by-writing-many-many-more-wave-wave">I’ll try to excel as fast as possible by writing MANY MANY more! <img class="emoji" title=":wave:" alt=":wave:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20"> <img class="emoji" title=":wave:" alt=":wave:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20">
+<h3 id="ill-try-to-excel-as-fast-as-possible-by-writing-many-many-more-wave-wave">I’ll try to excel as fast as possible by writing MANY MANY more! <img class="emoji" title=":wave:" alt=":wave:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20"> <img class="emoji" title=":wave:" alt=":wave:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png" height="20" width="20">
 </h3>
 
         
@@ -488,7 +488,7 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
 ">Previous</a>
     
     
-      <a href="/hugo/" class="pagination--pager" title="Hugo - as my static page blog
+      <a href="/hugo/" class="pagination--pager" title="Hugo - as a static page blog
 ">Next</a>
     
   </nav>
@@ -513,16 +513,16 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src="/assets/images/clean-code-head.jpg" alt="">
+          <img src="/assets/images/git-banner.png" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/typescript-summary/" rel="permalink">Clean Coder - Robert Martin: Summary
+          <a href="/git-overwrite-trick/" rel="permalink">GIT Command - Overwrite Trick
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">A brief summary of the book Clean Coder by Robert Martin
+      <p class="archive__item-excerpt" itemprop="description">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life
 </p>
     
     </article>
@@ -539,16 +539,16 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src="/assets/images/ts.jpg" alt="">
+          <img src="/assets/images/intellij-logo.png" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/typescript-summary/" rel="permalink">TypeScript syntax summary
+          <a href="/intelliJ-ide-productivity-tricks/" rel="permalink">IntelliJ IDE - Productivity Tricks
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">A brief summary of typescript syntax
+      <p class="archive__item-excerpt" itemprop="description">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE
 </p>
     
     </article>
@@ -565,16 +565,16 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src="/assets/images/hugogit.jpg" alt="">
+          <img src="/assets/images/netflix.png" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/hugo/" rel="permalink">Hugo - as my static page blog
+          <a href="/reactive-data-streams-rxjava/" rel="permalink">Reactive Data Streams - quick rxJava Summery
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">Create your own blog with Hugo, a static site generator, on the same line as Jekyll.
+      <p class="archive__item-excerpt" itemprop="description">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.
 </p>
     
     </article>
@@ -591,17 +591,16 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
       
         <div class="archive__item-teaser">
-          <img src="/assets/images/jekyll-head.jpg" alt="">
+          <img src="/assets/images/react-boiler.jpg" alt="">
         </div>
       
       <h2 class="archive__item-title" itemprop="headline">
         
-          <a href="/jekyll-creating-blog/" rel="permalink">Jekyll: Creating a blog is easy and FREE
+          <a href="/react-native-boilerplates-overview/" rel="permalink">React Native: Boilerplates overview
 </a>
         
       </h2>
-      <p class="archive__item-excerpt" itemprop="description">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.
-</p>
+      <p class="archive__item-excerpt" itemprop="description">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the...</p>
     
     </article>
   </div>
@@ -639,17 +638,13 @@ Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
           <li><a href="http://www.linkedin.com/in/andrehatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
         
       
-        
-          <li><a href="https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> StackOverflow</a></li>
-        
-      
     
 
     <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">© 2019 André Hatlo-Johansen </div>
+<div class="page__footer-copyright">© 2020 André Hatlo </div>
 
       </footer>
     </div>

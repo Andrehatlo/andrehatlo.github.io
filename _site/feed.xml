@@ -1,413 +1,1548 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-15T14:27:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hi! I’m André, a computer engineer</title><subtitle>Welcome to my </subtitle><author><name>André Hatlo-Johansen</name></author><entry><title type="html">Clean Coder - Robert Martin: Summary</title><link href="http://localhost:4000/typescript-summary/" rel="alternate" type="text/html" title="Clean Coder - Robert Martin: Summary" /><published>2019-01-15T00:00:00+01:00</published><updated>2019-01-15T00:00:00+01:00</updated><id>http://localhost:4000/clean-coder</id><content type="html" xml:base="http://localhost:4000/typescript-summary/">&lt;p&gt;An insightful book that talks about how to be a professional developer. Encouraging you to take responsibility of your career to be better.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-19T08:38:58+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">A Creative Engineer</title><subtitle>Creative Knowledge Center</subtitle><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><entry><title type="html">GIT Command - Overwrite Trick</title><link href="http://localhost:4000/git-overwrite-trick/" rel="alternate" type="text/html" title="GIT Command - Overwrite Trick" /><published>2020-01-12T00:00:00+01:00</published><updated>2020-01-12T00:00:00+01:00</updated><id>http://localhost:4000/git-trick-rebase</id><content type="html" xml:base="http://localhost:4000/git-overwrite-trick/">&lt;p&gt;A short post to all those who have difficulty with repository hell. This Git command parts the sea, brings peace and makes the local repository die for your sins.&lt;/p&gt;
 
-&lt;h2 id=&quot;professionalism&quot;&gt;Professionalism&lt;/h2&gt;
+&lt;p&gt;Especially in IntelliJ i was faced with this issue numerous times, not being able to switch branches without going through some kind of satanic IntelliJ ritual of saving the repo changes to a shelf.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Professionalism is all about taking responsibility. — Robert Martin&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">A brief summary of the book `Clean Coder by Robert Martin`</summary></entry><entry><title type="html">TypeScript syntax summary</title><link href="http://localhost:4000/typescript-summary/" rel="alternate" type="text/html" title="TypeScript syntax summary" /><published>2019-01-11T00:00:00+01:00</published><updated>2019-01-11T00:00:00+01:00</updated><id>http://localhost:4000/typescript-summery</id><content type="html" xml:base="http://localhost:4000/typescript-summary/">&lt;p&gt;TypeScript is one of the fastest rising technologies of 2018. This brief summary is filled with what you need to know to understand its key concepts.&lt;/p&gt;
+&lt;p&gt;The solution is here:&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Force overwrite of local files from remote repository:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;TypeScript is built by Microsoft, by one of its creators Anders Hejlsberg, a danish software engineer known for Turbo Pascal and Delphi. Its open source, developed public at &lt;a href=&quot;https://github.com/Microsoft/TypeScript&quot;&gt;https://github.com/Microsoft/TypeScript&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It’s a superset of ECMAScript 2015, also know as ES6, which means that any valid JS is also valid TypeScript. So if you ever wrote a line of JavaScript, you already wrote a line of TypeScript code!&lt;/p&gt;
-
-&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g typescript&lt;/code&gt;  to globally install the TypeScript compiler on your system, available to you using the &lt;code class=&quot;highlighter-rouge&quot;&gt;tsc&lt;/code&gt; command.&lt;/p&gt;
-
-&lt;p&gt;Create an &lt;code class=&quot;highlighter-rouge&quot;&gt;app.ts&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;Write your first program:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hello world!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git fetch --all
+$ git reset --hard origin/master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;As you see, its just plain JavaScript, but stored in a &lt;code class=&quot;highlighter-rouge&quot;&gt;.ts&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To download changes from some other branch&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Compile the program using the &lt;code class=&quot;highlighter-rouge&quot;&gt;tsc app.ts&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;Use the following command:&lt;/p&gt;
 
-&lt;p&gt;The compiler compiles the program into a new file: &lt;code class=&quot;highlighter-rouge&quot;&gt;app.js&lt;/code&gt;, with this content:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hello world!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Just like &lt;em&gt;old JavaScript&lt;/em&gt;, the TS compiler compiles TypeScript to ES5 by default, which means that its almost guaranteed to be suppored by all modern browsers. If you want to change the compilation target to another version, for example ES2018 use &lt;code class=&quot;highlighter-rouge&quot;&gt;tsc app.ts --target ES2018&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hello world!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Here almost nothing changed except for the additional semicolons.&lt;/p&gt;
-
-&lt;p&gt;If you would like to play around with TS to JS compilation, check out &lt;a href=&quot;https://www.typescriptlang.org/play/&quot;&gt;https://www.typescriptlang.org/play/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;typing&quot;&gt;TYPING&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;The most important functionality provided by TypeScript is the type system:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;static types&lt;/li&gt;
-  &lt;li&gt;interfaces&lt;/li&gt;
-  &lt;li&gt;type interence&lt;/li&gt;
-  &lt;li&gt;enums&lt;/li&gt;
-  &lt;li&gt;hybrid types&lt;/li&gt;
-  &lt;li&gt;generics&lt;/li&gt;
-  &lt;li&gt;union/intersection types&lt;/li&gt;
-  &lt;li&gt;access modifiers&lt;/li&gt;
-  &lt;li&gt;null checking&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This resembles languages like Go or C, so if you’ve coded these languages you already know how this works. Unike dynamic languages like Python or Ruby, this is all new.&lt;/p&gt;
-
-&lt;p&gt;The type system allows adding types to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;variables&lt;/li&gt;
-  &lt;li&gt;function arguments&lt;/li&gt;
-  &lt;li&gt;function return types&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Giving a more rigid structure to your programs.&lt;/p&gt;
-
-&lt;p&gt;This is how:&lt;/p&gt;
-
-&lt;h3 id=&quot;you-define-a-string-variable-in-typescript&quot;&gt;You define a string variable in TypeScript:&lt;/h3&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hello!&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;a-function-accepts-an-argument-of-a-specific-type&quot;&gt;A function accepts an argument of a specific type:&lt;/h3&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;you-declare-their-return-value&quot;&gt;You declare their return value:&lt;/h3&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Valid types are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;number&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;string&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;boolean&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;enum&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;undefined&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;any&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;never&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tuple&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;any&lt;/code&gt; is a type that identifies, as its name says, &lt;strong&gt;any&lt;/strong&gt; type.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;classes&quot;&gt;CLASSES&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Like JavsScript, you declare classes like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Defining class fields:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Fields are public by default. You can set a field to be &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;protected&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;brand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Like other languages, private fields can only be accessed by the class that its declared in. Protected fields can only be accessed by deriving classes.&lt;/p&gt;
-
-&lt;p&gt;TypeScript also has &lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt; fields, which are class fields instead of object fields:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;numberOfWheels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;initialize&lt;/code&gt; fields with a constructor:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;theColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theColor&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Shorthand syntax to make it simpler:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;printColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'red'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;printColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A field can be &lt;code class=&quot;highlighter-rouge&quot;&gt;read only&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git reset --hard origin/&amp;lt;insert_other_branch&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;in this case its value can only be set in the constructor.&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Git fetch&lt;/code&gt; downloads latest updates from remote, but doesn’t merge or rebase in local files.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Class methods:&lt;/p&gt;
+&lt;p&gt;Thank the lord! The repo is resurrected back to its stable form!&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'You are driving the car'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;want-to-know-more-check-out-the-git-cheat-sheet-here&quot;&gt;Want to know more, check out the &lt;a href=&quot;https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf&quot;&gt;Git cheat sheet here!&lt;/a&gt;&lt;/h3&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">A short post to all those who have difficulty with repository hell. This Git command parts the sea and brings peace back to your life</summary></entry><entry><title type="html">IntelliJ IDE - Productivity Tricks</title><link href="http://localhost:4000/intelliJ-ide-productivity-tricks/" rel="alternate" type="text/html" title="IntelliJ IDE - Productivity Tricks" /><published>2020-01-05T00:00:00+01:00</published><updated>2020-01-05T00:00:00+01:00</updated><id>http://localhost:4000/intelliJ-productivity-tricks</id><content type="html" xml:base="http://localhost:4000/intelliJ-ide-productivity-tricks/">&lt;h1 id=&quot;intellij-tricks-to-boost-productivity&quot;&gt;IntelliJ Tricks to boost productivity&lt;/h1&gt;
 
-&lt;p&gt;You create objects from those classes, like in JavaScript, using the &lt;code class=&quot;highlighter-rouge&quot;&gt;new&lt;/code&gt; keyword:&lt;/p&gt;
+&lt;p&gt;IntelliJ is a smart IDE used to code Java/Scala/Kotlin. It uses something called Jetbrains to almost code for you. Here is my favorite summery of keyboard shortcuts which made me WAY more productive in this heavy IDE.&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myCar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'red'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;moving-the-cursor&quot;&gt;&lt;strong&gt;Moving the cursor&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;p&gt;You can extend an existing class using the &lt;code class=&quot;highlighter-rouge&quot;&gt;extend&lt;/code&gt; keyword:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;One word at a time:&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ElectricCar&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;//..&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Cursor&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Move cursor to beginning of line:&lt;/p&gt;
 
-&lt;p&gt;Call &lt;code class=&quot;highlighter-rouge&quot;&gt;super()&lt;/code&gt; in the constructor and in methods to call the extended class corresponding method.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Home&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Move cursor to end of line:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;End&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;moving-the-lines&quot;&gt;&lt;strong&gt;Moving the lines&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h1 id=&quot;accessors&quot;&gt;ACCESSORS&lt;/h1&gt;
-&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Move line up:&lt;/p&gt;
 
-&lt;p&gt;Getters and setters:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Alt + Up&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Move line down:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Alt + Down&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;
+&lt;h2 id=&quot;format-code&quot;&gt;&lt;strong&gt;Format code&lt;/strong&gt;&lt;/h2&gt;
 
-  &lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_color&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Duplicate line:&lt;/p&gt;
 
-  &lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + D&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Delete line:&lt;/p&gt;
 
-&lt;h1 id=&quot;abstact-classes&quot;&gt;ABSTACT CLASSES&lt;/h1&gt;
-&lt;hr /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Y&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Parameter info:&lt;/p&gt;
 
-&lt;p&gt;To define an abstract class there needs to be a class that extends it, and implements its eventual abstact methods:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + P&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comment out selected line:&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;abstact&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + /&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comment out code block:&lt;/p&gt;
 
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SportsCar&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'You are driving a sports car'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + /&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fold code block:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + -/+&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;navigate-through-code&quot;&gt;&lt;strong&gt;Navigate through code&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h1 id=&quot;interfaces&quot;&gt;INTERFACES&lt;/h1&gt;
-&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;To class:&lt;/p&gt;
 
-&lt;p&gt;Interfaces build upon basic types. Use an interface as a type, and its interface can contain other type definitions:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + N&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To file:&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SetOfNumbers&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + N&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To symbol:&lt;/p&gt;
 
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SetOfNumbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + Alt + N&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go back:&lt;/p&gt;
 
-&lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + &amp;lt;-/-&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find action:&lt;/p&gt;
 
-&lt;p&gt;An interface can also be an interface for a class implementation:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + A&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Search everywhere&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Searches classes/files/symbols/actions)&lt;/li&gt;
+      &lt;li&gt;Use tab to jump to type&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Shift&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'string'&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;brand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;h2 id=&quot;the-nr-1-productivity-killer&quot;&gt;&lt;strong&gt;The Nr 1 Productivity killer&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SportsCar&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
+&lt;h3 id=&quot;file-tabs&quot;&gt;File tabs&lt;/h3&gt;
 
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;brand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//..&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;When using intelliJ you collect file tabs of previous files you have looked through or coded in.&lt;/p&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'You are driving a sports car'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This makes for bad productivity since you would have to pause your work and close the tabs one by one.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Instead! Disable tabs and use the recent files function!&lt;/p&gt;
 
-&lt;h1 id=&quot;function-features&quot;&gt;FUNCTION FEATURES&lt;/h1&gt;
-&lt;hr /&gt;
+&lt;ol&gt;
+  &lt;li&gt;In the find action, search for “tabs placement”&lt;/li&gt;
+  &lt;li&gt;Disable “tabs placement”&lt;/li&gt;
+  &lt;li&gt;Then use the following shortcut to navigate your recent files:&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Functions can have optional parameters using the &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; symbol after the parameter name:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Recent files&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;kilometers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;kilometers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Drive the car for ${kilometers} kilometers'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Drive the car'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + E&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Search in recent files by writing the filename of the file you desire to look/work on.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Recent edited files:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + E&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Parameters can have default values:&lt;/p&gt;
+&lt;h2 id=&quot;code-selection&quot;&gt;&lt;strong&gt;Code selection&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;kilometers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Drive the car for ${kilometers} kilometers'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select line&lt;/p&gt;
 
-&lt;p&gt;Functions can accept a verying number of parameters by using rest parameters:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Home/End&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select words&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;kilometers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;occupants&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Drive the car for ${kilometers} kilometers, with those people on it:'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;occupants&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;drive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Andre'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Peter'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Roger'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + &amp;lt;-/-&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select characters&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + &amp;lt;-/-&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Extending selection&lt;/p&gt;
 
-&lt;h1 id=&quot;enums&quot;&gt;ENUMS&lt;/h1&gt;
-&lt;hr /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + W&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Shrinking selection&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + W&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;A great way to defined named constants.&lt;/p&gt;
+&lt;h2 id=&quot;code-completion&quot;&gt;&lt;strong&gt;Code completion&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Order&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;First&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Third&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Fourth&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Envoking smart code completion:&lt;/p&gt;
 
-&lt;p&gt;Simply reference &lt;code class=&quot;highlighter-rouge&quot;&gt;Order.First&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Order.Second&lt;/code&gt; etc.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + Space&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Most usefull:&lt;/p&gt;
 
-&lt;p&gt;You can assign values to constants explicitly:&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;After the new keyword in an object declaration&lt;/li&gt;
+          &lt;li&gt;In the list of parameters of a method call&lt;/li&gt;
+          &lt;li&gt;In return statements&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + Space&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Twice&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Invokes smart code which completes:
+        &lt;ul&gt;
+          &lt;li&gt;Static expressions&lt;/li&gt;
+          &lt;li&gt;Collections, lists and arrays&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Static method completion:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Space + Ctrl + Space&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Order&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;First&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Second&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Third&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Fourth&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;postfix-completion&quot;&gt;Postfix completion&lt;/h3&gt;
 
-&lt;p&gt;or use strings:&lt;/p&gt;
+&lt;p&gt;What is postfix expressions?&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Order&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;First&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'FIRST'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Second&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'SECOND'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Third&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'THIRD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;Fourth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'FOURTH'&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;generics&quot;&gt;GENERICS&lt;/h1&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;A new feature not available in many programming languages. You can create a function, interface or class that works with different types, without specifying the type up front.&lt;/p&gt;
-
-&lt;p&gt;If you change the type at compile time, the compiler will throw an error.&lt;/p&gt;
-
-&lt;p&gt;We could do this by omitting types to all or using &lt;code class=&quot;highlighter-rouge&quot;&gt;any&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;But with generics all the tooling is going to be able to help us.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Postfix notation is used to represent algebraic expressions.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Example:&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hi ${a.name}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'André'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PostFixCompletion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Collection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Postfix expression:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;T&lt;/code&gt; symbol identifies a generic type.&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method&lt;/code&gt; method takes in a colleciton of string &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;.
+By writing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s.&lt;/code&gt; then using the &lt;strong&gt;postfix completion shortcut:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + J&lt;/code&gt;
+Will bring up a list of postfix expressions to choose.
+Filter the list by writing:&lt;/p&gt;
 
-&lt;p&gt;the type can be resistricted to a certain class family or interface, using the &lt;code class=&quot;highlighter-rouge&quot;&gt;extends&lt;/code&gt; keyword:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nn&lt;/code&gt; / &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt; -&amp;gt; Checks expression to be null.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;notnull&lt;/code&gt; -&amp;gt; Checks expression to be not-null.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;synchronized&lt;/code&gt; -&amp;gt; Produces synchronization statement.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;try&lt;/code&gt; -&amp;gt; Inserts statement in try-catch block.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for&lt;/code&gt; -&amp;gt; Iterates over enumerable collection.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fori&lt;/code&gt; -&amp;gt; Iterates with index over collection&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;forr&lt;/code&gt; -&amp;gt; Iterates with index in reverse order.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Greetable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Greetable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hi ${a.name}!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'André'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;h2 id=&quot;code-generation&quot;&gt;&lt;strong&gt;Code Generation&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Getter &amp;amp; Setter methods&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + Insert&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Stub test, setUp, tearDown methods&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + Insert&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;version-control-tricks&quot;&gt;&lt;strong&gt;Version Control tricks&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;commiting-changes&quot;&gt;&lt;strong&gt;Commiting changes:&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + K&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Brings up the built inn commit interface&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;commit-flow&quot;&gt;Commit flow:&lt;/h4&gt;
+
+&lt;p&gt;Inside the &lt;strong&gt;commit interface&lt;/strong&gt;, the focus starts in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit message&lt;/code&gt; box.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Write your commit message.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to your &lt;strong&gt;change list&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Tab&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;See the &lt;strong&gt;differance&lt;/strong&gt; in a file:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + D&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Changes here are automatically sent to the change set.&lt;/li&gt;
+      &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt; key to leave diff view.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Revert&lt;/strong&gt; changes in a file:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Alt + Z&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt; to the &lt;strong&gt;revert&lt;/strong&gt; button&lt;/li&gt;
+      &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enter&lt;/code&gt; key to confirm &lt;strong&gt;revert&lt;/strong&gt; file.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Before commit actions&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Select to perform task before commit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tab&lt;/code&gt; button to move the focus to the &lt;strong&gt;Commit&lt;/strong&gt; button&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enter&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;vc-popup-menu&quot;&gt;&lt;strong&gt;VC Popup Menu&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Get a popup list of alle VC operations directly from a keyboard shortcut&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + Back Quote&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Each list item is accociated with a number which you can access by pressing on your keyboard.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When selecting branch, search by typing in your search word.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Intellij will automatically filter the branch list as your typing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reformat&quot;&gt;&lt;strong&gt;Reformat:&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tab&lt;/code&gt; to move selection one tab stop to the right&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Tab&lt;/code&gt; to move selection one tab stop to the left&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Alt + L&lt;/code&gt; to reformat current selection or current file&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + W&lt;/code&gt; to extend selection&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Alt + 1&lt;/code&gt; to move focus to the project tool window&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;TIP!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + W&lt;/code&gt; to expand selection, then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Alt + L&lt;/code&gt; to reformat the code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;optimaizing-imports&quot;&gt;&lt;strong&gt;Optimaizing imports&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Imports can get messy when coding, which leads to libraries included that are not used.
+This can be solved easily by using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;optimizing imports&lt;/code&gt; shortcut:;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Alt + O&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;optimize-imports-on-the-fly&quot;&gt;Optimize imports on the fly&lt;/h3&gt;
+
+&lt;p&gt;When this is activated, intellij automatically changes and optimizes the imports as you code.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Ctrl + A&lt;/code&gt; to open the &lt;strong&gt;Actions&lt;/strong&gt; popup search field.&lt;/li&gt;
+  &lt;li&gt;Search for “&lt;em&gt;optimizing imports on the fly&lt;/em&gt;” and activate it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;only-optimize-imports-on-commited-files&quot;&gt;Only optimize imports on commited files&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + K&lt;/code&gt; to bring up the commit interface.&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Optimize imports&lt;/code&gt; in the &lt;strong&gt;before commit&lt;/strong&gt; field.&lt;/li&gt;
+  &lt;li&gt;Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Commit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;navigate-to-compilation-error&quot;&gt;&lt;strong&gt;Navigate to Compilation Error&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;When compiling an application in IntelliJ you will receive errors in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event log&lt;/code&gt;.
+Instead of using the mouse to click the error that will send you to the errors location, simply do this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;After a compilation error.&lt;/li&gt;
+  &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Alt + Down&lt;/code&gt; to move to next error.&lt;/li&gt;
+  &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + Alt + Up&lt;/code&gt; to move back to the previous error.&lt;/li&gt;
+  &lt;li&gt;Then press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt; to move to the error location.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bonus&quot;&gt;&lt;strong&gt;Bonus&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;language-injection&quot;&gt;Language injection&lt;/h3&gt;
+
+&lt;h2 id=&quot;others&quot;&gt;&lt;strong&gt;Other’s&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;multicursor&quot;&gt;MultiCursor&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl + ctrl (hold last ctrl and move cursor)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">A summery of my favorite keyboard shortcuts and tricks to boost productivity in the intelliJ IDE</summary></entry><entry><title type="html">Reactive Data Streams - quick rxJava Summery</title><link href="http://localhost:4000/reactive-data-streams-rxjava/" rel="alternate" type="text/html" title="Reactive Data Streams - quick rxJava Summery" /><published>2019-10-26T00:00:00+02:00</published><updated>2019-10-26T00:00:00+02:00</updated><id>http://localhost:4000/rxJava-reactive-java-streams</id><content type="html" xml:base="http://localhost:4000/reactive-data-streams-rxjava/">&lt;p&gt;Inspired by the (Reactive movement - manifesto)[https://www.reactivemanifesto.org/], rxJava is an implementation of Reactive Stream specification created by Netflix. Reactive streams is a concept for handling data streams asynchronous. It is built by Netflix to be able to effectively reduce network chattiness. Their goal with rxJava is to allow the client to invoke a single “heavy” client request that is executed in parallel on the server.&lt;/p&gt;
+
+&lt;p&gt;Its concept is based on an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Observable&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Iterable&lt;/code&gt; type and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Subscribing&lt;/code&gt; on these to send data streams async.&lt;/p&gt;
+
+&lt;p&gt;The following notes are not explained in high detail. Since in the process of writing this i switched to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Reactor&lt;/code&gt; library, because of upgrading to Spring Boot 2, which needs Java 8 and rxJava only runs Java 6. Both are based on a similar concept but different in structure.&lt;/p&gt;
+
+&lt;h2 id=&quot;observable--iterable&quot;&gt;Observable / Iterable&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Observable&lt;/code&gt;&lt;/strong&gt; data type can be thought of as a “push” equivaltent to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Iterable&lt;/code&gt; which is “pull”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Iterable&lt;/code&gt;&lt;/strong&gt; data type pulls values from the producer and the thread blocks until those values arrive.&lt;/p&gt;
+
+&lt;p&gt;The producer pushes values to the consumer whenever values are available.&lt;/p&gt;
+
+&lt;p&gt;Which creates an approach which is more flexible, because values can arrive synchronously or async.&lt;/p&gt;
+
+&lt;h4 id=&quot;observable-type&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Observable&lt;/code&gt; type&lt;/h4&gt;
+
+&lt;p&gt;Adds two missing semantiqcs which are present in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Iterable&lt;/code&gt; type:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Producer can signal to the consumer that there is no more data available.&lt;/li&gt;
+  &lt;li&gt;Producer can signal to the consumer that an error har occured.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This makes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Observable&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Iterable&lt;/code&gt; unified.&lt;/p&gt;
+
+&lt;p&gt;The only difference is the direction which the data flows.&lt;/p&gt;
+
+&lt;p&gt;Always return &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Observable&lt;/code&gt;, always request &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Iterable&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-an-observable-from-existing-data-structures&quot;&gt;Creating an Observable from existing Data structures&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;From existing data structures:&lt;/li&gt;
+  &lt;li&gt;Use the Observable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;just()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;from()&lt;/code&gt; methods to convert objects, lists, or arrays of objects into Observables that can emit those objects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Inserting a list into an observable&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;just&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;one object&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;want-more&quot;&gt;WANT MORE?&lt;/h1&gt;
+&lt;h4 id=&quot;creating-an-observable-via-the-create-method&quot;&gt;Creating an Observable via the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create()&lt;/code&gt; method&lt;/h4&gt;
 
-&lt;p&gt;We just went over the basics of TypeScript, go to the &lt;a href=&quot;https://www.typescriptlang.org/docs&quot;&gt;official docs&lt;/a&gt; for more!&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">A brief summary of typescript syntax</summary></entry><entry><title type="html">Hugo - as my static page blog</title><link href="http://localhost:4000/hugo/" rel="alternate" type="text/html" title="Hugo - as my static page blog" /><published>2019-01-08T00:00:00+01:00</published><updated>2019-01-08T00:00:00+01:00</updated><id>http://localhost:4000/hugo-static-site-generator</id><content type="html" xml:base="http://localhost:4000/hugo/">&lt;p&gt;After the setup of my Jekyll site I came across Hugo.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Via the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create()&lt;/code&gt; method, you can implement async i/o, computational operations, or even ‘infinite’ streams of data by designing your own Observable.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Hugo is a static site generator, on the same line as Jekyll as it uses &lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; to create blog posts.&lt;/p&gt;
+&lt;h6 id=&quot;synchronous-observable-example&quot;&gt;Synchronous Observable example:&lt;/h6&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Custom Observable that blocks when subscribed to (does not spawn an extra thread)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;customObservableBlocking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aSub&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aSub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUnsubscribed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;aSub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onNext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;value_&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// after sending all values we complete the sequence&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aSub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUnsubscribed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;aSub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCompleted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Output:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;customObservableBlocking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h6 id=&quot;asynchronous-observable-example&quot;&gt;Asynchronous Observable example:&lt;/h6&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Observable that emits 75 strings.&lt;/li&gt;
+  &lt;li&gt;Doesn’t block when subscribed to as it spawns a separate thread.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;customObservableNonBlocking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Runnable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUnsubscribed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onNext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;value_&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUnsubscribed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Output:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;customObservableNonBlocking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fetch a list of Wiki articles async, in Groovy:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchWikiArticleAsync&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wikiArticleNames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;articleName&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wikiArticleNames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUnsubscribed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onNext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://en.wikipedia.org/wiki/&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;articleName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isUnsubscribed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCompleted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Output:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fetchWikiArticleAsync&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Tiger&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Elephant&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--- Article ---\n&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;125&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;transforming-observables-with-operatiors&quot;&gt;Transforming Observables with Operatiors&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Chain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;operators&lt;/code&gt; together to transform and compose Observables&lt;/li&gt;
+  &lt;li&gt;Async call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;customObservableNonBlock&lt;/code&gt; with chaining:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;simpleComposition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;customObservableNonBlocking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;skip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;take&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;_xform&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;println&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;onNext =&amp;gt; &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;skip(10)&lt;/code&gt; - Jumps to the 10th value&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;take(5)&lt;/code&gt; - Grabs the 5 next values&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map(...)&lt;/code&gt; - maps each value and concatenates &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stringValue&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_xform&lt;/code&gt; =&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$stringValue_xform&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subscribe(...)&lt;/code&gt; - returns the mapped values with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onNext =&amp;gt;&lt;/code&gt; concatenated&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is an early rxJava summery. Switching to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reactor&lt;/code&gt; library instead, the concepts are the same but structured differently/more simply and accepts Java 8.&lt;/p&gt;
+
+&lt;p&gt;More information about rxJava, check it out here: (HERE)[https://github.com/ReactiveX/RxJava]&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">Inpired by the Reactive movement - manifesto, rxJava is an implementation of Reactive Stream specification created by netflix.</summary></entry><entry><title type="html">React Native: Boilerplates overview</title><link href="http://localhost:4000/react-native-boilerplates-overview/" rel="alternate" type="text/html" title="React Native: Boilerplates overview" /><published>2019-06-24T00:00:00+02:00</published><updated>2019-06-24T00:00:00+02:00</updated><id>http://localhost:4000/react-boilerplates</id><content type="html" xml:base="http://localhost:4000/react-native-boilerplates-overview/">&lt;p&gt;It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?&lt;/p&gt;
+
+&lt;p&gt;There are three boilerplates worth considering:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/infinitered/ignite&quot;&gt;Ignitee&lt;/a&gt; - 9,375 stars&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/futurice/pepperoni-app-kit&quot;&gt;Pepperoni App Kit&lt;/a&gt; - 4,453 stars&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bartonhammond/snowflake&quot;&gt;Snowflake&lt;/a&gt; - 4,399 stars&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will be taking a closer look at the most popular of them all, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite&lt;/code&gt; boilerplate.&lt;/p&gt;
+
+&lt;h2 id=&quot;ignitee-cli&quot;&gt;Ignitee CLI&lt;/h2&gt;
+
+&lt;p&gt;Ignite is now the ‘hottest’ CLI for React Native.&lt;/p&gt;
+
+&lt;p&gt;It includes boilerplates, plugins, generators and more.&lt;/p&gt;
+
+&lt;p&gt;Ignite requires a Node version of 7.6+ minimum, check your version by running:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Install &lt;a href=&quot;https://yarnpkg.com/lang/en/docs/install/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Yarn&lt;/code&gt;&lt;/a&gt; for your system.&lt;/p&gt;
+
+&lt;p&gt;Then run the following commands to add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite-cli&lt;/code&gt; and to create your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite&lt;/code&gt; boilerplate.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yarn&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ignite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cli&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;ignite-includes-two-primary-boilerplates&quot;&gt;Ignite includes two primary boilerplates&lt;/h4&gt;
+
+&lt;h5 id=&quot;andross&quot;&gt;Andross:&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The tried and true (React Navigation, Redux, &amp;amp; Redux Saga)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/49c1245faf62f39e5a486e0df0f8e5fa281f06ac/687474703a2f2f69725f7075626c69632e73332e616d617a6f6e6177732e636f6d2f70726f6a656374732f69676e6974652f69676e6974652d616e64726f73732d6c61756e63682d73637265656e2e706e67&quot; alt=&quot;Andross&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;React Native 0.57.7&lt;/li&gt;
+  &lt;li&gt;React Navigation 3.0.0&lt;/li&gt;
+  &lt;li&gt;Redux&lt;/li&gt;
+  &lt;li&gt;Redux Sagas&lt;/li&gt;
+  &lt;li&gt;And more!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;bowser&quot;&gt;Bowser:&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The latest and greatest (React Navigation, MobX State Tree, &amp;amp; Typescript)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/b598169ed7d3a9eea78e921acd10adee55bf53eb/687474703a2f2f69725f7075626c69632e73332e616d617a6f6e6177732e636f6d2f70726f6a656374732f69676e6974652f69676e6974652d626f777365722d6c61756e63682d73637265656e2e706e67&quot; alt=&quot;bowser&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This boilerplate includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;React Native&lt;/li&gt;
+  &lt;li&gt;React Navigation&lt;/li&gt;
+  &lt;li&gt;MobX State Tree&lt;/li&gt;
+  &lt;li&gt;Typescript&lt;/li&gt;
+  &lt;li&gt;Reactotron (requires 2.x)&lt;/li&gt;
+  &lt;li&gt;And more!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I won’t go into detail about these services in this post. I will choose a preferred boilerplate after testing and explain the services more in detail in a future post.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to&quot;&gt;How to:&lt;/h2&gt;
+
+&lt;p&gt;Lets choose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite&lt;/code&gt;s newest boilerplate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bowser&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;First of all to start of a bowser boilerplate, simply run the following command and choose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bowser&lt;/code&gt; from the terminal menu:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ignite new MyNewAppName
+-----------------------------------------------
+  (                  )   (
+  )\ )   (        ( /(   )\ )    *   )
+ (()/(   )\ )     )\()) (()/(  ` )  /(   (
+  /(_)) (()/(    ((_)\   /(_))  ( )(_))  )\
+ (_))    /(_))_   _((_) (_))   (_(_())  ((_)
+ |_ _|  (_)) __| | \| | |_ _|  |_   _|  | __|
+  | |     | (_ | | .` |  | |     | |    | _|
+ |___|     \___| |_|\_| |___|    |_|    |___|
+-----------------------------------------------
+
+An unfair headstart for your React Native apps.
+https://infinite.red/ignite
+
+-----------------------------------------------
+
+🔥 igniting app BowserStyle
+? Which boilerplate would you like to use? Bowser (React Navigation, MobX State Tree, &amp;amp; TypeScript)
+&amp;gt; Bowser  *
+&amp;gt; Andross
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you open your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NewAppProject&lt;/code&gt; directory, you will see loads of files that come will the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite&lt;/code&gt; boilerplate compared to the standard setup using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;react-native new&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expo init&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;Run simulator:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;For iOS:
+  cd ProjectFolder
+  react-native run-ios
+
+For Android:
+  cd ProjectFolder
+  react-native run-android
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To see what else Ignite CLI can do in the command line:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cd ProjectFolder
+  ignite
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;project-directory-structure&quot;&gt;Project directory structure&lt;/h3&gt;
+
+&lt;p&gt;The project structure is some more advanced that a simple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;react-native new&lt;/code&gt; / &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expo init&lt;/code&gt; default project structure.&lt;/p&gt;
+
+&lt;p&gt;The project structure will look similar to this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ignite-project
+├── app
+│   ├── components
+│   ├── i18n
+│   ├── models
+│   ├── navigation
+│   ├── screens
+│   ├── services
+│   ├── theme
+│   ├── utils
+│   ├── app.tsx
+│   ├── environment-variables.ts
+├── storybook
+│   ├── views
+│   ├── index.ts
+│   ├── storybook-registry.ts
+│   ├── storybook.ts
+├── test
+│   ├── __snapshots__
+│   ├── storyshots.test.ts.snap
+│   ├── mock-i18n.ts
+│   ├── mock-reactotron.ts
+│   ├── setup.ts
+│   ├── storyshots.test.ts
+├── README.md
+├── android
+├── ignite
+│   ├── ignite.json
+│   └── plugins
+├── index.js
+├── ios
+└── package.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lets go deeper into the directories included in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bowser&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-app-directory&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./app&lt;/code&gt; directory:&lt;/h4&gt;
+
+&lt;p&gt;Like when running the default structure commands, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app&lt;/code&gt; directory is present.&lt;/p&gt;
+
+&lt;p&gt;Inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app&lt;/code&gt; directory, it will look similar to this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;app
+│── components
+│── i18n
+├── models
+├── navigation
+├── screens
+├── services
+├── theme
+├── utils
+├── app.tsx
+├── environment-variables.ts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;components:&lt;/strong&gt;
+This is where your components live. Normally you would have components created with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.js&lt;/code&gt; file. Since &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bowser&lt;/code&gt; includes typescript, each component will have a directory containing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tsx&lt;/code&gt; file, along with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;story.tsx&lt;/code&gt; file. Optionally if the component is large, the component directory can include &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;preset.ts&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;props.ts&lt;/code&gt; files for better organisation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;i18n:&lt;/strong&gt;
+If you included the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;react-native-i18n&lt;/code&gt; service, this is where your translations live.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;models:&lt;/strong&gt;
+This is where your models and model logic lives. Each model has a directory that contains the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mobx-state-tree&lt;/code&gt; model file, test file, and other supported files like actions, types etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;navigation:&lt;/strong&gt;
+Your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;react-navigation&lt;/code&gt; files live here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;screens:&lt;/strong&gt;
+The react screen component which takes up the entire screen and is part of the navigation hierarchy lives here. Each directory contains the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tsx&lt;/code&gt; file, assets or helper files.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;services:&lt;/strong&gt;
+Services that interface with the outside world like REST APIs, Push Notifications etc, live here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;theme:&lt;/strong&gt;
+Your theme lives here, built including spacing, colors, typography, timing etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;utils:&lt;/strong&gt;
+Shared files like helpers, utilities like date helpers, formatters etc are often placed here. If a helper or utility is only used by a specific component/model in your application the file should live with that component/model.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;app.tsx:&lt;/strong&gt;
+Your entry point to your application. The main App component that renders the rest of the application. You can also choose if you would like to run the app in storybook mode.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-ignite-directory&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./ignite&lt;/code&gt; directory:&lt;/h4&gt;
+
+&lt;p&gt;This is where the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite&lt;/code&gt; CLI and all things &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ignite&lt;/code&gt; live. Generators, plugins and examples are included to help you get started.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-storybook-directory&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./storybook&lt;/code&gt; directory:&lt;/h4&gt;
+
+&lt;p&gt;This is where stories will be registered and where the Storybook configs will live.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://storybook.js.org/basics/guide-react-native/&quot;&gt;Storybook&lt;/a&gt; is a UI development environment for rapid iteration and testing of UI components. This allows you to visualise the different states of the individual components of your app and test the UI interactions.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-test-directory&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./test&lt;/code&gt; directory:&lt;/h4&gt;
+
+&lt;p&gt;This is where your Jest configs and mocks live. As well as storyshots test files.&lt;/p&gt;
+
+&lt;h2 id=&quot;attaching-to-expo&quot;&gt;Attaching to Expo&lt;/h2&gt;
+
+&lt;p&gt;If you are like me and use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;expo&lt;/code&gt; toolchain to kick of your project, and you would still like to use one of Ignites boilerplates simply use the command:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo init &amp;lt;AppName&amp;gt;
+cd &amp;lt;AppName&amp;gt;
+ignite attach
+// Then choose which boilerplate you would like to use
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This also works for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;create-react-native-app&lt;/li&gt;
+  &lt;li&gt;create-react-app&lt;/li&gt;
+  &lt;li&gt;normal Reach JS projects&lt;/li&gt;
+  &lt;li&gt;empty directories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not all plugins work in all environments, but many features of Ignite CLI are available.&lt;/p&gt;
+
+&lt;p&gt;For more info check out their documentation at https://expo.io/ !&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">It can take a few weeks (if not months) getting started with React Native, can boilerplates give a jump start to mobile development? And if so, which are the best?</summary></entry><entry><title type="html">Home Assistant - Lovelace introduction: Step 3</title><link href="http://localhost:4000/home-assinstant-step-3-lovelace/" rel="alternate" type="text/html" title="Home Assistant - Lovelace introduction: Step 3" /><published>2019-05-21T00:00:00+02:00</published><updated>2019-05-21T00:00:00+02:00</updated><id>http://localhost:4000/home-assistant-step-3-lovelace</id><content type="html" xml:base="http://localhost:4000/home-assinstant-step-3-lovelace/">&lt;p&gt;Home Assistant recently came out with their new UI in January. A ui called Lovelace it has now become their default ui interface. Taking a new approach for building user interfaces for Home Assistant.&lt;/p&gt;
+
+&lt;p&gt;Note! I had to cut this project short because of the timeframe for my new job, but here is a quick overview over my custom Lovelace UI which i was able to put together.&lt;/p&gt;
+
+&lt;p&gt;A dynamic UI with a whole new set of features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;24 card grid.&lt;/li&gt;
+  &lt;li&gt;A UI editor.&lt;/li&gt;
+  &lt;li&gt;Faster!&lt;/li&gt;
+  &lt;li&gt;And fully customizable
+    &lt;ul&gt;
+      &lt;li&gt;Cards have a list of attributes and options which can alter how your data is presented.&lt;/li&gt;
+      &lt;li&gt;Themes!&lt;/li&gt;
+      &lt;li&gt;Entity overriding privileges (name and icon).&lt;/li&gt;
+      &lt;li&gt;Custom cards built from the HA community.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/lovelace-default.png&quot; height=&quot;80%&quot; width=&quot;80%&quot; style=&quot;padding:10px;&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This is whats so fun about this new platform is that the community is blooming. Make HA work for you!&lt;/p&gt;
+
+&lt;p&gt;Take a look at my UI in mobile view:&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/ui-1.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; style=&quot;padding:10px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/ui-3.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; style=&quot;padding:10px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/ui-2.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; style=&quot;padding:10px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/ui-4.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; style=&quot;padding:10px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/ui-5.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; style=&quot;padding:10px;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/ha-step3/ui-6.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; style=&quot;padding:10px;&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">An introduction to the Lovelace UI used in HA</summary></entry><entry><title type="html">Home Assistant - Configuring devices: Step 2</title><link href="http://localhost:4000/home-assinstant-configurate-devices-step-2/" rel="alternate" type="text/html" title="Home Assistant - Configuring devices: Step 2" /><published>2019-05-20T00:00:00+02:00</published><updated>2019-05-20T00:00:00+02:00</updated><id>http://localhost:4000/home-assistant-step-2</id><content type="html" xml:base="http://localhost:4000/home-assinstant-configurate-devices-step-2/">&lt;p&gt;If you haven’t seen my last post on how to install Home Assistant on a Rapsberry Pi, follow &lt;a href=&quot;https://www.andrehatlo.com/home-assinstant-and-rapsberry-pi-3-step-1/&quot;&gt;this&lt;/a&gt; link before starting with this section.&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Successfully installed Home assistant on a Raspberry Pi&lt;/li&gt;
+  &lt;li&gt;Some type of smart device and gateway connected to your network&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;configuration-of-devices&quot;&gt;Configuration of devices:&lt;/h2&gt;
+
+&lt;p&gt;Go to your HA web interface by typing http://ipaddress:8123 in your browser.&lt;/p&gt;
+
+&lt;p&gt;The main menu will look something like this:&lt;/p&gt;
+
+&lt;h3 id=&quot;the-main-menu&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Main menu&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/main-menu.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Overview&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This is where your UI exists.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;HA has a map interface for tracking and estimating time.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Logbook&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Here HA logs all events that happen in your smart home.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;History&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Check out your sensors/devices/places history, how they act over time.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MDI Icon Index&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This is a custom icon page i added, i will get back to this and show you how this is done.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Configuration&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Everything you can do with HA gets configured here.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-configuration-menu&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Configuration&lt;/code&gt; menu&lt;/h3&gt;
+
+&lt;p&gt;Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;configuration&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main menu&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You will see a menu that looks something like this:&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/conf-menu-1.png&quot; height=&quot;70%&quot; width=&quot;70%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Home Assistant Cloud&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Sign up for the HA Cloud service, this makes it possible to use your interface from all around the world. Without any port forwarding.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Integrations&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;All new devices on your network has to get setup here before anything else.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Users&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Add user accounts that can access HA web interface here.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;General&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Here you can restart your server/core/groups/automations/scripts and validate your configuration files for quick debugging.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Persons&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Add people and connect them to the user account you would like.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Entity Registry&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;An overview over all devices. Also possible to override naming for each device.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Area Registry&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Define the places in your home. For example bathroom, kitchen, livingroom etc. These places can then be assigned to each of your devices.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Automation&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Here is where the magic happens. Where you can automate your smart devices as you see fit. Turn off all lights after 23:00 or set the temperature up after 07:00.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Script&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Script actions to be used in Lovelace UI. For example create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;restart HA&lt;/code&gt; script that calls action &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;homeassistant.restart&lt;/code&gt; so you can easily restart the server from your UI.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Z-Wave&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;You will probably not have this in your configuration unless you’ve activated z-wave in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;configration.yaml&lt;/code&gt; file. Here is where you can add Z-wave nodes and configure them.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Customization&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tweak entity attributes or add/edit customizations that override the enities attributes.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;integrations&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integrations&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;In the configuration menu, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integrations&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Discovered&lt;/code&gt; you’ll see all devices Home Assistant can find on your network.&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/int-discovered-device.png&quot; height=&quot;80%&quot; width=&quot;80%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Home assistant has made integrating devices as easy as pie. Just hit the button &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CONFIGURE&lt;/code&gt; and follow the steps:&lt;/p&gt;
+
+&lt;h3 id=&quot;ikea-tradfri-integration&quot;&gt;IKEA tradfri integration&lt;/h3&gt;
+
+&lt;p&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CONFIGURE&lt;/code&gt; next to IKEA TRÅDFRI.&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/ikea-gw.png&quot; height=&quot;80%&quot; width=&quot;80%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill inn the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Security Code&lt;/code&gt; from underneath your IKEA Trådfri Gateway.&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/ikea-gw-pw.png&quot; height=&quot;60%&quot; width=&quot;60%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit&lt;/code&gt; and accept the list of IKEA Trådfri devices HA lists up.&lt;/p&gt;
+
+&lt;h3 id=&quot;phillips-hue-integration&quot;&gt;Phillips hue integration&lt;/h3&gt;
+
+&lt;p&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CONFIGURE&lt;/code&gt; next to Philips Hue.&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/philips-gw.png&quot; height=&quot;80%&quot; width=&quot;80%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Locate your Philips gateway and press the button located on topp of the gateway.&lt;/p&gt;
+
+&lt;p&gt;Then accept all devices HA lists up in the next step.&lt;/p&gt;
+
+&lt;h3 id=&quot;back-in-integrations&quot;&gt;Back in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integrations&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;You should now have a list of devices depending on what you have configured from integrations.&lt;/p&gt;
+
+&lt;p&gt;This is what my list looks like:&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/configured-devices.png&quot; height=&quot;80%&quot; width=&quot;80%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;developer-tools&quot;&gt;Developer tools&lt;/h2&gt;
+
+&lt;p&gt;Underneath the Main menu you will see the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Developer tools&lt;/code&gt;, this is worth mentioning since it will be used a lot during the device automation/configuration stage.&lt;/p&gt;
+
+&lt;center&gt;
+  &lt;img src=&quot;/assets/images/ha-step2/dev-tools.png&quot; height=&quot;40%&quot; width=&quot;40%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Services (remote control icon)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Here its possible to run/test all services that HA has integrated.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;States (&amp;lt; &amp;gt; icons)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;This is the place to have total control over ALL your entities.&lt;/li&gt;
+      &lt;li&gt;Check if their online, or if they exist at all.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Events (radio tower icon)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;I havent personally used this function much, but as far as i know this is the place to run events.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Templates (document &amp;lt;&amp;gt; icon)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;When doing advanced configuration with HA, its possible to create templates that act as sensors. This is the place to test your tempates and see if you get the return values your looking for.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;About (info icon)&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The place to check your HA version or to check what the HA log is outputting.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hope this gives a better understanding of the fundamentals of HA and how to configure devices on your network.&lt;/p&gt;
+
+&lt;h1 id=&quot;want-more&quot;&gt;Want more?&lt;/h1&gt;
+
+&lt;h2 id=&quot;get-familiar-with-home-assistant-by-reading-the-docs&quot;&gt;Get familiar with Home Assistant by reading the &lt;a href=&quot;https://www.home-assistant.io/docs/&quot;&gt;docs&lt;/a&gt;!&lt;/h2&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">Going through the fundamentals of the Home Assistant web interface, and how to add/configure smart devices in your network with HA</summary></entry><entry><title type="html">Home Assistant - HA &amp;amp; PI: Step 1</title><link href="http://localhost:4000/home-assinstant-and-rapsberry-pi-3-step-1/" rel="alternate" type="text/html" title="Home Assistant - HA &amp;amp; PI: Step 1" /><published>2019-05-15T00:00:00+02:00</published><updated>2019-05-15T00:00:00+02:00</updated><id>http://localhost:4000/home-assistant-step-1</id><content type="html" xml:base="http://localhost:4000/home-assinstant-and-rapsberry-pi-3-step-1/">&lt;p&gt;There are almost 8.4 billion internet of things (IoT) across the world right now. The number of devices are expected to more than double the next couple of years to the stage of 20.4 billion in 2020. The problem with all these devices are that each and every brand of smart device has their own gateway and platform to automate and control. This is where Home Assistant steps in.&lt;/p&gt;
+
+&lt;p&gt;Home assistant is an open source platform where all your digital smart things can talk to each other. Implemented with an raspberry pi, you can shedual or command events for your smart devices (events as turn up heat when cold outside, or dim lights after 21:00).&lt;/p&gt;
+
+&lt;p&gt;Home assistant can run on any always connected operating system that supports Python 3 apps, and its very lightweight and small. Which makes it great to run on a Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;My smart devices range from:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;IKEA tradfri
+    &lt;ul&gt;
+      &lt;li&gt;Bulbs&lt;/li&gt;
+      &lt;li&gt;Motion sensor&lt;/li&gt;
+      &lt;li&gt;Gateway&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Philips hue bulbs and motion detectors
+    &lt;ul&gt;
+      &lt;li&gt;Bulbs&lt;/li&gt;
+      &lt;li&gt;Motion sensor&lt;/li&gt;
+      &lt;li&gt;Temperature sensor&lt;/li&gt;
+      &lt;li&gt;Light sensor&lt;/li&gt;
+      &lt;li&gt;Gateway&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sonos
+    &lt;ul&gt;
+      &lt;li&gt;Two speakers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Gooogle Cast
+    &lt;ul&gt;
+      &lt;li&gt;Livingroom tv with Android OS&lt;/li&gt;
+      &lt;li&gt;Nvidea Shield on my bedroom tv&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Z-wave
+    &lt;ul&gt;
+      &lt;li&gt;Door/Window sensor&lt;/li&gt;
+      &lt;li&gt;USB gateway&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To create a setup where all these different brands of devices can talk to each other i’ll create a new home automation server on my Raspberry Pi 3B+.&lt;/p&gt;
+
+&lt;p&gt;Follow this guide for a easy setup. And follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements:&lt;/h2&gt;
+&lt;center&gt;
+  &lt;img src=&quot;https://cdn.instructables.com/FFU/VNV0/IY4Q7ROG/FFUVNV0IY4Q7ROG.LARGE.jpg&quot; height=&quot;70%&quot; width=&quot;70%&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raspberry Pi 3B+ (Recommended)&lt;/li&gt;
+  &lt;li&gt;Micro SD (At least 32gb)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/&quot;&gt;Raspbian (Stretch light)&lt;/a&gt; installed on micro sd card&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installing-home-assistant-on-raspbian&quot;&gt;Installing Home Assistant on raspbian&lt;/h2&gt;
+
+&lt;h3 id=&quot;enable-ssh&quot;&gt;Enable SSH&lt;/h3&gt;
+
+&lt;p&gt;Assuming raspbian is already installed on the raspberry pi.&lt;/p&gt;
+
+&lt;p&gt;Make sure your connected to your local network, control by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Activate SSH on the raspberry pi by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo raspi-config&lt;/code&gt; in the terminal window.&lt;/p&gt;
+
+&lt;p&gt;Then select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Interfacing Options&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Navigate to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSH&lt;/code&gt; and select it.&lt;/p&gt;
+
+&lt;p&gt;Choose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Yes&lt;/code&gt; and select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ok&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then choose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Finish&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;connect-by-ssh-and-install-ha&quot;&gt;Connect by SSH and install HA&lt;/h3&gt;
+
+&lt;p&gt;To connect to your Raspberry Pi over SSH run the following command in terminal.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Default password is: raspberry
+$ ssh pi@piaddress
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Change the default password by running:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Update your pi:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get update
+$ sudo apt-get upgrade -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Install dependencies:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install python3 python3-venv python3-pip libffi-dev libssl-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add a homeassistant user with groups &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dialout&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpio&lt;/code&gt;. Dialout is required for using Z-Wave and Zigbee controllers, while GPIO is required to communicate with Raspberry’s GPIO.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo useradd -rm homeassistant -G dialout,gpio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Create a directory for the installation in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/srv&lt;/code&gt; directory and set owner permissions to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;homeassistant&lt;/code&gt; account:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd /srv
+$ sudo mkdir homeassistant
+$ sudo chown homeassistant:homeassistant homeassistant
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then create and change to a virtual environment for Home assistant as the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;homeassistant&lt;/code&gt; account:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo -u homeassistant -H -s
+$ cd /srv/homeassistant
+$ python3 -m venv .
+$ source bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once the virtual environment is activated, run the following command to install a required python package:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ python3 -m pip install wheel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Last but not least, install Home Assistant:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install homeassistant
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To complete the installation, start Home Assistant for the first time.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(homeassistant) $ hass
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will create the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.homeassistant&lt;/code&gt; directory under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;home/homeassistant&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;If the installation was successful you can reach the Home Assistant web interface on http://ipaddress:8121.&lt;/p&gt;
+
+&lt;h2 id=&quot;autostart-home-assistant-on-boot&quot;&gt;Autostart Home Assistant on boot&lt;/h2&gt;
+
+&lt;p&gt;Since the raspberry pi will host the Home Assistant server i would like to create a deamon that autostarts Home Assistant on boot.&lt;/p&gt;
+
+&lt;p&gt;A service file is needed to control Home Assistant with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Create the template below with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; rights with the following path &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/systemd/system/home-assistant@homeassistant.service&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /etc/systemd/system/home-assistant@homeassistant.service
+
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=ExecStart=/srv/homeassistant/bin/hass -c &quot;/home/%i/.homeassistant&quot;
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now reload &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemd&lt;/code&gt; to make the deamon aware of the new configuration.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo systemctl --system daemon-reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Enable the home assistant service to automatically start on boot:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo systemctl enable home-assistant@homeassistant.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To start the service run this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo systemctl start home-assistant@homeassistant.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now go to your Home Assistant web interface by going to http://ipaddress:8123.&lt;/p&gt;
+
+&lt;p&gt;Next time we will show how to setup your smart devices in HA and configure them so that you can access them all.&lt;/p&gt;
+
+&lt;p&gt;Follow my blog for more information, ideas and guides for Home Assistant that i will post in the near future!&lt;/p&gt;
+
+&lt;h1 id=&quot;want-more&quot;&gt;Want more?&lt;/h1&gt;
+&lt;h2 id=&quot;get-familiar-with-home-assistant-by-reading-the-docs&quot;&gt;Get familiar with Home Assistant by reading the &lt;a href=&quot;https://www.home-assistant.io/docs/&quot;&gt;docs&lt;/a&gt;!&lt;/h2&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">Automating my home with home assistant and raspberry pi. How to install HA on the Raspberry Pi 3 B+ ?</summary></entry><entry><title type="html">React Native: State vs Props</title><link href="http://localhost:4000/react-native-state-vs-props/" rel="alternate" type="text/html" title="React Native: State vs Props" /><published>2019-02-19T00:00:00+01:00</published><updated>2019-02-19T00:00:00+01:00</updated><id>http://localhost:4000/react-state-vs-props</id><content type="html" xml:base="http://localhost:4000/react-native-state-vs-props/">&lt;p&gt;The question that confuses most beginners in react.&lt;/p&gt;
+
+&lt;p&gt;What is the difference of props and state?&lt;/p&gt;
+
+&lt;p&gt;Lets clarify this.&lt;/p&gt;
+
+&lt;p&gt;Props includes data which we give to a component.&lt;/p&gt;
+
+&lt;p&gt;State includes data that is local or private to that component. So other components cannot access that state, it s completely internal to that component.&lt;/p&gt;
+
+&lt;p&gt;Lets say we have a Counters component.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./counter&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Counters&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;counters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;        
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Counter&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Counters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you take a closer look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt; method of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Counters&lt;/code&gt; component:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Counter&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;All attributes we are setting here are part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;props&lt;/code&gt;, the input to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Counter&lt;/code&gt; component.&lt;/p&gt;
+
+&lt;p&gt;We cannot access the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; of this component. It is local and internal to that component.&lt;/p&gt;
+
+&lt;p&gt;Props is read only, for example lets look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Counter&lt;/code&gt; component.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;handleIncrement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;badge badge-warning&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleIncrement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;btn btn-secondary btn-sm&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Look closer at the helper method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;handleIncrement&lt;/code&gt;, which increments the counter by one:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;handleIncrement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If we update the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;handleIncrement&lt;/code&gt; method to update the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;props.value&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;handleIncrement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// this.setState({value: this.state.value + 1});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And we increment it in the view, we would get this error:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/gyXg32t/Screenshot-2019-02-19-at-09-51-31.png&quot; alt=&quot;react-native prop error&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So react does not allow you to change any props to any component.&lt;/p&gt;
+
+&lt;p&gt;If you would like to modify the input during the lifecycle of a component, you have to get that input and put it in the state like initially done in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;handleIncrement&lt;/code&gt; method:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;handleIncrement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;more-information-about-state-and-props&quot;&gt;More information about state and props&lt;/h2&gt;
+
+&lt;p&gt;For more information about &lt;a href=&quot;https://facebook.github.io/react-native/docs/state&quot;&gt;state&lt;/a&gt; and &lt;a href=&quot;https://facebook.github.io/react-native/docs/props&quot;&gt;props&lt;/a&gt; visit the react &lt;a href=&quot;https://facebook.github.io/react-native/docs&quot;&gt;docs.&lt;/a&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">The question that confuses most beginners in react.</summary></entry><entry><title type="html">Starting a React Native project with Expo</title><link href="http://localhost:4000/starting-a-react-project/" rel="alternate" type="text/html" title="Starting a React Native project with Expo" /><published>2019-02-17T00:00:00+01:00</published><updated>2019-02-17T00:00:00+01:00</updated><id>http://localhost:4000/starting-a-react-project</id><content type="html" xml:base="http://localhost:4000/starting-a-react-project/">&lt;p&gt;For React Native we need &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Watchman&lt;/code&gt;, React Native CLI and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Xcode&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;node:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A javascript package manager.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Watchman:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A service for watching changes in files and trigger actions when files are changed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;React Native CLI:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A command line interface module for React Native.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Xcode:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apples IDE to test your application on an Iphone simulator.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1-install-node-and-watchman&quot;&gt;1. Install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Watchman&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Install node and watchman using &lt;a href=&quot;https://brew.sh/index_se.html&quot;&gt;Homebrew&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install node
+brew install watchman
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;2-install-react-native-cli&quot;&gt;2. Install React Native CLI&lt;/h2&gt;
+
+&lt;p&gt;Install React Native CLI with the node package manager (npm).&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g react-native-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;3-install-xcode-and-the-xcode-command-line-tools&quot;&gt;3. Install Xcode and the Xcode Command line tools.&lt;/h2&gt;
+
+&lt;p&gt;Install &lt;a href=&quot;https://itunes.apple.com/us/app/xcode/id497799835?mt=12&quot;&gt;Xcode from the app store&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In Xcode preferences, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;locations&lt;/code&gt; and download the Xcode CLI found at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command Line Tools&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Components&lt;/code&gt; and download a simulator of your choice, preferably the newest.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-starting-a-react-native-project&quot;&gt;4. Starting a React Native project&lt;/h2&gt;
+
+&lt;p&gt;Now you can run these commands in your terminal to start of a React Native project:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;react-native init MyApp
+cd MyApp
+react-native run-ios
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will initiate a React Native project, and showcase it in an iOS simulator that should look similar to this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/React-native-ios.png&quot; alt=&quot;react-native&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;expo&quot;&gt;Expo&lt;/h2&gt;
+
+&lt;p&gt;Expo is a free toolchain built around React Native like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;react-native&lt;/code&gt; to help build native iOS and Android projects.&lt;/p&gt;
+
+&lt;p&gt;The toolchain provides tools to simplify development of React Native apps by supplying components of users interface and services that are normally available in third-party native React Native components. All these you can find in Expo SDK.&lt;/p&gt;
+
+&lt;p&gt;Simply install the Expo CLI and run the simulator by running the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g expo-cli
+expo init MyApp
+cd MyApp
+npm start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last command will start Metro Bundler, which is a HTTP server that compiles the JavaScript code of our app using Babel and serves it to the Expo app.&lt;/p&gt;
+
+&lt;p&gt;You will also notice it pops open the Expo Dev Tools, a control panel for developing your app, in your default browser.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-the-app-on-your-phone-or-simulator&quot;&gt;Open the app on your phone or simulator&lt;/h3&gt;
+
+&lt;p&gt;Looking at the Expo Dev Tools, you have available options on which type of simulator you would like to run (Android or iOS). And you have the option to scan the QR code to run the app on your phone in real time using Live Reload.&lt;/p&gt;
+
+&lt;p&gt;All you have to do is download the &lt;a href=&quot;https://expo.io/tools#client&quot;&gt;Expo app&lt;/a&gt; on either Android or iPhone and scan the QR code, and you are ready to go.&lt;/p&gt;
+
+&lt;h3 id=&quot;react-native-documentation&quot;&gt;React Native Documentation:&lt;/h3&gt;
+
+&lt;p&gt;Learn more about how React Native works by looking at the &lt;a href=&quot;https://facebook.github.io/react-native/docs/tutorial.html&quot;&gt;docs&lt;/a&gt;.&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">How to start using react native with Expo</summary></entry><entry><title type="html">Hugo - as a static page blog</title><link href="http://localhost:4000/hugo/" rel="alternate" type="text/html" title="Hugo - as a static page blog" /><published>2019-01-08T00:00:00+01:00</published><updated>2019-01-08T00:00:00+01:00</updated><id>http://localhost:4000/hugo-static-site-generator</id><content type="html" xml:base="http://localhost:4000/hugo/">&lt;p&gt;After the setup of my Jekyll site I came across Hugo.&lt;/p&gt;
+
+&lt;p&gt;Hugo is a static site generator, on the same line as Jekyll as it uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; to create blog posts.&lt;/p&gt;
 
 &lt;p&gt;The main difference i noticed after testing Jekyll against Hugo is that it’s fast. It seems like it has Go under the hood.&lt;/p&gt;
 
@@ -415,7 +1550,7 @@
 
 &lt;h2 id=&quot;hugo-quicksetup-tutorial&quot;&gt;Hugo quicksetup tutorial:&lt;/h2&gt;
 
-&lt;h2 id=&quot;step-1-install-hugo&quot;&gt;Step 1: Install &lt;code class=&quot;highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;step-1-install-hugo&quot;&gt;Step 1: Install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;I use mac, so for those other operating systems out there:&lt;/p&gt;
 
@@ -433,7 +1568,7 @@
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Run the &lt;code class=&quot;highlighter-rouge&quot;&gt;brew&lt;/code&gt; commend to install &lt;code class=&quot;highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;brew&lt;/code&gt; commend to install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hugo&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hugo&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -442,17 +1577,17 @@
 
 &lt;h2 id=&quot;step-2-create-a-new-site&quot;&gt;Step 2: Create a new site:&lt;/h2&gt;
 
-&lt;p&gt;Go to the directory where you want to create your &lt;code class=&quot;highlighter-rouge&quot;&gt;Hugo&lt;/code&gt; repo, then run this command:&lt;/p&gt;
+&lt;p&gt;Go to the directory where you want to create your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hugo&lt;/code&gt; repo, then run this command:&lt;/p&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;hugo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Will create a new Hugo site in a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;name-of-site-dir&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Will create a new Hugo site in a folder named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name-of-site-dir&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-3-add-a-theme&quot;&gt;Step 3: Add a Theme&lt;/h2&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Requirement: &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; is installed&lt;/p&gt;
+  &lt;p&gt;Requirement: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; is installed&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;See &lt;a href=&quot;themes.gohugo.io&quot;&gt;themes.gohugo.io&lt;/a&gt; to browse themes.&lt;/p&gt;
@@ -466,7 +1601,7 @@
 &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;submodule&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;budparr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gohugo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ananke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;themes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ananke&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Now edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; configuration file and add the Ananke theme:&lt;/p&gt;
+&lt;p&gt;Now edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; configuration file and add the Ananke theme:&lt;/p&gt;
 
 &lt;p&gt;Either echo it in from commandline:&lt;/p&gt;
 
@@ -486,7 +1621,7 @@
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;hugo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;md&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Edit the file if you like, you can use both &lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Html&lt;/code&gt;, your choice.&lt;/p&gt;
+&lt;p&gt;Edit the file if you like, you can use both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Markdown&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Html&lt;/code&gt;, your choice.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-5-start-the-server&quot;&gt;Step 5: Start the server&lt;/h2&gt;
 
@@ -501,9 +1636,9 @@
 
 &lt;h3 id=&quot;site-config&quot;&gt;Site config&lt;/h3&gt;
 
-&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; in your favourite text editor.&lt;/p&gt;
+&lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.toml&lt;/code&gt; in your favourite text editor.&lt;/p&gt;
 
-&lt;p&gt;Then replace &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; with something personal and &lt;code class=&quot;highlighter-rouge&quot;&gt;baseUrl&lt;/code&gt; (if you have a domain already), like i did:&lt;/p&gt;
+&lt;p&gt;Then replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; with something personal and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;baseUrl&lt;/code&gt; (if you have a domain already), like i did:&lt;/p&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;http://andrehatlo.org/&quot;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;languageCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;en-us&quot;&lt;/span&gt;
@@ -518,264 +1653,8 @@ while the server is running will automatically update
 the site and you will see the changes right away.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;now-your-site-is-up-and-running-you-can-find-more-to-do-by-reading-the-hugo-docs-here&quot;&gt;Now your site is up and running you can find more to do by reading the Hugo docs &lt;a href=&quot;https://gohugo.io/documentation/&quot;&gt;here&lt;/a&gt;&lt;/h2&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Create your own blog with Hugo, a static site generator, on the same line as Jekyll.</summary></entry><entry><title type="html">Jekyll + Github = Free hosting: Tutorial</title><link href="http://localhost:4000/jekyll-github-free-host/" rel="alternate" type="text/html" title="Jekyll + Github = Free hosting: Tutorial" /><published>2019-01-07T00:00:00+01:00</published><updated>2019-01-07T00:00:00+01:00</updated><id>http://localhost:4000/jekyll-and-github-makes-love</id><content type="html" xml:base="http://localhost:4000/jekyll-github-free-host/">&lt;h2 id=&quot;requirements&quot;&gt;Requirements:&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Terminal&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check whether you have Ruby 2.1.0 or higher installed:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ruby -v
- ruby 2.x.x
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install Bundler:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ gem install bundler
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Create a local repository for your Jekyll site. (Jump to step 1 if this is done)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Install git, see &lt;a href=&quot;https://help.github.com/articles/set-up-git/&quot;&gt;set up Git&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Open terminal&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Initialize a new Git repo for your jekyll site:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init &amp;lt;GitHubUsername&amp;gt;.github.io
-Initialized empty Git repository in /Users/horseforce/andrehatlo.github.io/.git/
-# creates a new file directory on your local computer, Initialized as a Git repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Then change directory to the new repository created:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd &amp;lt;GitHubUsername&amp;gt;.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;step-1-install-jekyll-using-bundler&quot;&gt;Step 1: Install Jekyll using Bundler&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check if you have a Gemfile in your newly created repo&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ ls
- Gemfile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;If you have a Gemfile, skip to step 4.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open up your favorite text editor, if you need one: &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;. Then add these lines to a new file, and save.&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; source 'http://rubygems.org'
- gem 'github-pages', group: :jekyll_plugins
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Save the file as &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;, in the root directory of your local Jekyll repository. Now skip to step 5 to install Jekyll.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Only&lt;/strong&gt; if you already have a Gemfile. Open your favorite editor, mine is &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, and add these lines to your Gemfile:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; source 'https://rubygems.org'
- gem 'github-pages', group: :jekyll_plugins
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install Jekyll and other dependencies from the GitHub Pages gem by running:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ bundle install
- Fetching gem metadata from https://rubygems.org/......
- Fetching version metadata from https://rubygems.org/...
- Fetching dependency metadata from https://rubygems.org/..
- Resolving dependencies...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;step-2-run-your-jekyll-site-localy&quot;&gt;Step 2: Run your Jekyll site localy&lt;/h2&gt;
-
-&lt;p&gt;You can generate site files for a basic Jekyll template site in your local repository.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you don’t already have a Jekyll site localy on your computer, create a Jekyll template site in a new directory:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ bundle exec jekyll _3.3.0_ new &amp;lt;new-jekyll-site-repo-name&amp;gt;
- New jekyll site installed in /Users/horseforce/&amp;lt;new-jekyll-site-repo-name&amp;gt;.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate into your new site directory and edit your Gemfile by removing the following line:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ 'jekyll', &quot;3.3.0&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the same Gemfile, delete the &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; at the beginning of this line:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ gem &quot;github-pages&quot;, group: :jekyll_plugins
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Initialize the directory as a Git repo&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Connect your remote repo on GitHub to your local repo for your site.&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git remote add origin http://github.com/&amp;lt;username/organization-name/your-remote-repo-name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To edit the Jekyll site, open your jekyll local repository in an text editor. Make as much changes as you want and save them.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Preview changes locally by running a Jekyll command to build your site:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Navigate to your site root directory:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd &amp;lt;GithubUsername&amp;gt;.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the following command:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ bundle exec jekyll serve
-Configuration file: /Users/horseforce/andrehatlo.github.io/_config.yml
-            Source: /Users/horseforce/andrehatlo.github.io
-       Destination: /Users/horseforce/andrehatlo.github.io/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-                    done in 0.309 seconds.
- Auto-regeneration: enabled for '/Users/horseforce/my-site'
-Configuration file: /Users/horceforce/andrehatlo.github.io/_config.yml
-    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In your browser, preview your local Jekyll site at &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add or stage your changes:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Commit it&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ git commit -m &quot;some stuff changed&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Push your changes to your remote repository on GitHub&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;step-3-make-github-host-it&quot;&gt;Step 3: Make github host it&lt;/h2&gt;
-
-&lt;h3 id=&quot;navigate-to-your-repository&quot;&gt;Navigate to your repository.&lt;/h3&gt;
-
-&lt;p&gt;Which should be named in this format:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;github-username&amp;gt;.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If your repository is called something else, we can change it at the next step.&lt;/p&gt;
-
-&lt;h3 id=&quot;enter-into-your-repository-settings&quot;&gt;Enter into your repository settings.&lt;/h3&gt;
-
-&lt;p&gt;First thing you see is &lt;code class=&quot;highlighter-rouge&quot;&gt;Repository name&lt;/code&gt;, edit it so that it matches the syntax:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;github-username&amp;gt;.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next scroll further down in repo settings until you see &lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Pages&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;-github-pages&quot;&gt;@ &lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Pages&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Hopefully it should now say:&lt;/p&gt;
+&lt;h2 id=&quot;now-your-site-is-up-and-running-you-can-find-more-to-do-by-reading-the-hugo-docs-here&quot;&gt;Now your site is up and running you can find more to do by reading the Hugo docs &lt;a href=&quot;https://gohugo.io/documentation/&quot;&gt;here&lt;/a&gt;&lt;/h2&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;:heavy_check_mark: Your site is published at: &lt;a href=&quot;http://andrehatlo.com&quot;&gt;http://www.andrehatlo.github.io&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If not, there is possibly something wrong with your repository or github setup.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;applying-a-custom-domain&quot;&gt;Applying a custom domain&lt;/h2&gt;
-
-&lt;p&gt;Scroll down on the github repo settings page until you see &lt;code class=&quot;highlighter-rouge&quot;&gt;Custom domain&lt;/code&gt; under &lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub Pages&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Fill in your domain name, and click save.&lt;/p&gt;
-
-&lt;p&gt;Now go to your domain hoster website and create a CNAME record that points to your repo, this can be done in the settings of your DNS records.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;www.andrehatlo.com -&amp;gt;  CNAME -&amp;gt; &amp;lt;github-username&amp;gt;.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;now-you-should-have-your-own-domain-hosted-for-free&quot;&gt;Now you should have your own domain hosted for free&lt;/h2&gt;
-
-&lt;p&gt;Just keep tweaking your website and check out all the different themes out there! I will be coming with more tutorials about Jekyll in the future :smile:&lt;/p&gt;
-
-&lt;h3 id=&quot;hope-this-was-helpfull-enough-as-my-first-blog-post&quot;&gt;Hope this was helpfull enough as my first blog post.&lt;/h3&gt;
-&lt;h3 id=&quot;ill-try-to-excel-as-fast-as-possible-by-writing-many-many-more-wave-wave&quot;&gt;I’ll try to excel as fast as possible by writing MANY MANY more! :wave: :wave:&lt;/h3&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Create your own blog/portofolio using these technologies, with no hosting fee!</summary></entry><entry><title type="html">Jekyll: Creating a blog is easy and FREE</title><link href="http://localhost:4000/jekyll-creating-blog/" rel="alternate" type="text/html" title="Jekyll: Creating a blog is easy and FREE" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/projekt-nettansikt</id><content type="html" xml:base="http://localhost:4000/jekyll-creating-blog/">&lt;p&gt;So, i’ve chosen to start blogging my experiences/insights/thoughts as a developer. Both to learn and to share knowledge.&lt;/p&gt;
-
-&lt;p&gt;Trying to find the right platform to start a blog was my biggest challenge.&lt;/p&gt;
-
-&lt;p&gt;Google didn’t make in much easier, i have a feeling their algorithm favorites something called &lt;strong&gt;WORDPRESS&lt;/strong&gt;. So i tested it out.&lt;/p&gt;
-
-&lt;p&gt;Making it through the first configuration, then the second configuration, then they wanted me to pay them for a domain name i already have.&lt;/p&gt;
-
-&lt;p&gt;At last i made it through to the end, and i was left with was a revamped version of Joomla.&lt;/p&gt;
-
-&lt;p&gt;Using Wordpress, there is almost no challenge, and you end up paying for something in end anyway, something i’m &lt;em&gt;_not_&lt;/em&gt; interested in.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;
-&lt;iframe src=&quot;https://giphy.com/embed/O8pa1CyYSp1yE&quot; width=&quot;480&quot; height=&quot;269&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;I wanted the right platform, for a simple programming blog and portfolio for my future projects.&lt;/p&gt;
-
-&lt;p&gt;This was until i stumbled into the best place on the internet; &lt;em&gt;Reddit&lt;/em&gt;, and found a post about &lt;strong&gt;Jekyll&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;For those who does not know what Jekyll is:&lt;/em&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Written in Ruby by Tom Preston-Werner, GitHub’s co-founder, it is distributed under the open source MIT license&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This lightweight, easy to use, multilingual system is a perfect substitution for platforms similar to Wordpress.&lt;/p&gt;
-
-&lt;h3 id=&quot;and-do-you-know-whats-even-better&quot;&gt;And do you know whats even better!?&lt;/h3&gt;
-
-&lt;h1 id=&quot;using-jekyll-you-can-get-free-hosting-through-github&quot;&gt;Using Jekyll you can get &lt;em&gt;FREE&lt;/em&gt; hosting through Github!&lt;/h1&gt;
-
-&lt;p&gt;Follow my tutorial on how i used Jekyll and Github to create this blog/portfolio you are on right now:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.andrehatlo.com/jekyll-and-github-makes-love&quot;&gt;Free Blog/Portfolio with Jekyll and Github tutorial&lt;/a&gt;&lt;/p&gt;</content><author><name>André Hatlo-Johansen</name></author><summary type="html">Jekyll is a light weight, easy to setup system that does exactly what it is supposed to do.</summary></entry></feed>
+  &lt;p&gt;Note that i stayed with Jekyll even though Hugo was an awesome choice for a personal blog with the same features &amp;gt; but fast. This is mostly because i found that Jekyll was more intuitive when coming to posting and doing simple &amp;gt; customization. What ever you pick if you choose to start a blog/portfolio you cant go wrong either way!&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>André Hatlo-Johansen</name><email>andrehatlo@icloud.com</email></author><summary type="html">Create your own blog with Hugo, a static site generator, on the same line as Jekyll.</summary></entry></feed>

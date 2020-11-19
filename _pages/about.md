@@ -10,19 +10,15 @@ header:
 # Hi! I'm André Hatlo-Johansen!
 
 
-[Take a look at my CV here](https://drive.google.com/file/d/1hsQ-YoPXCy-37s0ataECXT1CD7Bl_IAi/view)
+[Take a look at my newly updated CV here](https://drive.google.com/file/d/1hsQ-YoPXCy-37s0ataECXT1CD7Bl_IAi/view)
 
 ## Professionally:
 
-A developer, worked on an ecommerce project for Rørkjøp Nett AS for 2 years, and worked on a WebBank project for Nordea for about 1 year which entailed building API microservices.
+As a developer, I've worked in the E-Commerce field for quite some time, for Rørkjøp Nett AS for 2 years, and worked on a WebBank project for Nordea for about 1 year which entailed building API micro-services. While also keeping my own store open and updated with sales at all times.
 
 ### Rørkjøp
 
-Hired me after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS.
-
-On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS.
-
-This entailed setting up a machine learning system that learned by looking at personalized data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations. Which it did successfully.
+Rørkjøp hired me after writing my bachelor thesis on [Machine Learning in an E-Commercial Business](https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06) for Rørkjøp AS. On this thesis my main job in the group was to implement a working machine learning solution for Rørkjøp AS. This entailed setting up a machine learning system that learned by looking at personalised data sets for each unique customer, based on their previous shopping pattern and return personal product recommendations. Which it did successfully.
 
     Technologies utilized for thesis:
       - Linux
@@ -47,12 +43,11 @@ This entailed setting up a machine learning system that learned by looking at pe
       - Elasticsearch
       - Heroku
 
-Projects I've been assigned while working for Rørkjøp are mostly based on creating features too speed up productivity, scalability or maintainability of Rørkjøp's e-commerce platform.
+Projects I've been assigned while working for Rørkjøp are mostly based on creating features too speed up productivity, scalability or maintainability of Rørkjøp's E-Commerce and CMS platform.
 
 #### Nordea AS
 
-My second job at Nordea AS i was stationed mostly backend, building microservice API's.
-Working here i've utilized Java foremost with reactive libraries to create rich streaming applications:
+At Nordea AS i was stationed mostly backend, building micro-service API's that communicated with third party services to add features such as payment, adding balance to an account and loans. Working at Nordea i've utilized Java foremost with reactive libraries to create rich streaming applications:
 
 Technologies used at Nordea AS:
 
@@ -60,13 +55,13 @@ Technologies used at Nordea AS:
   - RxJava library
   - Reactor
   - SpringBoot
-- Maven 
+- Maven
 - SQL
 - IntelliJ (IDE)
 
 ### Other skills:
 
-    - Java (Upper Intermediate)
+    - Java (Intermediate)
     - HTML (Advanced)
     - CSS/SCSS  (Pre-advanced)
     - Adobe Photoshop (Pre-advanced)
@@ -76,27 +71,27 @@ On my spare time i like to **solve puzzles**, **read**, **gain knowledge** and *
 
 ### E-Commerce and Digital Marketing
 
-Having my own e-commerce site and trying to gain organic growth has made me efficient at SEO and website structuring for website traffic. Which again forces me to be creative and use some of my spare time to write articles about subjects that i've never thought about.
+Having my own E-Commerce site and doing my best to gain organic growth has made me efficient at SEO and website structuring for website traffic. Which again forces me to be creative and use some of my spare time to write articles about subjects that i've never thought about.
 
 Also i am very comfortable with Facebook Ads and Google Ads, which i've used to convert customers.
 
 ## On a personal note:
 
-I'm a 27 year old man who both loves a good laugh, having a good time and values my alone time.
+I'm a 29 year old man who both loves a good laugh, having a good time and values my alone time.
 
-At the moment I live in Drammen Norway, with my best friend and beautiful partner Hilde.
+At the moment I live in Drammen Norway, with my other half Hilde.
 
-Together we have a super funny thirty-five kilo, three year old boxer named **Mini**.
+We have a super funny thirty-five kilo, three year old boxer named **Mini**.
 
 <img src="/assets/images/fam.jpg" alt="my family"/>
 
 ## Hobbies:
 
 - Cooking - I love to both make food and eat
-- Ski, snowboarding.
-- Keeping up with my favourite tv-shows.
-- Playing and walking with my dog.
-- I've picked up Yoga in the last year.
+- Walks with my dog, while i question reality to keep my mind in top shape.
+- Keeping up with my favourite tv-shows through services such as Trakt.
+- Playing computer games.
+- Yoga has literally changed my life and I love it.
 
 ## Phrases i live by:
 
