@@ -9,6 +9,12 @@ header:
 
 # Portfolio
 
+### Crypto Dash:
+
+Created With React, Axios, Api (Coingecko), Highland charts and hosted on heroku.
+
+<a href="https://awsm-dash.herokuapp.com/">View Dashboard</a>
+
 ### Bachelor Thesis:
 
 <a href="https://drive.google.com/open?id=1ZTvTA2Uo2WnMI_grts0aJcPWlR_Hje06">
