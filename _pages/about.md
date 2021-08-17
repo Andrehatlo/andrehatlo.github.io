@@ -19,11 +19,9 @@ This is why i call my self a **creative engineer**, because I see my self as hig
 
 A creative engineer is someone who is abstract and dynamic with creative ideas that flow like a fosset when faced with an issue. They see all threads available to create solutions in the most effective manner possible, while floating close to earth so a project stays in its track.
 
-I am a creative individual comparing myself to those i have worked close with in the last years, and i do all i can to harness this part of myself for the best of my abilities by painting, creating lighting installations and photographing/photoshopping weekly to stay in this part of myself.
+I am a creative individual comparing myself to those i have worked close with in the last years, and i do all i can to harness this part of myself for the best of my abilities by painting, creating lighting installations and photographing weekly to stay in this part of myself.
 
 This also reflects through in my development process as i adapt like a gecko to any type of syntax or issue i've met.
-
-[Link to updated CV(2020)](https://drive.google.com/file/d/1hsQ-YoPXCy-37s0ataECXT1CD7Bl_IAi/view)
 
 ## My Development Role
 
@@ -84,10 +82,9 @@ Technologies used at Nordea AS:
 
 ### Other skills:
 
-    - Java (Intermediate)
+    - Javascript (Intermediate) = React/Node.js/etc
     - HTML (Advanced)
-    - CSS/SCSS  (Pre-advanced)
-    - Adobe Photoshop (Pre-advanced)
+    - CSS/SCSS  (Advanced)
     - Linux/Windows/iOS (Advanced)
 
 ## Other information:
@@ -102,11 +99,11 @@ Also i am very comfortable with Facebook Ads and Google Ads, which i've used to 
 
 ## On a personal note:
 
-I'm a 29 year old man who both loves a good laugh, having a good time and values my alone time.
+I'm a 29 year old man who both loves a good laugh, having a good time and values my time.
 
-At the moment I live in Drammen Norway with my girlfriend.
+At the moment I live in Drammen Norway with my bestfriend/girlfriend and Mini.
 
-I have a super funny thirty-five kilo, three year old boxer named **Mini**.
+I have a super funny 40kilo, three year old boxer named **Mini**.
 
 <img src="/assets/images/fam.jpg" alt="my family"/>
 
