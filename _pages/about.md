@@ -13,13 +13,13 @@ I've come to learn over the last years that people are quite different.
 
 This is in respect to the inner essences and personal "powers" that one is born with and eventually with enough self-mastery can harness to its fullest potensial. This came to me after observing my life from a distance, that entailed my own and others thought process, planning process to execution process.
 
-This is why i call my self a **creative engineer**, because I see my self as highly creative in the field of thought, planning and execution. I can hold a room, which means anyone can say anything to me, i dont offend, judge and always give my honest feedback. While also having the mentality to think of solutions to issues for easier and or more perfected solution mastering.
+This is why i call my self a **creative engineer**, because I see my self as highly creative in the field of thought, planning and execution. I can hold a room, which means anyone can say anything to me, i dont offend, judge and try to (to my best ability) to give my 100% honest feedback. While also having the mentality to think of solutions to computer coding issues for easier and or more perfected solution mastering.
 
 ## Creative Engineer
 
-A creative engineer is someone who is abstract and dynamic with creative ideas that flow like a fosset when faced with an issue. They see all threads available to create solutions in the most effective manner possible, while floating close to earth so a project stays in its track.
+A creative engineer is someone who is abstract and dynamic with creative ideas that flow like a fosset when faced with an issue. They see all threads available to create solutions in the most effective manner possible, while floating close to earth so a project stays in track.
 
-I am a creative individual comparing myself to those i have worked close with in the last years, and i do all i can to harness this part of myself for the best of my abilities by painting, creating lighting installations and photographing weekly to stay in this part of myself.
+I am a creative individual comparing myself to those i have worked close with in the last years, and i do all i can to harness this part of myself for the best of my abilities by painting, creating indoor lighting installations and photographing weekly to stay in this creative flow.
 
 This also reflects through in my development process as i adapt like a gecko to any type of syntax or issue i've met.
 
@@ -29,7 +29,7 @@ In the developer role, I've worked in the E-Commerce field for quite some time. 
 
 Later in life, i moved on to Nordea where i stayed for 2 years, building economic gateways which consisted of structuring API gateways in micro-service frameworks that talk cross and through third-party services.
 
-Also i've built, designed, structured and marketed my private E-Commerce store, where i have for the most part done the total project from design to sale. I love this part of my day since i am creatively free to test and experiment, while economical liberated (on my own dime). This project gives me knowledge in areas i've never thought of learning, which i HIGHLY appreciate.
+Also i've built, designed, structured and marketed a E-Commerce store, where i have for the most part done the total project from design to sale. I love this part of my day since i am creatively free to do what i want. This project gives me knowledge in areas i've never thought of learning, which i HIGHLY appreciate.
 
 ### Rørkjøp
 
@@ -64,7 +64,7 @@ Projects assigned while working for Rørkjøp were for the most part based on bu
 
 It was hard work coming from basically no coding knowledge to be able to develop my last project for Rørkjøp, a ETL system (Extract, Transfer, Load), which basically is a way of automating a database migration/importing process.  
 
-I must say I LOVED my time there, a challange worth the sweat and tears it took to speed up my knowledge and intellect in the development world.
+I must say I LOVED my time there, a challange worth the sweat and tears it took to speed up my knowledge and intellect in the development world. 
 
 #### Nordea AS
 
@@ -80,12 +80,10 @@ Technologies used at Nordea AS:
 - SQL
 - IntelliJ (IDE)
 
-### Other skills:
+### Other:
 
-    - Javascript (Intermediate) = React/Node.js/etc
-    - HTML (Advanced)
-    - CSS/SCSS  (Advanced)
-    - Linux/Windows/iOS (Advanced)
+    - React (60%) 
+    - Linux/Windows/iOS (90%)
 
 ## Other information:
 
@@ -101,11 +99,10 @@ Also i am very comfortable with Facebook Ads and Google Ads, which i've used to 
 
 I'm a 29 year old man who both loves a good laugh, having a good time and values my time.
 
-At the moment I live in Drammen Norway with my bestfriend/girlfriend and Mini.
+At the moment I live with my bestfriend/girlfriend and Mini.
 
 I have a super funny 40kilo, three year old boxer named **Mini**.
 
-<img src="/assets/images/fam.jpg" alt="my family"/>
 
 ## I have Hobbies!
 
