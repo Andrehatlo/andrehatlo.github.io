@@ -10,7 +10,7 @@ author_profile: false
 comments: true
 draft: false
 ---
-i
+
 # Grinding gears in a developer sole.
 
 I've always wanted to know and build, ever since i was a child and first heard about a kid that built the web based game Mafia back in the late 90's using Javascript.
