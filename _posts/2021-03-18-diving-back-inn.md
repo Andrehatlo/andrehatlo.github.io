@@ -8,5 +8,5 @@ header:
   teaser: "/assets/images/soul-banner.png"
 author_profile: false
 comments: true
-draft: true
+draft: false
 ---
