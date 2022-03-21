@@ -69,11 +69,6 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/a-break-from-reality/",
         "teaser":"http://localhost:4000/assets/images/soul-banner.png"},{
-        "title": "Back from the search - New perspective on life",
-        "excerpt":"So after to whole years of corona, i am ready to dive back into the developer role and bang out some blog articles again. The time we have been through has been tough both mentally and physically, not beeing able to do what we normaly do and the world changing...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/a-break-from-reality/",
-        "teaser":"http://localhost:4000/assets/images/soul-banner.png"},{
         "title": "Vim - The ultimate text editor?",
         "excerpt":"Vim Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as “vi” with most UNIX systems and with Apple macOS. Installation Because we want an addon thats called You complete me, we cant use the standard vim...","categories": [],
         "tags": [],

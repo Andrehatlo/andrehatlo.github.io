@@ -31,13 +31,13 @@ Give me a job which has a flexible work hours where i can focus my hours on work
 
 Give me a job that has both in house and remote options.
 
-Give me a job which is innovating, icioii and where you CAN take a nap if your head is burned out.
+Give me a job which is innovating, creative and where you have the freedom to take a nap if your head is on fire.
 
 We are all biological machines, we need sun, air, freedom and good food to create optimal code.
 
 Code comes from the mind, where both freedom and curiosity lives.
 
-Give your peers the freedom to take your software to new l/h-ights, because the freedom we have is the freedom we make.
+Give your peers the freedom to take your software to new highs, because the freedom we have is the freedom we make.
 
 Strict rules results in shitty and tightly bound spagetti code, drop mic.
 
