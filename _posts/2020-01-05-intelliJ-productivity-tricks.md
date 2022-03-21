@@ -7,7 +7,7 @@ header:
   image: "/assets/images/intellij-logo.png"
   teaser: "/assets/images/intellij-logo.png"
 author_profile: false
-comments: true
+comments: false
 draft: false
 ---
 

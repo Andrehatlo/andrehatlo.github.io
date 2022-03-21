@@ -7,7 +7,7 @@ header:
   image: "/assets/images/netflix.png"
   teaser: "/assets/images/netflix.png"
 author_profile: false
-comments: true
+comments: false
 draft: false
 ---
 

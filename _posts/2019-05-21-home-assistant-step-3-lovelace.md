@@ -7,7 +7,7 @@ header:
   image: "/assets/images/ha1.png"
   teaser: "/assets/images/ha1.png"
 author_profile: false
-comments:
+comments: false
 draft: false
 ---
 

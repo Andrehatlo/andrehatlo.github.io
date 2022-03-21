@@ -97,21 +97,25 @@ Also i am very comfortable with Facebook Ads and Google Ads, which i've used to 
 
 ## On a personal note:
 
-I'm a 29 year old man who both loves a good laugh, having a good time and values my time.
+I'm a 30 year old man who both loves a good laugh, having a good time and values my time.
 
-At the moment I live with my bestfriend/girlfriend and Mini.
-
-I have a super funny 40kilo, three year old boxer named **Mini**.
+At the moment I live in Drammen with my 40kilo, 5 year old dog named **Mini**.
 
 
 ## I have Hobbies!
 
 - Improv - Once a week! Which i LOVE, keeps my social mind sharp
+- Gitar - Gives me a break from tech.
 - Cooking - I love to both make food and eat, nomnom
-- Dog walks/play - This is where most of my best thinking comes through, the most creative part of me.
+- Dog walks/play - This is where most of my best thinking comes through, when i go with the flow on a walk with my dog.
 - Keeping up with my favourite tv-shows. (not the Kardashians)
-- Playing some computer games still.
-- Yoga is something i practise religiously as i've benefited so much from it.
+- Playing console/pc games (less than before).
+
+## I am healthy
+
+- Yoga, as i've benefited so much from it.
+- Jogging as it makes me push myself mentally and physically
+- Strength workouts once-twice a week.  
 
 ## Phrases i live by:
 

@@ -7,7 +7,7 @@ header:
   image: "/assets/images/git-banner.png"
   teaser: "/assets/images/git-banner.png"
 author_profile: false
-comments: true
+comments: false
 draft: false
 ---
 
