@@ -98,7 +98,7 @@ analytics:
 author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/andrefocus.png"
-  bio              : "Welcome to my personal blog! Take a look around :) I will continually post articles when learning new fundementals of different tech."
+  bio              : "Welcome to my "
   location         : "Drammen, Norway"
   email            : "andrehatlo@icloud.com"
   links:
@@ -111,15 +111,10 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:andrehatlo@icloud.com"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"fas fa-at
-    #   url: "https://www.facebook.com/Andre.Hatlo/"
-    - label: "E-Commerce Shop 1"
-      icon: "fas fa-fw fa-link"
-      url: "www.orientdesign.no"
-    - label: "Instagram - Creativity edition"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/q3_art/"
+
+
+
+
 
 # Site Footer
 footer:
@@ -130,9 +125,7 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "http://www.linkedin.com/in/andrehatlo"
-    # - label: "StackOverflow"
-    #   icon: "fab fa-fw fa-stack-overflow"
-    #   url: "https://stackoverflow.com/users/10538876/andr%C3%A9-hatlo"
+
 
 
 
