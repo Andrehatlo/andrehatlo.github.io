@@ -98,7 +98,7 @@ analytics:
 author:
   name             : "André Hatlo-Johansen"
   avatar           : "/assets/images/andrefocus.png"
-  bio              : "Welcome to my "
+  bio              : "Welcome to my blog."
   location         : "Drammen, Norway"
   email            : "andrehatlo@icloud.com"
   links:
@@ -125,8 +125,6 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "http://www.linkedin.com/in/andrehatlo"
-
-
 
 
 # Reading Files
